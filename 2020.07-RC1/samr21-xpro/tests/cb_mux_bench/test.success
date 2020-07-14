@@ -1,0 +1,13 @@
+r
+ssh -t lenders@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+cb_mux benchmark application
+Populating cb_mux list with 20 items
+Finding the last list entry
+List walk time: 23 us
+Walk time less than threshold of 200 us
+[SUCCESS]
+

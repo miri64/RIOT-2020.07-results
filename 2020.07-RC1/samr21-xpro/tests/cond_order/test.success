@@ -1,0 +1,26 @@
+r
+ssh -t lenders@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Condition variable order test
+Please refer to the README.md for more information
+
+T3 (prio 6): waiting on condition variable now
+T4 (prio 4): waiting on condition variable now
+T5 (prio 0): waiting on condition variable now
+T6 (prio 2): waiting on condition variable now
+T7 (prio 1): waiting on condition variable now
+First batch was signaled
+T5 (prio 0): condition variable was signaled now
+T7 (prio 1): condition variable was signaled now
+T6 (prio 2): condition variable was signaled now
+First batch has woken up
+Second batch was signaled
+T4 (prio 4): condition variable was signaled now
+T3 (prio 6): condition variable was signaled now
+Second batch has woken up
+
+Test END, check the order of priorities above.
+

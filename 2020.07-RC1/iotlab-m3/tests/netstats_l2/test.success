@@ -1,0 +1,19 @@
+
+
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+
+> 
+> ifconfig
+ifconfig
+Iface  2  HWaddr: 5D:6F  Channel: 26  Page: 0  NID: 0x23  PHY: O-QPSK 
+          
+          Long HWaddr: 0A:55:F7:65:10:6B:11:14 
+           TX-Power: 0dBm  State: IDLE  max. Retrans.: 3  CSMA Retries: 4 
+          AUTOACK  ACK_REQ  CSMA  L2-PDU:102  Source address length: 2
+          
+          Statistics for Layer 2
+            RX packets 0  bytes 0
+            TX packets 0 (Multicast: 0)  bytes 0
+            TX succeeded 0 errors 0
+
+> 

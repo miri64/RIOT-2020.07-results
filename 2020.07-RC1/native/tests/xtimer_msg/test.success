@@ -1,0 +1,78 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/xtimer_msg/bin/native/tests_xtimer_msg.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+This is thread 3
+sending 1st msg
+now=2:933241 -> every 2.0s: Hello World
+sending 2nd msg
+now=2:933261 -> every 5.0s: This is a Test
+This is thread 4
+sec=3 min=0 hour=0
+now=4:933374 -> every 2.0s: Hello World
+sec=4 min=0 hour=0
+sec=5 min=0 hour=0
+now=6:933497 -> every 2.0s: Hello World
+sec=6 min=0 hour=0
+now=7:933307 -> every 5.0s: This is a Test
+sec=7 min=0 hour=0
+now=8:933589 -> every 2.0s: Hello World
+sec=8 min=0 hour=0
+sec=9 min=0 hour=0
+now=10:933722 -> every 2.0s: Hello World
+sec=10 min=0 hour=0
+sec=11 min=0 hour=0
+now=12:933367 -> every 5.0s: This is a Test
+now=12:933845 -> every 2.0s: Hello World
+sec=12 min=0 hour=0
+sec=13 min=0 hour=0
+now=14:933957 -> every 2.0s: Hello World
+sec=14 min=0 hour=0
+sec=15 min=0 hour=0
+now=16:934072 -> every 2.0s: Hello World
+sec=16 min=0 hour=0
+now=17:933424 -> every 5.0s: This is a Test
+sec=17 min=0 hour=0
+now=18:934170 -> every 2.0s: Hello World
+sec=18 min=0 hour=0
+sec=19 min=0 hour=0
+now=20:934297 -> every 2.0s: Hello World
+sec=20 min=0 hour=0
+sec=21 min=0 hour=0
+now=22:933483 -> every 5.0s: This is a Test
+now=22:934422 -> every 2.0s: Hello World
+sec=22 min=0 hour=0
+sec=23 min=0 hour=0
+now=24:934545 -> every 2.0s: Hello World
+sec=24 min=0 hour=0
+sec=25 min=0 hour=0
+now=26:934644 -> every 2.0s: Hello World
+sec=26 min=0 hour=0
+now=27:933554 -> every 5.0s: This is a Test
+sec=27 min=0 hour=0
+now=28:934751 -> every 2.0s: Hello World
+sec=28 min=0 hour=0
+sec=29 min=0 hour=0
+now=30:934853 -> every 2.0s: Hello World
+sec=30 min=0 hour=0
+sec=31 min=0 hour=0
+now=32:933617 -> every 5.0s: This is a Test
+now=32:934981 -> every 2.0s: Hello World
+sec=32 min=0 hour=0
+sec=33 min=0 hour=0
+now=34:935115 -> every 2.0s: Hello World
+sec=34 min=0 hour=0
+sec=35 min=0 hour=0
+now=36:935255 -> every 2.0s: Hello World
+sec=36 min=0 hour=0
+now=37:933679 -> every 5.0s: This is a Test
+

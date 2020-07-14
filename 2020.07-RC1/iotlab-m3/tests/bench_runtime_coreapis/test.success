@@ -1,0 +1,24 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Runtime of Selected Core API functions
+
+                 nop loop:     17799us  ---   0.017us per call  ---   56182931 calls per sec
+
+             mutex_init():         1us  ---   0.000us per call  ---  3567587328 calls per sec
+        mutex lock/unlock:       909us  ---   0.000us per call  ---  1100110011 calls per sec
+
+       thread_flags_set():      3491us  ---   0.003us per call  ---  286450873 calls per sec
+     thread_flags_clear():     62955us  ---   0.062us per call  ---   15884361 calls per sec
+thread flags set/wait any:      4399us  ---   0.004us per call  ---  227324391 calls per sec
+thread flags set/wait all:     54301us  ---   0.054us per call  ---   18415867 calls per sec
+thread flags set/wait one:     56046us  ---   0.056us per call  ---   17842486 calls per sec
+
+        msg_try_receive():     44739us  ---   0.044us per call  ---   22351863 calls per sec
+              msg_avail():     65119us  ---   0.065us per call  ---   15356501 calls per sec
+
+[SUCCESS]
+

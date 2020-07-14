@@ -1,0 +1,42 @@
+Run test case
+{'data_len_end': 503,
+ 'data_len_start': 0,
+ 'data_len_step': 50,
+ 'mode': 'sub',
+ 'qos_level': 0,
+ 'topic_name': '/test'}
+Run test case
+{'data_len_end': 503,
+ 'data_len_start': 0,
+ 'data_len_step': 50,
+ 'mode': 'sub',
+ 'qos_level': 1,
+ 'topic_name': '/test'}
+Run test case
+{'data_len_end': 9,
+ 'data_len_start': 8,
+ 'mode': 'sub',
+ 'qos_level': 1,
+ 'topic_name': '/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'}
+Run test case
+{'data_len_end': 9,
+ 'data_len_start': 8,
+ 'mode': 'sub_w_reg',
+ 'qos_level': 1,
+ 'topic_name': '/test'}
+Run test case
+{'data_len_end': 503,
+ 'data_len_start': 1,
+ 'data_len_step': 50,
+ 'mode': 'pub',
+ 'qos_level': 0,
+ 'topic_name': '/test'}
+Run test case
+{'data_len_end': 503,
+ 'data_len_start': 1,
+ 'data_len_step': 50,
+ 'mode': 'pub',
+ 'qos_level': 1,
+ 'topic_name': '/test'}
+SUCCESS
+

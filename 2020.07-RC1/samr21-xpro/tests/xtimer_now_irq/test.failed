@@ -1,0 +1,14 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/xtimer_now_irq test
+r
+ssh -t lenders@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+xtimer_now_irq test application.
+
+Timeout in expect script at "child.expect_exact("OK", timeout=TIMEOUT)" (tests/xtimer_now_irq/tests/01-run.py:19)
+
+make: *** [/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/xtimer_now_irq/../../Makefile.include:770: test] Error 1
+
+Return value: 2

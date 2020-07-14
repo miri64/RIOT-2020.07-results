@@ -1,0 +1,31 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/pkg_semtech-loramac test
+
+
+ssh -t lenders@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+
+> 
+> loramac erase
+loramac erase
+Usage: loramac <get|set|join|tx|link_check>
+> reboot
+reboot
+main(): This is RIOT! (Version: buildtest)
+All up, running the shell now
+> loramac set deveui None
+loramac set deveui None
+Usage: loramac set deveui <16 hex chars>
+>loramac set appeui None
+ loramac set appeui None
+Usage: loramac set appeui <16 hex chars>
+> loramac set appkey None
+loramac set appkey None
+Usage: loramac set appkey <32 hex chars>
+> loramac set dr 0
+loramac set dr 0
+> loramac join otaa
+loramac join otaa
+Timeout in expect script at ""Warning: already joined!"])" (tests/pkg_semtech-loramac/tests/01-run.py:103)
+
+make: *** [/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/pkg_semtech-loramac/../../Makefile.include:770: test] Error 1
+
+Return value: 2

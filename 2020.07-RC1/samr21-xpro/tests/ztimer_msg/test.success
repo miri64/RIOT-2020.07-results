@@ -1,0 +1,71 @@
+r
+ssh -t lenders@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+This is thread 3
+sending 1st msg
+now=3:424239 -> every 2.0s: Hello World
+sending 2nd msg
+now=3:429334 -> every 5.0s: This is a Test
+This is thread 4
+sec=4 min=0 hour=0
+now=5:427953 -> every 2.0s: Hello World
+sec=5 min=0 hour=0
+sec=6 min=0 hour=0
+now=7:431668 -> every 2.0s: Hello World
+sec=7 min=0 hour=0
+now=8:433313 -> every 5.0s: This is a Test
+sec=8 min=0 hour=0
+now=9:435383 -> every 2.0s: Hello World
+sec=9 min=0 hour=0
+sec=10 min=0 hour=0
+now=11:439098 -> every 2.0s: Hello World
+sec=11 min=0 hour=0
+sec=12 min=0 hour=0
+now=13:437292 -> every 5.0s: This is a Test
+now=13:442902 -> every 2.0s: Hello World
+sec=13 min=0 hour=0
+sec=14 min=0 hour=0
+now=15:446705 -> every 2.0s: Hello World
+sec=15 min=0 hour=0
+sec=16 min=0 hour=0
+now=17:450508 -> every 2.0s: Hello World
+sec=17 min=0 hour=0
+now=18:441360 -> every 5.0s: This is a Test
+sec=18 min=0 hour=0
+now=19:454313 -> every 2.0s: Hello World
+sec=19 min=0 hour=0
+sec=20 min=0 hour=0
+now=21:458118 -> every 2.0s: Hello World
+sec=21 min=0 hour=0
+sec=22 min=0 hour=0
+now=23:445429 -> every 5.0s: This is a Test
+now=23:461924 -> every 2.0s: Hello World
+sec=23 min=0 hour=0
+sec=24 min=0 hour=0
+now=25:465729 -> every 2.0s: Hello World
+sec=25 min=0 hour=0
+sec=26 min=0 hour=0
+now=27:469534 -> every 2.0s: Hello World
+sec=27 min=0 hour=0
+now=28:449499 -> every 5.0s: This is a Test
+sec=28 min=0 hour=0
+now=29:473340 -> every 2.0s: Hello World
+sec=29 min=0 hour=0
+sec=30 min=0 hour=0
+now=31:477145 -> every 2.0s: Hello World
+sec=31 min=0 hour=0
+sec=32 min=0 hour=0
+now=33:453569 -> every 5.0s: This is a Test
+now=33:480951 -> every 2.0s: Hello World
+sec=33 min=0 hour=0
+sec=34 min=0 hour=0
+now=35:484756 -> every 2.0s: Hello World
+sec=35 min=0 hour=0
+sec=36 min=0 hour=0
+now=37:488562 -> every 2.0s: Hello World
+sec=37 min=0 hour=0
+now=38:457639 -> every 5.0s: This is a Test
+

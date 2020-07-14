@@ -1,0 +1,34 @@
+r
+ssh -t lenders@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+
+> 
+> help
+Command              Description
+---------------------------------------
+reboot               Reboot the node
+version              Prints current RIOT_VERSION
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+ps
+> ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches
+	  - | isr_stack            | -        - |   - |    512 (  168) (  344) | 0x20000000 | 0x200001c0
+	  1 | idle                 | pending  Q |  15 |    256 (  148) (  108) | 0x20000538 | 0x200005a4  | 96.427% |       251
+	  2 | main                 | running  Q |   7 |   1536 (  812) (  724) | 0x20000638 | 0x2000090c  |  1.151% |       149
+	  3 | thread               | bl mutex _ |   6 |   1024 (  460) (  564) | 0x20000e6c | 0x2000115c  |  0.448% |       166
+	  4 | thread               | bl mutex _ |   6 |   1024 (  460) (  564) | 0x2000126c | 0x2000155c  |  0.625% |       176
+	  5 | thread               | bl rx    _ |   6 |   1024 (  460) (  564) | 0x2000166c | 0x2000198c  |  0.820% |       187
+	  6 | thread               | bl rx    _ |   6 |   1024 (  460) (  564) | 0x20001a6c | 0x20001d8c  |  1.031% |       197
+	  7 | thread               | bl rx    _ |   6 |   1024 (  460) (  564) | 0x20001e6c | 0x2000218c  |  0.365% |       207
+	    | SUM                  |            |     |   7424 ( 3428) ( 3996)
+> 

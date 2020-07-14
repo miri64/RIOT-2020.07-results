@@ -1,0 +1,7 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/examples/suit_update flash-only
+iotlab-node --jmespath='keys(@)[0]' --format='int' --id 224324 --list saclay,samr21,10 --update /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/examples/suit_update/bin/samr21-xpro/suit_update-slot0-extended.bin | grep 0
+HTTP Error 500: 
+	Unknown firmware format file
+make: *** [/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/examples/suit_update/../../Makefile.include:707: flash-only] Error 1
+
+Return value: 2

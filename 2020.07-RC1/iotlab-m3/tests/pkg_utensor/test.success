@@ -1,0 +1,10 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Simple MNIST end-to-end uTensor cli example (device)
+
+Predicted label: 7
+

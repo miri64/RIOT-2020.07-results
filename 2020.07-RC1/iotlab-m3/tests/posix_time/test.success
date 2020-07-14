@@ -1,0 +1,20 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READYs
+
+START
+main(): This is RIOT! (Version: buildtest)
+5 x usleep(i++ * 500000)
+wake up
+wake up
+wake up
+wake up
+wake up
+5 x sleep(i++)
+wake up
+wake up
+wake up
+wake up
+wake up
+DONE
+

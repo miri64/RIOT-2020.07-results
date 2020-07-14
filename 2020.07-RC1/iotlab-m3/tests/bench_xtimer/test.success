@@ -1,0 +1,23 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+xtimer benchmark application.
+
+                     set() one     4710 / 1000 = 4
+                  remove() one     1140 / 1000 = 1
+          set() + remove() one     5668 / 1000 = 5
+  set() many increasing target   368144 / 1000 = 368
+               re-set()  first     5043 / 1000 = 5
+               re-set() middle   377572 / 1000 = 377
+               re-set()   last   730109 / 1000 = 730
+       remove() + set()  first   238867 / 1000 = 238
+       remove() + set() middle   611375 / 1000 = 611
+       remove() + set()   last   957906 / 1000 = 957
+      remove() many decreasing   113184 / 1000 = 113
+                  xtimer_now()     1570 / 1000 = 1
+              sizeof(xtimer_t)    28000 / 1000 = 28
+done.
+

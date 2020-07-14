@@ -1,0 +1,12 @@
+r
+ssh -t lenders@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Test for irq_disable() / irq_restore()
+======================================
+
+Verifying test works: [SUCCESS]
+Test result: [SUCCESS]
+

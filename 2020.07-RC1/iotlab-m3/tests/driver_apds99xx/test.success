@@ -1,0 +1,12 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+APDS99XX proximity and ambient light sensor driver test application
+
+Initializing APDS99XX sensor
+[Failed]
+FAILED
+

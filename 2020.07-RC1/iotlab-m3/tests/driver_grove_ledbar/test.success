@@ -1,0 +1,16 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+ stepwise increase LED bar to 100% and then decrease to 0%.
+
+ >>> round 1
+ >>> round 2
+ >>> round 3
+ >>> round 4
+ >>> round 5
+[SUCCESS]
+

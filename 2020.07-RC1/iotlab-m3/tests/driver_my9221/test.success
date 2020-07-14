@@ -1,0 +1,14 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+- light up all LEDs one by one.
+- light up all LEDs to 33%.
+- light up all LEDs to 66%.
+- light up all LEDs to 100%.
+- turn off all LEDs
+[SUCCESS]
+

@@ -1,0 +1,12 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Test for the CPUID driver
+This test is reading out the CPUID of the platforms CPU
+
+CPUID_LEN: 12
+CPUID: 0x32 0xff 0xd7 0x05 0x33 0x48 0x32 0x36 0x19 0x89 0x03 0x43
+

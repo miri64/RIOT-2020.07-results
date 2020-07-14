@@ -1,0 +1,20 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+THREAD nr1 (pid:2) start
+THREAD nr2 (pid:3) start
+THREAD nr3 (pid:4) start
+THREADS CREATED
+
+THREAD nr1 (pid:2) end.
+Got msg from pid 2: "nr1"
+THREAD nr2 (pid:3) end.
+Got msg from pid 3: "nr2"
+THREAD nr3 (pid:4) end.
+Got msg from pid 4: "nr3"
+SUCCESS
+

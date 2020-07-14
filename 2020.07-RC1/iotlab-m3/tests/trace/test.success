@@ -1,0 +1,9 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+n=   0 t=  3510797 v=0x00000000
+n=   1 t=+       2 v=0x00000001
+

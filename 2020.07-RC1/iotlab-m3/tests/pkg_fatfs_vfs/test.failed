@@ -1,0 +1,21 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/pkg_fatfs_vfs test
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Tests for FatFs over VFS - test results will be printed in the format test_name:result
+test_mount__mount:[FAILED]
+
+Traceback (most recent call last):
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/pkg_fatfs_vfs/tests/01-run.py", line 34, in <module>
+    sys.exit(run(testfunc))
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/pkg_fatfs_vfs/tests/01-run.py", line 28, in testfunc
+    raise TestFailed(child.after.split(':', 1)[0] + " test failed!")
+__main__.TestFailed: test_mount__mount test failed!
+make: *** [/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/pkg_fatfs_vfs/../../Makefile.include:770: test] Error 1
+
+Return value: 2

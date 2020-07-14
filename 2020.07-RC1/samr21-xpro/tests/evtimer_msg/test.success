@@ -1,0 +1,23 @@
+r
+ssh -t lenders@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing generic evtimer
+This should list 2 items
+ev #1 offset=1000
+ev #2 offset=500
+This should list 4 items
+ev #1 offset=659
+ev #2 offset=341
+ev #3 offset=500
+ev #4 offset=2454
+Are the reception times of all 4 msgs close to the supposed values?
+At   4077 ms received msg 0: "#2 supposed to be 4077"
+.At   4418 ms received msg 1: "#0 supposed to be 4418"
+.At   4918 ms received msg 2: "#1 supposed to be 4918"
+.At   7372 ms received msg 3: "#3 supposed to be 7372"
+.
+All tests successful
+

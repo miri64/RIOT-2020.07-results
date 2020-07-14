@@ -1,0 +1,10 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+parsed coordinates: lat=52.483631 lon=13.446008
+SUCCESS
+

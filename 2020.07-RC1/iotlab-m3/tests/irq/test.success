@@ -1,0 +1,16 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+busy_thread created
+xtimer_wait()
+busy_thread starting
+main: return
+i: 398117
+j: 398117
+k: 398117
+SUCCESS
+

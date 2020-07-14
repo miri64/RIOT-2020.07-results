@@ -1,0 +1,12 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/pkg_fatfs_vfs test
+r
+ssh -t lenders@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Timeout in expect script at "child.expect_exact("Tests for FatFs over VFS - test results will be printed"" (tests/pkg_fatfs_vfs/tests/01-run.py:19)
+
+make: *** [/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/pkg_fatfs_vfs/../../Makefile.include:770: test] Error 1
+
+Return value: 2

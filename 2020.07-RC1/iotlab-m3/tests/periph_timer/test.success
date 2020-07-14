@@ -1,0 +1,39 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMERs
+
+Available timers: 2
+
+Testing TIMER_0:
+TIMER_0: initialization successful
+TIMER_0: stopped
+TIMER_0: set channel 0 to 5000
+TIMER_0: set channel 1 to 10000
+TIMER_0: set channel 2 to 15000
+TIMER_0: set channel 3 to 20000
+TIMER_0: starting
+TIMER_0: channel 0 fired at SW count    15000 - init:    15000
+TIMER_0: channel 1 fired at SW count    29991 - diff:    14991
+TIMER_0: channel 2 fired at SW count    44983 - diff:    14992
+TIMER_0: channel 3 fired at SW count    59975 - diff:    14992
+
+Testing TIMER_1:
+TIMER_1: initialization successful
+TIMER_1: stopped
+TIMER_1: set channel 0 to 5000
+TIMER_1: set channel 1 to 10000
+TIMER_1: set channel 2 to 15000
+TIMER_1: set channel 3 to 20000
+TIMER_1: starting
+TIMER_1: channel 0 fired at SW count    15000 - init:    15000
+TIMER_1: channel 1 fired at SW count    29992 - diff:    14992
+TIMER_1: channel 2 fired at SW count    44983 - diff:    14991
+TIMER_1: channel 3 fired at SW count    59975 - diff:    14992
+
+TEST SUCCEEDED
+

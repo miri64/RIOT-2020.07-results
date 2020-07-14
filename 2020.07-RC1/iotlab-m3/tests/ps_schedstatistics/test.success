@@ -1,0 +1,33 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> 
+> help
+
+> help
+Command              Description
+---------------------------------------
+reboot               Reboot the node
+version              Prints current RIOT_VERSION
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+> ps
+ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches
+	  - | isr_stack            | -        - |   - |    512 (  212) (  300) | 0x20000000 | 0x200001c8
+	  1 | main                 | running  Q |   7 |   1536 (  780) (  756) | 0x20000538 | 0x2000094c  | 30.419% |        48
+	  2 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20000d74 | 0x200010ac  | 12.040% |       233
+	  3 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001174 | 0x200014ac  | 14.604% |       237
+	  4 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001574 | 0x200018ac  | 16.864% |       239
+	  5 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001974 | 0x20001cac  | 19.289% |       243
+	  6 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001d74 | 0x200020ac  | 10.400% |       245
+	    | SUM                  |            |     |   7168 ( 3052) ( 4116)
+> 

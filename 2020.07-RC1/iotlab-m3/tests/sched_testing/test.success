@@ -1,0 +1,13 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+The output should be: yield 1, snd_thread running, yield 2, done
+----------------------------------------------------------------
+yield 1
+snd_thread running
+yield 2
+done
+

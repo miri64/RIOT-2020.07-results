@@ -1,0 +1,11 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+The output of the configuration variables:
+SUPER_STRING: I love sentences with spaces
+DEFINED_AFTER_MAKEFILE_INCLUDE: 0
+CFLAGS_STRING_FROM_DOCKER: 
+

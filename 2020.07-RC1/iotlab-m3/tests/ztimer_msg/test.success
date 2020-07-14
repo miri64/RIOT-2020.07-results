@@ -1,0 +1,71 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+This is thread 2
+sending 1st msg
+now=3:417635 -> every 2.0s: Hello World
+sending 2nd msg
+now=3:418901 -> every 5.0s: This is a Test
+This is thread 3
+sec=4 min=0 hour=0
+now=5:418567 -> every 2.0s: Hello World
+sec=5 min=0 hour=0
+sec=6 min=0 hour=0
+now=7:419499 -> every 2.0s: Hello World
+sec=7 min=0 hour=0
+now=8:419895 -> every 5.0s: This is a Test
+sec=8 min=0 hour=0
+now=9:420431 -> every 2.0s: Hello World
+sec=9 min=0 hour=0
+sec=10 min=0 hour=0
+now=11:421363 -> every 2.0s: Hello World
+sec=11 min=0 hour=0
+sec=12 min=0 hour=0
+now=13:420889 -> every 5.0s: This is a Test
+now=13:422316 -> every 2.0s: Hello World
+sec=13 min=0 hour=0
+sec=14 min=0 hour=0
+now=15:423269 -> every 2.0s: Hello World
+sec=15 min=0 hour=0
+sec=16 min=0 hour=0
+now=17:424221 -> every 2.0s: Hello World
+sec=17 min=0 hour=0
+now=18:421905 -> every 5.0s: This is a Test
+sec=18 min=0 hour=0
+now=19:425173 -> every 2.0s: Hello World
+sec=19 min=0 hour=0
+sec=20 min=0 hour=0
+now=21:426125 -> every 2.0s: Hello World
+sec=21 min=0 hour=0
+sec=22 min=0 hour=0
+now=23:422921 -> every 5.0s: This is a Test
+now=23:427078 -> every 2.0s: Hello World
+sec=23 min=0 hour=0
+sec=24 min=0 hour=0
+now=25:428031 -> every 2.0s: Hello World
+sec=25 min=0 hour=0
+sec=26 min=0 hour=0
+now=27:428983 -> every 2.0s: Hello World
+sec=27 min=0 hour=0
+now=28:423937 -> every 5.0s: This is a Test
+sec=28 min=0 hour=0
+now=29:429935 -> every 2.0s: Hello World
+sec=29 min=0 hour=0
+sec=30 min=0 hour=0
+now=31:430887 -> every 2.0s: Hello World
+sec=31 min=0 hour=0
+sec=32 min=0 hour=0
+now=33:424953 -> every 5.0s: This is a Test
+now=33:431840 -> every 2.0s: Hello World
+sec=33 min=0 hour=0
+sec=34 min=0 hour=0
+now=35:432793 -> every 2.0s: Hello World
+sec=35 min=0 hour=0
+sec=36 min=0 hour=0
+now=37:433745 -> every 2.0s: Hello World
+sec=37 min=0 hour=0
+now=38:425969 -> every 5.0s: This is a Test
+

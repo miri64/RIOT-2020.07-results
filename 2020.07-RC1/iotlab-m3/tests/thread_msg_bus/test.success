@@ -1,0 +1,18 @@
+r
+ssh -t lenders@lille.iot-lab.info 'socat - tcp:m3-100.lille.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+THREAD 1 start
+THREAD 2 start
+THREAD 3 start
+THREADS CREATED
+Posted event 22 to 0 threads
+T1 recv: Hello Threads! (type=23)
+T3 recv: Hello Threads! (type=23)
+Posted event 23 to 2 threads
+T2 recv: Hello Threads! (type=24)
+Posted event 24 to 1 threads
+SUCCESS
+
