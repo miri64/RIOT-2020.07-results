@@ -1,0 +1,37 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "500000" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+ 
+>  
+>  help
+Command              Description
+---------------------------------------
+reboot               Reboot the node
+version              Prints current RIOT_VERSION
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+ps
+>  ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches
+	  - | isr_stack            | -        - |   - |    512 (  212) (  300) | 0x20000000 | 0x200001c8
+	  1 | main                 | running  Q |   7 |   1536 (  780) (  756) | 0x20000538 | 0x2000082c  | 38.669% |        47
+	  2 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20000d74 | 0x200010ac  | 10.857% |       153
+	  3 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001174 | 0x200014ac  | 12.752% |       155
+	  4 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001574 | 0x200018ac  | 14.877% |       159
+	  5 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001974 | 0x20001c6c  | 17.065% |       162
+	  6 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001d74 | 0x200020ac  |  9.652% |       165
+	    | SUM                  |            |     |   7168 ( 3052) ( 4116)
+> 

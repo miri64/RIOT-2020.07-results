@@ -1,0 +1,19 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "500000" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START] event_wait_timeout test application.
+
+waiting for event with 10ms timeout...
+event_wait time out after 10020us
+waiting for event with 10ms timeout (using uint64)...
+event_wait time out after 10020us
+finished: 4/4 events and 4/4 timeouts recorded
+[SUCCESS]
+

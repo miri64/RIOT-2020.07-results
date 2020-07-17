@@ -1,0 +1,43 @@
+
+Operating System Environment
+----------------------------
+         Operating System: "Arch Linux" 
+                   Kernel: Linux 5.7.8-arch1-1 x86_64 unknown
+             System shell: GNU bash, version 5.0.17(1)-release (x86_64-pc-linux-gnu)
+             make's shell: GNU bash, version 5.0.17(1)-release (x86_64-pc-linux-gnu)
+
+Installed compiler toolchains
+-----------------------------
+               native gcc: gcc (GCC) 10.1.0
+        arm-none-eabi-gcc: arm-none-eabi-gcc (Arch Repository) 10.1.0
+                  avr-gcc: missing
+         mips-mti-elf-gcc: missing
+               msp430-gcc: missing
+     riscv-none-embed-gcc: missing
+     xtensa-esp32-elf-gcc: missing
+   xtensa-esp8266-elf-gcc: missing
+                    clang: clang version 10.0.0 
+
+Installed compiler libs
+-----------------------
+     arm-none-eabi-newlib: "3.3.0"
+      mips-mti-elf-newlib: missing
+  riscv-none-embed-newlib: missing
+  xtensa-esp32-elf-newlib: missing
+xtensa-esp8266-elf-newlib: missing
+                 avr-libc: missing (missing)
+
+Installed development tools
+---------------------------
+                   ccache: ccache version 3.7.10
+                    cmake: cmake version 3.18.0
+                 cppcheck: missing
+                  doxygen: 1.8.18
+                      git: git version 2.27.0
+                     make: GNU Make 4.3
+                  openocd: Open On-Chip Debugger 0.10.0+dev-01089-g3bfe49266 (2020-02-26-14:18)
+                   python: Python 3.8.3
+                  python2: Python 2.7.18
+                  python3: Python 3.8.3
+                   flake8: 3.8.3 (mccabe: 0.6.1, pycodestyle: 2.6.0, pyflakes: 2.2.0) CPython 3.8.3 on
+               coccinelle: missing

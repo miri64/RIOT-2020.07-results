@@ -1,0 +1,52 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT-release/tests/emcute test
+make[1]: Nothing to be done for 'all'.
+Traceback (most recent call last):
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT-release/tests/emcute/tests/01-run.py", line 491, in <module>
+    sys.exit(run(testfunc, timeout=TIMEOUT, echo=False))
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/pythonlibs/testrunner/__init__.py", line 27, in run
+    child = setup_child(timeout, env=os.environ,
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/pythonlibs/testrunner/spawn.py", line 88, in setup_child
+    sync_child(child, env)
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/pythonlibs/testrunner/spawn.py", line 121, in sync_child
+    utils.test_utils_interactive_sync_shell(child,
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/pythonlibs/testrunner/utils.py", line 41, in test_utils_interactive_sync_shell
+    _test_utils_interactive_sync(child, retries, delay, '\n', '>')
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/pythonlibs/testrunner/utils.py", line 17, in _test_utils_interactive_sync
+    ret = child.expect_exact([ready_exp, pexpect.TIMEOUT], timeout=delay)
+  File "/usr/lib/python3.8/site-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/usr/lib/python3.8/site-packages/pexpect/expect.py", line 179, in expect_loop
+    return self.eof(e)
+  File "/usr/lib/python3.8/site-packages/pexpect/expect.py", line 122, in eof
+    raise exc
+pexpect.exceptions.EOF: End Of File (EOF). Exception style platform.
+<pexpect.pty_spawn.spawn object at 0x7f83f1b1a130>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): ''
+before (last 100 chars): '1]: *** [/home/mlenders/Repositories/RIOT-OS/RIOT-release/Makefile.include:726: cleanterm] Error 1\r\n'
+after: <class 'pexpect.exceptions.EOF'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: True
+pid: 213492
+child_fd: 15
+closed: False
+timeout: 1
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: None
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: '>'
+    1: TIMEOUT
+make: *** [/home/mlenders/Repositories/RIOT-OS/RIOT-release/tests/emcute/../../Makefile.include:770: test] Error 1
+
+Return value: 2

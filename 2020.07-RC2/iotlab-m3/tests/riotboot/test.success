@@ -1,0 +1,155 @@
+
+
+/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "500000" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+
+>  
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f11cd16
+compiling /home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /home/mlenders/Repositories/RIOT-OS/RIOT-release/tests/riotboot/bin/iotlab-m3/tests_riotboot-slot1.1595002135.riot.bin...
+/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/tools/openocd/openocd.sh flash /home/mlenders/Repositories/RIOT-OS/RIOT-release/tests/riotboot/bin/iotlab-m3/tests_riotboot-slot1.1595002135.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08040800
+Open On-Chip Debugger 0.10.0+dev-01089-g3bfe49266 (2020-02-26-14:18)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Warn : Interface already configured, ignoring
+Info : auto-selecting first available session transport "jtag". To override use 'transport select <transport>'.
+trst_and_srst separate srst_nogate trst_push_pull srst_open_drain connect_assert_srst
+
+Info : clock speed 1000 kHz
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b (ARM Ltd.), part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020 (STMicroelectronics), part: 0x6414, ver: 0x0)
+Info : stm32f1x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : stm32f1x.cpu: external reset detected
+Info : Listening on port 44221 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f1x.cpu       cortex_m   little stm32f1x.cpu       reset
+
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b (ARM Ltd.), part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020 (STMicroelectronics), part: 0x6414, ver: 0x0)
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x0800029c msp: 0x20000200
+Info : device id = 0x10016414
+Info : flash size = 512kbytes
+auto erase enabled
+wrote 16384 bytes from file /home/mlenders/Repositories/RIOT-OS/RIOT-release/tests/riotboot/bin/iotlab-m3/tests_riotboot-slot1.1595002135.riot.bin in 0.729608s (21.930 KiB/s)
+
+verified 14412 bytes in 0.220293s (63.889 KiB/s)
+
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b (ARM Ltd.), part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020 (STMicroelectronics), part: 0x6414, ver: 0x0)
+shutdown command invoked
+Done flashing
+Image start address: 0x08001400
+Header chksum: 0xdf09e5c9
+
+>  main(): This is RIOT! (Version: buildtest)
+Hello riotboot!
+You are running RIOT on a(n) iotlab-m3 board.
+This board features a(n) stm32 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5f11cd17
+Image start address: 0x08040c00
+Header chksum: 0xcf11ddce
+
+> curslotnr
+ curslotnr
+Current slot=1
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f11cd17
+Image start address: 0x08040c00
+Header chksum: 0xcf11ddce
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08001400
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001400
+slot 1: metadata: 0x8040800 image: 0x08040c00
+> compiling /home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /home/mlenders/Repositories/RIOT-OS/RIOT-release/tests/riotboot/bin/iotlab-m3/tests_riotboot-slot0.1595002136.riot.bin...
+/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/tools/openocd/openocd.sh flash /home/mlenders/Repositories/RIOT-OS/RIOT-release/tests/riotboot/bin/iotlab-m3/tests_riotboot-slot0.1595002136.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08001000
+Open On-Chip Debugger 0.10.0+dev-01089-g3bfe49266 (2020-02-26-14:18)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Warn : Interface already configured, ignoring
+Info : auto-selecting first available session transport "jtag". To override use 'transport select <transport>'.
+trst_and_srst separate srst_nogate trst_push_pull srst_open_drain connect_assert_srst
+
+Info : clock speed 1000 kHz
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b (ARM Ltd.), part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020 (STMicroelectronics), part: 0x6414, ver: 0x0)
+Info : stm32f1x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : stm32f1x.cpu: external reset detected
+Info : Listening on port 36931 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f1x.cpu       cortex_m   little stm32f1x.cpu       reset
+
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b (ARM Ltd.), part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020 (STMicroelectronics), part: 0x6414, ver: 0x0)
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x0800029c msp: 0x20000200
+Info : device id = 0x10016414
+Info : flash size = 512kbytes
+auto erase enabled
+wrote 16384 bytes from file /home/mlenders/Repositories/RIOT-OS/RIOT-release/tests/riotboot/bin/iotlab-m3/tests_riotboot-slot0.1595002136.riot.bin in 0.725876s (22.042 KiB/s)
+
+verified 14412 bytes in 0.220507s (63.827 KiB/s)
+
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b (ARM Ltd.), part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020 (STMicroelectronics), part: 0x6414, ver: 0x0)
+shutdown command invoked
+Done flashing
+ main(): This is RIOT! (Version: buildtest)
+Hello riotboot!
+You are running RIOT on a(n) iotlab-m3 board.
+This board features a(n) stm32 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5f11cd18
+Image start address: 0x08001400
+Header chksum: 0xdf11e5cb
+
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f11cd18
+Image start address: 0x08001400
+Header chksum: 0xdf11e5cb
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08001400
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001400
+slot 1: metadata: 0x8040800 image: 0x08040c00
+> TEST PASSED
+

@@ -1,0 +1,68 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT-release/tests/gnrc_dhcpv6_client_6lbr test
+make[1]: Nothing to be done for 'all'.
+
+
+make[2]: Nothing to be done for 'all'.
+sudo /home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/tools/ethos/ethos tap0 /dev/ttyUSB1 115200
+[sudo] password for mlenders: 
+
+
+Sorry, try again.
+[sudo] password for mlenders: 
+
+
+
+
+Sorry, try again.
+[sudo] password for mlenders: 
+
+
+Traceback (most recent call last):
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT-release/tests/gnrc_dhcpv6_client_6lbr/tests/01-run.py", line 173, in <module>
+    sys.exit(run(testfunc, timeout=TIMEOUT, echo=True))
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/pythonlibs/testrunner/__init__.py", line 27, in run
+    child = setup_child(timeout, env=os.environ,
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/pythonlibs/testrunner/spawn.py", line 88, in setup_child
+    sync_child(child, env)
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/pythonlibs/testrunner/spawn.py", line 121, in sync_child
+    utils.test_utils_interactive_sync_shell(child,
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/pythonlibs/testrunner/utils.py", line 41, in test_utils_interactive_sync_shell
+    _test_utils_interactive_sync(child, retries, delay, '\n', '>')
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/pythonlibs/testrunner/utils.py", line 22, in _test_utils_interactive_sync
+    child.expect_exact(ready_exp, timeout=0)
+  File "/usr/lib/python3.8/site-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/usr/lib/python3.8/site-packages/pexpect/expect.py", line 181, in expect_loop
+    return self.timeout(e)
+  File "/usr/lib/python3.8/site-packages/pexpect/expect.py", line 144, in timeout
+    raise exc
+pexpect.exceptions.TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7f6e0307c040>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): '\n'
+before (last 100 chars): 'rry, try again.\r\n[sudo] password for mlenders: \r\nSorry, try again.\r\n[sudo] password for mlenders: \r\n'
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 226168
+child_fd: 15
+closed: False
+timeout: 1
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: '>'
+make: *** [/home/mlenders/Repositories/RIOT-OS/RIOT-release/tests/gnrc_dhcpv6_client_6lbr/../../Makefile.include:770: test] Error 1
+
+Return value: 2

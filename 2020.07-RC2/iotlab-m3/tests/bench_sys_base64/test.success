@@ -1,0 +1,15 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT-release/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "500000" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Verifying that base64 encoding works for benchmark input: OK
+Verifying that base64 decoding works for benchmark input: OK
+Encoding 10.000 x 96 bytes (128 bytes in base64): 741278 µs
+Decoding 10.000 x 96 bytes (128 bytes in base64): 1244165 µs
+
