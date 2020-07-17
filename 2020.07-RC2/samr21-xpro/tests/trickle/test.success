@@ -1,0 +1,26 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 3125549, t = 36
+now = 3183628, t = 52
+now = 3320705, t = 107
+now = 3536872, t = 161
+now = 4102040, t = 404
+[TRICKLE_RESET]
+now = 4114233, t = 10
+now = 4146310, t = 24
+now = 4189387, t = 33
+now = 4321464, t = 99
+now = 4581541, t = 229
+now = 4999709, t = 389
+now = 5684876, t = 560
+[SUCCESS]
+

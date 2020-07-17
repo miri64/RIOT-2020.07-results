@@ -1,0 +1,15 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Verifying that base64 encoding works for benchmark input: OK
+Verifying that base64 decoding works for benchmark input: OK
+Encoding 10.000 x 96 bytes (128 bytes in base64): 1148759 µs
+Decoding 10.000 x 96 bytes (128 bytes in base64): 2286676 µs
+

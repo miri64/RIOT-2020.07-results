@@ -1,0 +1,105 @@
+
+
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+>  
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f11a717
+compiling /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/riotboot/bin/samr21-xpro/tests_riotboot-slot1.1594992408.riot.bin...
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/tools/edbg/edbg --offset 133120 --target samr21 --verbose --file /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/riotboot/bin/samr21-xpro/tests_riotboot-slot1.1594992408.riot.bin --verify || /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/tools/edbg/edbg --offset 133120 --target samr21 --verbose --file /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/riotboot/bin/samr21-xpro/tests_riotboot-slot1.1594992408.riot.bin --verify --program
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800008254 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev D)
+Verification...
+at address 0x20800 expected 0x52, read 0x00
+Error: verification failed
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800008254 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev D)
+Programming.......................................................... done.
+Verification.......................................................... done.
+Image start address: 0x00001100
+Header chksum: 0x390db4ca
+
+> curslotnr
+ main(): This is RIOT! (Version: buildtest)
+Hello riotboot!
+You are running RIOT on a(n) samr21-xpro board.
+This board features a(n) samd21 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5f11a718
+Image start address: 0x00020900
+Header chksum: 0x2913accd
+
+>  curslotnr
+Current slot=1
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f11a718
+Image start address: 0x00020900
+Header chksum: 0x2913accd
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x00001100
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x1000 image: 0x00001100
+slot 1: metadata: 0x20800 image: 0x00020900
+> compiling /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/riotboot/bin/samr21-xpro/tests_riotboot-slot0.1594992409.riot.bin...
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/tools/edbg/edbg --offset 0x1000 --target samr21 --verbose --file /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/riotboot/bin/samr21-xpro/tests_riotboot-slot0.1594992409.riot.bin --verify || /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/tools/edbg/edbg --offset 0x1000 --target samr21 --verbose --file /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/riotboot/bin/samr21-xpro/tests_riotboot-slot0.1594992409.riot.bin --verify --program
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800008254 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev D)
+Verification...
+at address 0x1004 expected 0x19, read 0x17
+Error: verification failed
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800008254 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev D)
+Programming.......................................................... done.
+Verification.......................................................... done.
+ main(): This is RIOT! (Version: buildtest)
+Hello riotboot!
+You are running RIOT on a(n) samr21-xpro board.
+This board features a(n) samd21 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5f11a719
+Image start address: 0x00001100
+Header chksum: 0x3915b4cc
+
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f11a719
+Image start address: 0x00001100
+Header chksum: 0x3915b4cc
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x00001100
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x1000 image: 0x00001100
+slot 1: metadata: 0x20800 image: 0x00020900
+> TEST PASSED
+

@@ -1,0 +1,6 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_dhcpv6_client test
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_dhcpv6_client/dhcpv6_server.sh 61342 /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_dhcpv6_client/kea-dhcp6.conf
+[31;1mRequire root since kea uses some PID and Lock files in /var[0m
+make: *** [Makefile:43: dhcpv6_server] Error 1
+
+Return value: 2

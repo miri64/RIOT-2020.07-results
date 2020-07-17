@@ -1,0 +1,16 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/shell test
+
+socat - open:/dev/ttyACM0,b115200,echo=0,raw
+
+> bufsize
+
+> bufsize
+128
+________________________________________________________________________________________________________________________________verylong
+> ________________________________________________________________�4FY�Χ韜���L@�&@��7��A2��2N^p~F�
+shell: command not found: ________________________________________________________________�4FY�Χ韜���L@�&@��7��A2��2N^p~F�
+> $@�/ГK-ql?���y��Timeout in expect script at "child.expect('shell: maximum line length exceeded')" (tests/shell/tests/01-run.py:150)
+
+make: *** [/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/shell/../../Makefile.include:770: test] Error 1
+
+Return value: 2

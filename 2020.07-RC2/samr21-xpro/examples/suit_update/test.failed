@@ -1,0 +1,24 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/examples/suit_update test
+make -C ethos
+make[2]: Nothing to be done for 'all'.
+make -C uhcpd
+mkdir bin
+cc -g -O3 -Wall -DUHCP_SERVER -I/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/sys/include /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/sys/net/application_layer/uhcp/uhcp.c uhcpd.c -o bin/uhcpd
+make -C sliptty
+cc -O3 -Wall -pedantic sliptty.c -o sliptty
+/bin/sh: 1: exec: aiocoap-fileserver: not found
+/usr/bin/make -C ethos
+make[3]: Nothing to be done for 'all'.
+/usr/bin/make -C uhcpd
+make[3]: Nothing to be done for 'all'.
+/usr/bin/make -C sliptty
+make[3]: Nothing to be done for 'all'.
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/tools/ethos/ethos riot0 /dev/ttyACM0
+ioctl(TUNSETIFF): Operation not permitted
+make[1]: *** [/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/Makefile.include:726: cleanterm] Error 1
+Unexpected end of file in expect script at "child.expect(r"Image Version: (?P<app_ver>0x[0-9a-fA-F:]+)\r\n")" (examples/suit_update/tests/01-run.py:132)
+
+Process already stopped
+make: *** [/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/examples/suit_update/../../Makefile.include:770: test] Error 1
+
+Return value: 2
