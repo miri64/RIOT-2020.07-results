@@ -1,0 +1,19 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/bitarithm_timings/bin/native/tests_bitarithm_timings.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Start.
++ bitarithm_msb: 90231760 iterations per second
++ bitarithm_lsb: 219688931 iterations per second
++ bitarithm_bits_set: 34408220 iterations per second
+Done.
+

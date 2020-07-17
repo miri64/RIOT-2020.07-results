@@ -1,0 +1,20 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/xtimer_reset/bin/native/tests_xtimer_reset.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+This test tests re-setting of an already active timer.
+It should print three times "now=<value>", with values approximately 100ms (100000us) apart.
+now=3085832
+now=3185866
+now=3285850
+Test completed!
+

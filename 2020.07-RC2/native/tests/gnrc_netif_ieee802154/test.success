@@ -1,0 +1,24 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_netif_ieee802154/bin/native/tests_gnrc_netif_ieee802154.elf -z "0.0.0.0:17755,localhost:17754" 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+l2_addr: 45:5A
+PKTDUMP: data received:
+~~ SNIP  0 - size:   4 byte, type: NETTYPE_UNDEF (0)
+00000000  7E  33  F3  00
+~~ SNIP  1 - size:  12 byte, type: NETTYPE_NETIF (-1)
+if_pid: 4  rssi: 255  lqi: 0
+flags: 0x0
+src_l2addr: 45:59
+dst_l2addr: 45:5A
+~~ PKT    -  2 snips, total size:  16 byte
+

@@ -1,0 +1,58 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/suit_manifest/bin/native/tests_suit_manifest.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+.
+--- testing manifest 0
+---- res=-6 (expected=-6)
+
+--- testing manifest 1
+suit: verifying manifest signature
+suit: validated manifest version
+)1 <= 1
+seq_nr <= running image
+)---- res=-5 (expected=-5)
+
+--- testing manifest 2
+suit: verifying manifest signature
+suit: validated manifest version
+)riotboot_hdr_validate: riotboot_hdr checksum invalid
+suit: validated sequence number
+)validating vendor ID
+Comparing 547d0d74-6d3a-5a92-9662-4881afd9407b to 547d0d74-6d3a-5a92-9662-4881afd9407b from manifest
+validating vendor ID: OK
+validating class id
+Comparing bcc90984-fe7d-562b-b4c9-a24f26a3a9cd to e3daf1ac-c712-53da-8c0a-231bbe563173 from manifest
+---- res=-4 (expected=-4)
+
+--- testing manifest 3
+suit: verifying manifest signature
+suit: validated manifest version
+)riotboot_hdr_validate: riotboot_hdr checksum invalid
+suit: validated sequence number
+)validating vendor ID
+Comparing 547d0d74-6d3a-5a92-9662-4881afd9407b to 547d0d74-6d3a-5a92-9662-4881afd9407b from manifest
+validating vendor ID: OK
+validating class id
+Comparing bcc90984-fe7d-562b-b4c9-a24f26a3a9cd to bcc90984-fe7d-562b-b4c9-a24f26a3a9cd from manifest
+validating class id: OK
+Comparing manifest offset 4096 with other slot offset 8192
+Comparing manifest offset 8192 with other slot offset 8192
+Comparing manifest offset 4096 with other slot offset 8192
+Comparing manifest offset 8192 with other slot offset 8192
+riotboot_flashwrite_init_raw() empty mock
+Verifying image digest
+Verifying image digest
+---- res=0 (expected=0)
+
+OK (1 tests)
+

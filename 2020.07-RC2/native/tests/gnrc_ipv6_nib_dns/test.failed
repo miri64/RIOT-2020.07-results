@@ -1,0 +1,43 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_ipv6_nib_dns test
+
+
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_ipv6_nib_dns/bin/native/tests_gnrc_ipv6_nib_dns.elf tap0 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+> 
+> 
+> ifconfig
+ifconfig
+Iface  5  HWaddr: B6:4F:A1:0E:8F:CC 
+          L2-PDU:1500  MTU:1500  HL:64  Source address length: 6
+          Link type: wired
+          inet6 addr: fe80::b44f:a1ff:fe0e:8fcc  scope: link  VAL
+          inet6 group: ff02::1
+          inet6 group: ff02::1:ff0e:8fcc
+          
+> dns server
+dns server
+DNS server: -
+> 
+Traceback (most recent call last):
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_ipv6_nib_dns/tests/01-run.py", line 81, in <module>
+    sys.exit(run(testfunc, timeout=1, echo=True))
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_ipv6_nib_dns/tests/01-run.py", line 76, in testfunc
+    iface=tap)
+  File "/usr/local/lib/python3.7/dist-packages/scapy/sendrecv.py", line 335, in sendp
+    socket = socket or conf.L2socket(iface=iface, *args, **kargs)
+  File "/usr/local/lib/python3.7/dist-packages/scapy/arch/linux.py", line 467, in __init__
+    self.ins = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.htons(type))  # noqa: E501
+  File "/usr/lib/python3.7/socket.py", line 151, in __init__
+    _socket.socket.__init__(self, family, type, proto, fileno)
+PermissionError: [Errno 1] Operation not permitted
+make: *** [/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_ipv6_nib_dns/../../Makefile.include:770: test] Error 1
+
+Return value: 2

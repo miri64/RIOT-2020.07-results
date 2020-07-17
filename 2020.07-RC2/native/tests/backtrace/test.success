@@ -1,0 +1,20 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/backtrace/bin/native/tests_backtrace.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+BACKTRACE_SIZE: 4
+0x566015c9
+0x56601741
+0xf7d449cf
+0x56601ba2
+All tests successful
+

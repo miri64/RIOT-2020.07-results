@@ -1,0 +1,28 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_tcp test
+03-send_data.py: success
+
+- test_build_unspec SUCCESS
+- test_build_unspec_with_port SUCCESS
+- test_build_unspec_with_interface_and_port SUCCESS
+- test_build_addr_with_interface_and_port SUCCESS
+- test_einval_no_brackets SUCCESS
+- test_einval_much_brackets SUCCESS
+- test_einval_swaped_brackets SUCCESS
+- test_einval_no_addr_in_brackets SUCCESS
+- test_einval_first_char_no_open_bracket SUCCESS
+- test_einval_port_token_but_no_number SUCCESS
+- test_einval_port_inval_char SUCCESS
+- test_einval_port_out_of_range SUCCESS
+- test_einval_interface_id_after_bracket SUCCESS
+- test_einval_interface_id_token_but_no_number SUCCESS
+- test_einval_interface_id_inval_char SUCCESS
+- test_einval_interface_addr_to_short SUCCESS
+
+07-endpoint_construction.py: success
+
+[1;31mThis test requires root privileges.
+It uses `./dist/tools/ethos/start_networking.sh` as term and it's constructing and sending Ethernet frames.[0m
+
+make: *** [/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_tcp/../../Makefile.include:770: test] Error 1
+
+Return value: 2

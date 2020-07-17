@@ -1,0 +1,124 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/periph_timer_short_relative_set/bin/native/tests_periph_timer_short_relative_set.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMER short timer_set()
+
+This test tries timer_set() with decreasing intervals down to 0.
+You should see lines like 'interval <n> ok', followed by a success message.
+On failure, this test prints an error message.
+
+testing periph_timer 0, freq 1000000
+interval 99 ok
+interval 98 ok
+interval 97 ok
+interval 96 ok
+interval 95 ok
+interval 94 ok
+interval 93 ok
+interval 92 ok
+interval 91 ok
+interval 90 ok
+interval 89 ok
+interval 88 ok
+interval 87 ok
+interval 86 ok
+interval 85 ok
+interval 84 ok
+interval 83 ok
+interval 82 ok
+interval 81 ok
+interval 80 ok
+interval 79 ok
+interval 78 ok
+interval 77 ok
+interval 76 ok
+interval 75 ok
+interval 74 ok
+interval 73 ok
+interval 72 ok
+interval 71 ok
+interval 70 ok
+interval 69 ok
+interval 68 ok
+interval 67 ok
+interval 66 ok
+interval 65 ok
+interval 64 ok
+interval 63 ok
+interval 62 ok
+interval 61 ok
+interval 60 ok
+interval 59 ok
+interval 58 ok
+interval 57 ok
+interval 56 ok
+interval 55 ok
+interval 54 ok
+interval 53 ok
+interval 52 ok
+interval 51 ok
+interval 50 ok
+interval 49 ok
+interval 48 ok
+interval 47 ok
+interval 46 ok
+interval 45 ok
+interval 44 ok
+interval 43 ok
+interval 42 ok
+interval 41 ok
+interval 40 ok
+interval 39 ok
+interval 38 ok
+interval 37 ok
+interval 36 ok
+interval 35 ok
+interval 34 ok
+interval 33 ok
+interval 32 ok
+interval 31 ok
+interval 30 ok
+interval 29 ok
+interval 28 ok
+interval 27 ok
+interval 26 ok
+interval 25 ok
+interval 24 ok
+interval 23 ok
+interval 22 ok
+interval 21 ok
+interval 20 ok
+interval 19 ok
+interval 18 ok
+interval 17 ok
+interval 16 ok
+interval 15 ok
+interval 14 ok
+interval 13 ok
+interval 12 ok
+interval 11 ok
+interval 10 ok
+interval 9 ok
+interval 8 ok
+interval 7 ok
+interval 6 ok
+interval 5 ok
+interval 4 ok
+interval 3 ok
+interval 2 ok
+interval 1 ok
+interval 0 ok
+
+TEST SUCCEEDED
+

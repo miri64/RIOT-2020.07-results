@@ -1,0 +1,83 @@
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/examples/micropython/bin/native/micropython.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+MicroPython v1.4.2-6568-gbb8e51f6d on 2020-07-17; riot-native with native
+Type "help()" for more information.
+>>> print("echo this! " * 4)
+print("echo this! " * 4)
+echo this! echo this! echo this! echo this! 
+>>> import riot
+print(riot.thread_getpid())
+import riot
+>>> print(riot.thread_getpid())
+2
+>>> import utime
+import utime
+>>> utime.time()
+utime.time()
+3254
+>>> utime.sleep_ms(0)
+utime.sleep_ms(0)
+>>> utime.time()
+utime.time()
+3355
+>>> test_sleep(0, 1000): slept 101ms
+utime.time()
+utime.time()
+3405
+>>> utime.sleep_ms(50)
+utime.sleep_ms(50)
+>>> utime.time()
+utime.time()
+3556
+>>> test_sleep(50, 111): slept 151ms
+utime.time()
+utime.time()
+3607
+>>> utime.sleep_ms(250)
+utime.sleep_ms(250)
+>>> utime.time()
+utime.time()
+3958
+>>> test_sleep(250, 111): slept 351ms
+utime.time()
+utime.time()
+4009
+>>> utime.sleep_ms(500)
+utime.sleep_ms(500)
+>>> utime.time()
+utime.time()
+4610
+>>> test_sleep(500, 111): slept 601ms
+import xtimer
+import xtimer
+>>> a = 0
+a = 0
+>>> def inc_a(): global a; a+=1
+def inc_a(): global a; a+=1
+... 
+
+>>> t = xtimer.xtimer(inc_a)
+t = xtimer.xtimer(inc_a)
+>>> utime.time()
+utime.time()
+4913
+>>> t.set(500000)
+t.set(500000)
+>>> while a==0: pass
+while a==0: pass
+... 
+
+>>> utime.time()
+utime.time()
+5514
+>>> [TEST PASSED]
+

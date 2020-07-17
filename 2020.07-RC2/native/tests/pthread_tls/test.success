@@ -1,0 +1,101 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/pthread_tls/bin/native/tests_pthread_tls.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+
+-= TEST 1 - create 20 tls with sequential values 0...19 =-
+now rise sequential by one values 1...20
+pick deliberate storage (key[3]:1480640192) and change the value
+show tls values:
+key[0]: 1480640096, val: 1
+key[1]: 1480640128, val: 2
+key[2]: 1480640160, val: 3
+key[3]: 1480640192, val: 42
+key[4]: 1480640224, val: 5
+key[5]: 1480640256, val: 6
+key[6]: 1480640288, val: 7
+key[7]: 1480640320, val: 8
+key[8]: 1480640352, val: 9
+key[9]: 1480640384, val: 10
+key[10]: 1480640416, val: 11
+key[11]: 1480640448, val: 12
+key[12]: 1480640480, val: 13
+key[13]: 1480640512, val: 14
+key[14]: 1480640544, val: 15
+key[15]: 1480640576, val: 16
+key[16]: 1480640608, val: 17
+key[17]: 1480640640, val: 18
+key[18]: 1480640672, val: 19
+key[19]: 1480640704, val: 20
+
+ -= TEST 2 - delete deliberate key (key[5]:1480640256) =-
+show tls values:
+key[0]: 1480640096, val: 1
+key[1]: 1480640128, val: 2
+key[2]: 1480640160, val: 3
+key[3]: 1480640192, val: 42
+key[4]: 1480640224, val: 5
+key[6]: 1480640288, val: 7
+key[7]: 1480640320, val: 8
+key[8]: 1480640352, val: 9
+key[9]: 1480640384, val: 10
+key[10]: 1480640416, val: 11
+key[11]: 1480640448, val: 12
+key[12]: 1480640480, val: 13
+key[13]: 1480640512, val: 14
+key[14]: 1480640544, val: 15
+key[15]: 1480640576, val: 16
+key[16]: 1480640608, val: 17
+key[17]: 1480640640, val: 18
+key[18]: 1480640672, val: 19
+key[19]: 1480640704, val: 20
+
+-= TEST 3 - create new tls =-
+added new tls, key: 1480640736, val: 99
+show tls values:
+key[0]: 1480640096, val: 1
+key[1]: 1480640128, val: 2
+key[2]: 1480640160, val: 3
+key[3]: 1480640192, val: 42
+key[4]: 1480640224, val: 5
+key[6]: 1480640288, val: 7
+key[7]: 1480640320, val: 8
+key[8]: 1480640352, val: 9
+key[9]: 1480640384, val: 10
+key[10]: 1480640416, val: 11
+key[11]: 1480640448, val: 12
+key[12]: 1480640480, val: 13
+key[13]: 1480640512, val: 14
+key[14]: 1480640544, val: 15
+key[15]: 1480640576, val: 16
+key[16]: 1480640608, val: 17
+key[17]: 1480640640, val: 18
+key[18]: 1480640672, val: 19
+key[19]: 1480640704, val: 20
+
+-= TEST 4 - delete all keys =-
+show tls values:
+
+-= TEST 5 - try delete non-existing key =-
+try to delete returns: 0
+
+-= TEST 6 - add key and delete without a tls =-
+created key: 1480640768
+try to delete returns: 0
+
+-= TEST 7 - add key without tls =-
+created key: 1480640784
+test_7_val: (nil)
+tls tests finished.
+SUCCESS
+

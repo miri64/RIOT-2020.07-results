@@ -1,0 +1,42 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_dhcpv6_client_6lbr test
+
+
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_dhcpv6_client_6lbr/bin/native/tests_gnrc_dhcpv6_client_6lbr.elf -z [::1]:17754 tap0
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+DHCPv6: Selecting interface 7 as upstream
+main(): This is RIOT! (Version: buildtest)
+> 
+> 
+> Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/scapy/sendrecv.py", line 842, in _run
+    *arg, **karg)] = iface
+  File "/usr/local/lib/python3.7/dist-packages/scapy/arch/linux.py", line 467, in __init__
+    self.ins = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.htons(type))  # noqa: E501
+  File "/usr/lib/python3.7/socket.py", line 151, in __init__
+    _socket.socket.__init__(self, family, type, proto, fileno)
+PermissionError: [Errno 1] Operation not permitted
+
+
+Traceback (most recent call last):
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_dhcpv6_client_6lbr/tests/01-run.py", line 173, in <module>
+    sys.exit(run(testfunc, timeout=TIMEOUT, echo=True))
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_dhcpv6_client_6lbr/tests/01-run.py", line 114, in testfunc
+    pkt = wait_for_dhcpv6_pkt(iface)
+  File "/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_dhcpv6_client_6lbr/tests/01-run.py", line 95, in wait_for_dhcpv6_pkt
+    raise TimeoutError("Sniffing for DHCPv6 traffic timed out")
+TimeoutError: Sniffing for DHCPv6 traffic timed out
+make: *** [/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/gnrc_dhcpv6_client_6lbr/../../Makefile.include:770: test] Error 1
+
+Return value: 2

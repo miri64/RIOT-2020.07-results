@@ -1,0 +1,51 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/xtimer_usleep/bin/native/tests_xtimer_usleep.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Running test 5 times with 7 distinct sleep times
+Slept for 10040 us (expected: 10000 us) Offset: 40 us
+Slept for 50046 us (expected: 50000 us) Offset: 46 us
+Slept for 10281 us (expected: 10234 us) Offset: 47 us
+Slept for 56828 us (expected: 56780 us) Offset: 48 us
+Slept for 12158 us (expected: 12122 us) Offset: 36 us
+Slept for 98802 us (expected: 98765 us) Offset: 37 us
+Slept for 75046 us (expected: 75000 us) Offset: 46 us
+Slept for 10046 us (expected: 10000 us) Offset: 46 us
+Slept for 50047 us (expected: 50000 us) Offset: 47 us
+Slept for 10266 us (expected: 10234 us) Offset: 32 us
+Slept for 56826 us (expected: 56780 us) Offset: 46 us
+Slept for 12168 us (expected: 12122 us) Offset: 46 us
+Slept for 98801 us (expected: 98765 us) Offset: 36 us
+Slept for 75048 us (expected: 75000 us) Offset: 48 us
+Slept for 10045 us (expected: 10000 us) Offset: 45 us
+Slept for 50036 us (expected: 50000 us) Offset: 36 us
+Slept for 10281 us (expected: 10234 us) Offset: 47 us
+Slept for 56826 us (expected: 56780 us) Offset: 46 us
+Slept for 12163 us (expected: 12122 us) Offset: 41 us
+Slept for 98799 us (expected: 98765 us) Offset: 34 us
+Slept for 75047 us (expected: 75000 us) Offset: 47 us
+Slept for 10037 us (expected: 10000 us) Offset: 37 us
+Slept for 50046 us (expected: 50000 us) Offset: 46 us
+Slept for 10280 us (expected: 10234 us) Offset: 46 us
+Slept for 56825 us (expected: 56780 us) Offset: 45 us
+Slept for 12167 us (expected: 12122 us) Offset: 45 us
+Slept for 98801 us (expected: 98765 us) Offset: 36 us
+Slept for 75045 us (expected: 75000 us) Offset: 45 us
+Slept for 10045 us (expected: 10000 us) Offset: 45 us
+Slept for 50045 us (expected: 50000 us) Offset: 45 us
+Slept for 10279 us (expected: 10234 us) Offset: 45 us
+Slept for 56826 us (expected: 56780 us) Offset: 46 us
+Slept for 12168 us (expected: 12122 us) Offset: 46 us
+Slept for 98811 us (expected: 98765 us) Offset: 46 us
+Slept for 75046 us (expected: 75000 us) Offset: 46 us
+Test ran for 1566216 us
+

@@ -1,0 +1,24 @@
+
+
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/netstats_l2/bin/native/tests_netstats_l2.elf tap0
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Welcome to RIOT!
+> 
+> 
+> ifconfig
+ifconfig
+Iface  3  HWaddr: B6:4F:A1:0E:8F:CC 
+          L2-PDU:1500  Source address length: 6
+          
+          Statistics for Layer 2
+            RX packets 4  bytes 560
+            TX packets 0 (Multicast: 0)  bytes 0
+            TX succeeded 0 errors 0
+
+> 

@@ -1,0 +1,31 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/bench_runtime_coreapis/bin/native/tests_bench_runtime_coreapis.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Runtime of Selected Core API functions
+
+                 nop loop:      1699us  ---   0.001us per call  ---  588581518 calls per sec
+
+             mutex_init():      3163us  ---   0.003us per call  ---  316155548 calls per sec
+        mutex lock/unlock:   1412676us  ---   1.412us per call  ---     707876 calls per sec
+
+       thread_flags_set():    708364us  ---   0.708us per call  ---    1411703 calls per sec
+     thread_flags_clear():    710674us  ---   0.710us per call  ---    1407114 calls per sec
+thread flags set/wait any:   2127507us  ---   2.127us per call  ---     470033 calls per sec
+thread flags set/wait all:   2122054us  ---   2.122us per call  ---     471241 calls per sec
+thread flags set/wait one:   2131133us  ---   2.131us per call  ---     469233 calls per sec
+
+        msg_try_receive():    715127us  ---   0.715us per call  ---    1398353 calls per sec
+              msg_avail():      6001us  ---   0.006us per call  ---  166638893 calls per sec
+
+[SUCCESS]
+

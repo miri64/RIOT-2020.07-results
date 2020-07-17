@@ -1,0 +1,42 @@
+r
+/home/mlenders/Repositories/RIOT-OS/RIOT.ssh/tests/ps_schedstatistics/bin/native/tests_ps_schedstatistics.elf 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> 
+> 
+> help
+help
+Command              Description
+---------------------------------------
+reboot               Reboot the node
+version              Prints current RIOT_VERSION
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+>ps
+ ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches
+	  - | isr_stack            | -        - |   - |   8192 (   -1) ( 8193) | 0x565ce3c0 | 0x565ce3c0
+	  1 | idle                 | pending  Q |  15 |   8192 (  568) ( 7624) | 0x565cc0c0 | 0x565cdf30  | 23.896% |         1
+	  2 | main                 | running  Q |   7 |  12288 ( 3264) ( 9024) | 0x565c90c0 | 0x565cbf30  | 76.058% |        56
+	  3 | thread               | bl rx    _ |   6 |   8192 ( 2412) ( 5780) | 0x565bf0a0 | 0x565c0f10  |  0.007% |        21
+	  4 | thread               | bl rx    _ |   6 |   8192 ( 2412) ( 5780) | 0x565c10a0 | 0x565c2f10  |  0.009% |        21
+	  5 | thread               | bl rx    _ |   6 |   8192 ( 2412) ( 5780) | 0x565c30a0 | 0x565c4f10  |  0.010% |        21
+	  6 | thread               | bl mutex _ |   6 |   8192 ( 2412) ( 5780) | 0x565c50a0 | 0x565c6f10  |  0.012% |        20
+	  7 | thread               | bl rx    _ |   6 |   8192 ( 2412) ( 5780) | 0x565c70a0 | 0x565c8f10  |  0.004% |        19
+	    | SUM                  |            |     |  69632 (15892) (53740)
+> 
