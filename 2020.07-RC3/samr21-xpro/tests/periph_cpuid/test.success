@@ -1,0 +1,16 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-samr21-xpro" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-samr21-xpro
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+Test for the CPUID driver
+This test is reading out the CPUID of the platforms CPU
+
+CPUID_LEN: 16
+CPUID: 0x96 0x36 0x99 0x83 0x43 0x32 0x4d 0x51 0x20 0x20 0x20 0x32 0x2e 0x2c 0x0b 0x0b
+

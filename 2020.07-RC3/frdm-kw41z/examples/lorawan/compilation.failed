@@ -1,0 +1,30 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/examples/lorawan clean all
+rm -rf /builds/workspace/RIOT.git.jk/examples/lorawan/bin/frdm-kw41z/pkg-build/semtech-loramac
+Launching build container using image "riot/riotbuild:latest".
+docker run --rm --tty --user $(id -u) -v '/usr/share/zoneinfo/Europe/Paris:/etc/localtime:ro' -v '/builds/workspace/RIOT.git.jk:/data/riotbuild/riotbase:delegated' -e 'RIOTBASE=/data/riotbuild/riotbase' -e 'CCACHE_BASEDIR=/data/riotbuild/riotbase' -e 'BUILD_DIR=/data/riotbuild/riotbase/build' -e 'RIOTPROJECT=/data/riotbuild/riotbase' -e 'RIOTCPU=/data/riotbuild/riotbase/cpu' -e 'RIOTBOARD=/data/riotbuild/riotbase/boards' -e 'RIOTMAKE=/data/riotbuild/riotbase/makefiles'      --env BOARD=frdm-kw41z -e 'BOARD=frdm-kw41z' -e 'CC_NOCOLOR=1' -e 'RIOT_CI_BUILD=1' -e 'RIOT_VERSION=riot/2020.07-RC3'  -w '/data/riotbuild/riotbase/examples/lorawan/' 'riot/riotbuild:latest' make 'CC_NOCOLOR=1' 'RIOT_CI_BUILD=1'    all 
+Building application "lorawan" for "frdm-kw41z" with MCU "kinetis".
+
+[INFO] updating semtech-loramac /data/riotbuild/riotbase/build/pkg/semtech-loramac/.pkg-state.git-downloaded
+echo 1cdd9ccec4c9f05b616e7112059be4a9e358c571 > /data/riotbuild/riotbase/build/pkg/semtech-loramac/.pkg-state.git-downloaded
+[INFO] patch semtech-loramac
+fatal: Unable to create '/data/riotbuild/riotbase/build/pkg/semtech-loramac/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+/data/riotbuild/riotbase/pkg/pkg.mk:107: recipe for target '/data/riotbuild/riotbase/build/pkg/semtech-loramac/.pkg-state.git-patched' failed
+make[1]: *** [/data/riotbuild/riotbase/build/pkg/semtech-loramac/.pkg-state.git-patched] Error 128
+/data/riotbuild/riotbase/Makefile.include:670: recipe for target 'pkg-prepare' failed
+make: [pkg-prepare] Error 2 (ignored)
+[INFO] patch semtech-loramac
+fatal: previous rebase directory .git/rebase-apply still exists but mbox given.
+/data/riotbuild/riotbase/pkg/pkg.mk:107: recipe for target '/data/riotbuild/riotbase/build/pkg/semtech-loramac/.pkg-state.git-patched' failed
+make[1]: *** [/data/riotbuild/riotbase/build/pkg/semtech-loramac/.pkg-state.git-patched] Error 128
+/data/riotbuild/riotbase/Makefile.include:674: recipe for target 'pkg-build-semtech-loramac' failed
+make: *** [pkg-build-semtech-loramac] Error 2
+/builds/workspace/RIOT.git.jk/makefiles/docker.inc.mk:304: recipe for target '..in-docker-container' failed
+make: *** [..in-docker-container] Error 2
+
+Return value: 2

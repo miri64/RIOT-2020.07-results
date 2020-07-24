@@ -1,0 +1,75 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+This is thread 3
+sending 1st msg
+now=4:42439 -> every 2.0s: Hello World
+sending 2nd msg
+now=4:48008 -> every 5.0s: This is a Test
+This is thread 4
+sec=5 min=0 hour=0
+now=6:46756 -> every 2.0s: Hello World
+sec=6 min=0 hour=0
+sec=7 min=0 hour=0
+now=8:51078 -> every 2.0s: Hello World
+sec=8 min=0 hour=0
+now=9:52586 -> every 5.0s: This is a Test
+sec=9 min=0 hour=0
+now=10:55404 -> every 2.0s: Hello World
+sec=10 min=0 hour=0
+sec=11 min=0 hour=0
+now=12:59942 -> every 2.0s: Hello World
+sec=12 min=0 hour=0
+sec=13 min=0 hour=0
+now=14:57169 -> every 5.0s: This is a Test
+now=14:64483 -> every 2.0s: Hello World
+sec=14 min=0 hour=0
+sec=15 min=0 hour=0
+now=16:69018 -> every 2.0s: Hello World
+sec=16 min=0 hour=0
+sec=17 min=0 hour=0
+now=18:73557 -> every 2.0s: Hello World
+sec=18 min=0 hour=0
+now=19:61970 -> every 5.0s: This is a Test
+sec=19 min=0 hour=0
+now=20:78100 -> every 2.0s: Hello World
+sec=20 min=0 hour=0
+sec=21 min=0 hour=0
+now=22:82639 -> every 2.0s: Hello World
+sec=22 min=0 hour=0
+sec=23 min=0 hour=0
+now=24:66773 -> every 5.0s: This is a Test
+now=24:87177 -> every 2.0s: Hello World
+sec=24 min=0 hour=0
+sec=25 min=0 hour=0
+now=26:91716 -> every 2.0s: Hello World
+sec=26 min=0 hour=0
+sec=27 min=0 hour=0
+now=28:96257 -> every 2.0s: Hello World
+sec=28 min=0 hour=0
+now=29:71572 -> every 5.0s: This is a Test
+sec=29 min=0 hour=0
+now=30:100830 -> every 2.0s: Hello World
+sec=30 min=0 hour=0
+sec=31 min=0 hour=0
+now=32:105591 -> every 2.0s: Hello World
+sec=32 min=0 hour=0
+sec=33 min=0 hour=0
+now=34:76379 -> every 5.0s: This is a Test
+now=34:110351 -> every 2.0s: Hello World
+sec=34 min=0 hour=0
+sec=35 min=0 hour=0
+now=36:115112 -> every 2.0s: Hello World
+sec=36 min=0 hour=0
+sec=37 min=0 hour=0
+now=38:119877 -> every 2.0s: Hello World
+sec=38 min=0 hour=0
+now=39:81184 -> every 5.0s: This is a Test
+

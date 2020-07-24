@@ -1,0 +1,15 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-openmote-b" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-openmote-b
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+[1mmain(): This is RIOT! (Version: riot/2020.07-RC3)
+[0m[1;31mLogging value '42' and string 'test'
+[0m[1;33mLogging value '42' and string 'test'
+[0m[1mLogging value '42' and string 'test'
+[0m[0;32mLogging value '42' and string 'test'
+

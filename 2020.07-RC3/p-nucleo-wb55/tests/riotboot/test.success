@@ -1,0 +1,162 @@
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-p-nucleo-wb55" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-p-nucleo-wb55
+Welcome to pyterm!
+Type '/exit' to exit.
+
+>  
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a24c9
+compiling /builds/workspace/RIOT.git.jk/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git.jk/tests/riotboot/bin/p-nucleo-wb55/tests_riotboot-slot1.1595548874.riot.bin...
+/builds/workspace/RIOT.git.jk/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git.jk/tests/riotboot/bin/p-nucleo-wb55/tests_riotboot-slot1.1595548874.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08065800
+Open On-Chip Debugger 0.10.0+dev-g68611ef-dirty (2020-07-20-09:42)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 500 kHz
+Info : STLINK V2J33M25 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.254881
+Info : stm32wbx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for stm32wbx.cpu on 0
+Info : Listening on port 38697 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32wbx.cpu       hla_target little stm32wbx.cpu       reset
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080002a8 msp: 0x20000200
+Info : device idcode = 0x20016495 (STM32WB5x - Rev: 2.1)
+Info : flash size = 1024kbytes
+Info : flash mode : single-bank
+Warn : Adding extra erase range, 0x08065000 .. 0x080657ff
+Warn : Adding extra erase range, 0x080694a8 .. 0x08069fff
+auto erase enabled
+wrote 15528 bytes from file /builds/workspace/RIOT.git.jk/tests/riotboot/bin/p-nucleo-wb55/tests_riotboot-slot1.1595548874.riot.bin in 0.904267s (16.769 KiB/s)
+
+verified 15528 bytes in 0.542325s (27.961 KiB/s)
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+shutdown command invoked
+Done flashing
+Image start address: 0x08001400
+Header chksum: 0x3dee3d85
+
+>  main(): This is RIOT! (Version: riot/2020.07-RC3)
+Hello riotboot!
+You are running RIOT on a(n) p-nucleo-wb55 board.
+This board features a(n) stm32 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a24ca
+Image start address: 0x08065c00
+Header chksum: 0xcdf8858c
+
+> curslotnr
+ curslotnr
+Current slot=1
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a24ca
+Image start address: 0x08065c00
+Header chksum: 0xcdf8858c
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08001400
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001400
+slot 1: metadata: 0x8065800 image: 0x08065c00
+> compiling /builds/workspace/RIOT.git.jk/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git.jk/tests/riotboot/bin/p-nucleo-wb55/tests_riotboot-slot0.1595548875.riot.bin...
+/builds/workspace/RIOT.git.jk/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git.jk/tests/riotboot/bin/p-nucleo-wb55/tests_riotboot-slot0.1595548875.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08001000
+Open On-Chip Debugger 0.10.0+dev-g68611ef-dirty (2020-07-20-09:42)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 500 kHz
+Info : STLINK V2J33M25 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.256464
+Info : stm32wbx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for stm32wbx.cpu on 0
+Info : Listening on port 41493 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32wbx.cpu       hla_target little stm32wbx.cpu       reset
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080002a8 msp: 0x20000200
+Info : device idcode = 0x20016495 (STM32WB5x - Rev: 2.1)
+Info : flash size = 1024kbytes
+Info : flash mode : single-bank
+Warn : Adding extra erase range, 0x08004ca8 .. 0x08004fff
+auto erase enabled
+wrote 15528 bytes from file /builds/workspace/RIOT.git.jk/tests/riotboot/bin/p-nucleo-wb55/tests_riotboot-slot0.1595548875.riot.bin in 0.890232s (17.034 KiB/s)
+
+verified 15528 bytes in 0.539189s (28.124 KiB/s)
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+shutdown command invoked
+Done flashing
+ main(): This is RIOT! (Version: riot/2020.07-RC3)
+Hello riotboot!
+You are running RIOT on a(n) p-nucleo-wb55 board.
+This board features a(n) stm32 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a24cb
+Image start address: 0x08001400
+Header chksum: 0x3df63d87
+
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a24cb
+Image start address: 0x08001400
+Header chksum: 0x3df63d87
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08001400
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001400
+slot 1: metadata: 0x8065800 image: 0x08065c00
+> TEST PASSED
+

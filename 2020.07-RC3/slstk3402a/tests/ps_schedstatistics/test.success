@@ -1,0 +1,37 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-slstk3402a" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-slstk3402a
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+ 
+>  
+>  help
+Command              Description
+---------------------------------------
+reboot               Reboot the node
+version              Prints current RIOT_VERSION
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+> ps
+ ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches
+	  - | isr_stack            | -        - |   - |    512 (  204) (  308) | 0x20000000 | 0x200001c8
+	  1 | main                 | running  Q |   7 |   1536 (  924) (  612) | 0x20000548 | 0x200007ac  | 48.632% |       136
+	  2 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20000d8c | 0x200010c4  |  9.352% |       257
+	  3 | thread               | bl mutex _ |   6 |   1024 (  412) (  612) | 0x2000118c | 0x2000147c  | 11.014% |       268
+	  4 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000158c | 0x200018c4  | 12.874% |       279
+	  5 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000198c | 0x20001cc4  | 14.767% |       291
+	  6 | thread               | bl mutex _ |   6 |   1024 (  412) (  612) | 0x20001d8c | 0x2000207c  |  9.077% |       302
+	    | SUM                  |            |     |   7168 ( 3188) ( 3980)
+> 

@@ -1,0 +1,24 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/event_wait_timeout test
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+[START] event_wait_timeout test application.
+
+waiting for event with 10ms timeout...
+event_wait time out after 10153us
+waiting for event with 10ms timeout (using uint64)...
+RIOT MSP430 hardware initialization complete.
+Help: Press s to start test, r to print it is ready
+Timeout in expect script at "child.expect_exact(u"[SUCCESS]")" (tests/event_wait_timeout/tests/01-run.py:15)
+
+/builds/workspace/RIOT.git.jk/tests/event_wait_timeout/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

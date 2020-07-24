@@ -1,0 +1,26 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-frdm-k64f" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-frdm-k64f
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+[START]
+now = 3752266, t = 9
+now = 3777387, t = 17
+now = 3834595, t = 41
+now = 3962801, t = 104
+now = 4190097, t = 202
+[TRICKLE_RESET]
+now = 4203403, t = 12
+now = 4229617, t = 21
+now = 4276823, t = 35
+now = 4382034, t = 75
+now = 4588241, t = 152
+now = 5000539, t = 307
+now = 6018832, t = 812
+[SUCCESS]
+

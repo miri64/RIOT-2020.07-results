@@ -1,0 +1,40 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/driver_apds99xx_full flash-only
+/builds/workspace/RIOT.git.jk/dist/tools/pyocd/pyocd.sh flash /builds/workspace/RIOT.git.jk/tests/driver_apds99xx_full/bin/nrf52840-mdk/tests_driver_apds99xx_full.hex
+### Flashing Target ###
+0008367:CRITICAL:__main__:Cannot connect to J-Link.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/pyocd/probe/jlink_probe.py", line 137, in open
+    self._link.open(self._serial_number)
+  File "/home/ci/.local/lib/python3.6/site-packages/pylink/jlink.py", line 692, in open
+    raise errors.JLinkException(result.decode())
+pylink.errors.JLinkException: Cannot connect to J-Link.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/pyocd/__main__.py", line 362, in run
+    self._COMMANDS[self._args.cmd](self)
+  File "/usr/local/lib/python3.6/dist-packages/pyocd/__main__.py", line 516, in do_flash
+    options=convert_session_options(self._args.options))
+  File "/usr/local/lib/python3.6/dist-packages/pyocd/core/helpers.py", line 237, in session_with_chosen_probe
+    unique_id=unique_id,
+  File "/usr/local/lib/python3.6/dist-packages/pyocd/core/helpers.py", line 138, in choose_probe
+    allProbes = ConnectHelper.get_all_connected_probes(blocking=blocking, unique_id=unique_id)
+  File "/usr/local/lib/python3.6/dist-packages/pyocd/core/helpers.py", line 82, in get_all_connected_probes
+    allProbes = DebugProbeAggregator.get_all_connected_probes(unique_id=unique_id)
+  File "/usr/local/lib/python3.6/dist-packages/pyocd/probe/aggregator.py", line 34, in get_all_connected_probes
+    probes += cls.get_all_connected_probes()
+  File "/usr/local/lib/python3.6/dist-packages/pyocd/probe/jlink_probe.py", line 62, in get_all_connected_probes
+    return [cls(str(info.SerialNumber)) for info in jlink.connected_emulators()]
+  File "/usr/local/lib/python3.6/dist-packages/pyocd/probe/jlink_probe.py", line 62, in <listcomp>
+    return [cls(str(info.SerialNumber)) for info in jlink.connected_emulators()]
+  File "/usr/local/lib/python3.6/dist-packages/pyocd/probe/jlink_probe.py", line 96, in __init__
+    self.open()
+  File "/usr/local/lib/python3.6/dist-packages/pyocd/probe/jlink_probe.py", line 155, in open
+    six.raise_from(self._convert_exception(exc), exc)
+  File "<string>", line 3, in raise_from
+pyocd.core.exceptions.ProbeError: Cannot connect to J-Link.
+/builds/workspace/RIOT.git.jk/tests/driver_apds99xx_full/../../Makefile.include:707: recipe for target 'flash-only' failed
+make: *** [flash-only] Error 1
+
+Return value: 2

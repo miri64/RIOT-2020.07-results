@@ -1,0 +1,92 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/periph_gpio test
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-slstk3402a" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-slstk3402a
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> bench 0 0
+ 
+>  bench 0 0
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    175001us  ---   0.175us per call  ---    5714253 calls per sec
+                 gpio_set:    550002us  ---   0.550us per call  ---    1818175 calls per sec
+               gpio_clear:    550002us  ---   0.550us per call  ---    1818175 calls per sec
+              gpio_toggle:    500002us  ---   0.500us per call  ---    1999992 calls per sec
+                gpio_read:    675002us  ---   0.675us per call  ---    1481477 calls per sec
+               gpio_write:    650002us  ---   0.650us per call  ---    1538456 calls per sec
+
+ --- DONE ---
+> bench 0 1
+ bench 0 1
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    175002us  ---   0.175us per call  ---    5714220 calls per sec
+                 gpio_set:    550002us  ---   0.550us per call  ---    1818175 calls per sec
+               gpio_clear:    550002us  ---   0.550us per call  ---    1818175 calls per sec
+              gpio_toggle:    500002us  ---   0.500us per call  ---    1999992 calls per sec
+                gpio_read:    675002us  ---   0.675us per call  ---    1481477 calls per sec
+               gpio_write:    650002us  ---   0.650us per call  ---    1538456 calls per sec
+
+ --- DONE ---
+> bench 0 2
+ bench 0 2
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    175002us  ---   0.175us per call  ---    5714220 calls per sec
+                 gpio_set:    550002us  ---   0.550us per call  ---    1818175 calls per sec
+               gpio_clear:    550002us  ---   0.550us per call  ---    1818175 calls per sec
+              gpio_toggle:    500002us  ---   0.500us per call  ---    1999992 calls per sec
+                gpio_read:    675002us  ---   0.675us per call  ---    1481477 calls per sec
+               gpio_write:    650002us  ---   0.650us per call  ---    1538456 calls per sec
+
+ --- DONE ---
+> bench 0 3
+ bench 0 3
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    175002us  ---   0.175us per call  ---    5714220 calls per sec
+                 gpio_set:    550003us  ---   0.550us per call  ---    1818171 calls per sec
+               gpio_clear:    550002us  ---   0.550us per call  ---    1818175 calls per sec
+              gpio_toggle:    500002us  ---   0.500us per call  ---    1999992 calls per sec
+                gpio_read:    675002us  ---   0.675us per call  ---    1481477 calls per sec
+               gpio_write:    650002us  ---   0.650us per call  ---    1538456 calls per sec
+
+ --- DONE ---
+> bench 0 4
+ bench 0 4
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    175002us  ---   0.175us per call  ---    5714220 calls per sec
+                 gpio_set:    550002us  ---   0.550us per call  ---    1818175 calls per sec
+               gpio_clear:    550002us  ---   0.550us per call  ---    1818175 calls per sec
+              gpio_toggle:    500003us  ---   0.500us per call  ---    1999988 calls per sec
+                gpio_read:    675002us  ---   0.675us per call  ---    1481477 calls per sec
+               gpio_write:    650002us  ---   0.650us per call  ---    1538456 calls per sec
+
+ --- DONE ---
+> bench 0 5
+ bench 0 5
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    175002us  ---   0.175us per call  ---    5714220 calls per sec
+                 gpio_set:    550002us  ---   0.550us per call  ---    1818175 calls per sec
+s sec
+���	�r����́per call                 gpio_write:    650002us  ---   0.650us per call  ---    1538456 calls per sec
+
+ --- DONE ---
+> Timeout in expect script at "child.expect(r" *gpio_clear: +(\d+)us  --- +(\d+\.\d+)us per call  --- +(\d+) calls per sec")" (tests/periph_gpio/tests/02-bench.py:22)
+
+/builds/workspace/RIOT.git.jk/tests/periph_gpio/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

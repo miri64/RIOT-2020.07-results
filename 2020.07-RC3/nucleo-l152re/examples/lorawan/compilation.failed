@@ -1,0 +1,22 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/examples/lorawan clean all
+rm -rf /builds/workspace/RIOT.git.jk/examples/lorawan/bin/nucleo-l152re/pkg-build/semtech-loramac
+Launching build container using image "riot/riotbuild:latest".
+docker run --rm --tty --user $(id -u) -v '/usr/share/zoneinfo/Europe/Paris:/etc/localtime:ro' -v '/builds/workspace/RIOT.git.jk:/data/riotbuild/riotbase:delegated' -e 'RIOTBASE=/data/riotbuild/riotbase' -e 'CCACHE_BASEDIR=/data/riotbuild/riotbase' -e 'BUILD_DIR=/data/riotbuild/riotbase/build' -e 'RIOTPROJECT=/data/riotbuild/riotbase' -e 'RIOTCPU=/data/riotbuild/riotbase/cpu' -e 'RIOTBOARD=/data/riotbuild/riotbase/boards' -e 'RIOTMAKE=/data/riotbuild/riotbase/makefiles'      --env BOARD=nucleo-l152re -e 'BOARD=nucleo-l152re' -e 'CC_NOCOLOR=1' -e 'RIOT_CI_BUILD=1' -e 'RIOT_VERSION=riot/2020.07-RC3'  -w '/data/riotbuild/riotbase/examples/lorawan/' 'riot/riotbuild:latest' make 'CC_NOCOLOR=1' 'RIOT_CI_BUILD=1'    all 
+Building application "lorawan" for "nucleo-l152re" with MCU "stm32".
+
+[INFO] patch semtech-loramac
+fatal: previous rebase directory .git/rebase-apply still exists but mbox given.
+/data/riotbuild/riotbase/pkg/pkg.mk:107: recipe for target '/data/riotbuild/riotbase/build/pkg/semtech-loramac/.pkg-state.git-patched' failed
+make[1]: *** [/data/riotbuild/riotbase/build/pkg/semtech-loramac/.pkg-state.git-patched] Error 128
+/data/riotbuild/riotbase/Makefile.include:670: recipe for target 'pkg-prepare' failed
+make: [pkg-prepare] Error 2 (ignored)
+[INFO] patch semtech-loramac
+fatal: previous rebase directory .git/rebase-apply still exists but mbox given.
+/data/riotbuild/riotbase/pkg/pkg.mk:107: recipe for target '/data/riotbuild/riotbase/build/pkg/semtech-loramac/.pkg-state.git-patched' failed
+make[1]: *** [/data/riotbuild/riotbase/build/pkg/semtech-loramac/.pkg-state.git-patched] Error 128
+/data/riotbuild/riotbase/Makefile.include:674: recipe for target 'pkg-build-semtech-loramac' failed
+make: *** [pkg-build-semtech-loramac] Error 2
+/builds/workspace/RIOT.git.jk/makefiles/docker.inc.mk:304: recipe for target '..in-docker-container' failed
+make: *** [..in-docker-container] Error 2
+
+Return value: 2

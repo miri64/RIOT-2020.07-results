@@ -1,0 +1,20 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/gnrc_sock_udp clean all
+Launching build container using image "riot/riotbuild:latest".
+docker run --rm --tty --user $(id -u) -v '/usr/share/zoneinfo/Europe/Paris:/etc/localtime:ro' -v '/builds/workspace/RIOT.git.jk:/data/riotbuild/riotbase:delegated' -e 'RIOTBASE=/data/riotbuild/riotbase' -e 'CCACHE_BASEDIR=/data/riotbuild/riotbase' -e 'BUILD_DIR=/data/riotbuild/riotbase/build' -e 'RIOTPROJECT=/data/riotbuild/riotbase' -e 'RIOTCPU=/data/riotbuild/riotbase/cpu' -e 'RIOTBOARD=/data/riotbuild/riotbase/boards' -e 'RIOTMAKE=/data/riotbuild/riotbase/makefiles'      --env BOARD=z1 -e 'BOARD=z1' -e 'CC_NOCOLOR=1' -e 'RIOT_CI_BUILD=1' -e 'RIOT_VERSION=riot/2020.07-RC3'  -w '/data/riotbuild/riotbase/tests/gnrc_sock_udp/' 'riot/riotbuild:latest' make 'CC_NOCOLOR=1' 'RIOT_CI_BUILD=1'    all 
+Building application "tests_gnrc_sock_udp" for "z1" with MCU "msp430fxyz".
+
+/data/riotbuild/riotbase/tests/gnrc_sock_udp/bin/z1/gnrc_netif/gnrc_netif.o:(.debug_info+0x22a3): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+/data/riotbuild/riotbase/tests/gnrc_sock_udp/bin/z1/gnrc_netif/gnrc_netif.o:(.debug_loc+0xa72): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+/data/riotbuild/riotbase/tests/gnrc_sock_udp/bin/z1/gnrc_netif/gnrc_netif.o:(.debug_loc+0xa7c): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+/data/riotbuild/riotbase/tests/gnrc_sock_udp/bin/z1/gnrc_netif/gnrc_netif.o:(.debug_loc+0xa8a): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+/data/riotbuild/riotbase/tests/gnrc_sock_udp/bin/z1/gnrc_netif/gnrc_netif.o:(.debug_loc+0xb6e): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+/data/riotbuild/riotbase/tests/gnrc_sock_udp/bin/z1/xtimer/xtimer_core.o:(.debug_info+0x716): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+/data/riotbuild/riotbase/tests/gnrc_sock_udp/bin/z1/xtimer/xtimer_core.o:(.debug_loc+0x1fe): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+/data/riotbuild/riotbase/tests/gnrc_sock_udp/bin/z1/xtimer/xtimer_core.o:(.debug_loc+0x208): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+collect2: ld returned 1 exit status
+/data/riotbuild/riotbase/Makefile.include:572: recipe for target '/data/riotbuild/riotbase/tests/gnrc_sock_udp/bin/z1/tests_gnrc_sock_udp.elf' failed
+make: *** [/data/riotbuild/riotbase/tests/gnrc_sock_udp/bin/z1/tests_gnrc_sock_udp.elf] Error 1
+/builds/workspace/RIOT.git.jk/makefiles/docker.inc.mk:304: recipe for target '..in-docker-container' failed
+make: *** [..in-docker-container] Error 2
+
+Return value: 2

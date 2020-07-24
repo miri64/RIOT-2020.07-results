@@ -1,0 +1,19 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f767zi" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f767zi
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+micro-ecc compiled!
+Testing 4 random private key pairs and signature without using HWRNG
+Round 0
+Round 1
+Round 2
+Round 3
+Done with 0 error(s)
+SUCCESS
+

@@ -1,0 +1,22 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/suit_manifest clean all
+# Reset package to checkout state.
+rm -rf /builds/workspace/RIOT.git.jk/build/pkg/c25519
+rm -rf /builds/workspace/RIOT.git.jk/tests/suit_manifest/bin/p-nucleo-wb55/pkg-build/libcose
+rm -rf /builds/workspace/RIOT.git.jk/tests/suit_manifest/bin/p-nucleo-wb55/pkg-build/nanocbor
+Launching build container using image "riot/riotbuild:latest".
+docker run --rm --tty --user $(id -u) -v '/usr/share/zoneinfo/Europe/Paris:/etc/localtime:ro' -v '/builds/workspace/RIOT.git.jk:/data/riotbuild/riotbase:delegated' -e 'RIOTBASE=/data/riotbuild/riotbase' -e 'CCACHE_BASEDIR=/data/riotbuild/riotbase' -e 'BUILD_DIR=/data/riotbuild/riotbase/build' -e 'RIOTPROJECT=/data/riotbuild/riotbase' -e 'RIOTCPU=/data/riotbuild/riotbase/cpu' -e 'RIOTBOARD=/data/riotbuild/riotbase/boards' -e 'RIOTMAKE=/data/riotbuild/riotbase/makefiles'      --env BOARD=p-nucleo-wb55 -e 'BOARD=p-nucleo-wb55' -e 'CC_NOCOLOR=1' -e 'RIOT_CI_BUILD=1' -e 'RIOT_VERSION=riot/2020.07-RC3'  -w '/data/riotbuild/riotbase/tests/suit_manifest/' 'riot/riotbuild:latest' make 'CC_NOCOLOR=1' 'RIOT_CI_BUILD=1'    all 
+Building application "tests_suit_manifest" for "p-nucleo-wb55" with MCU "stm32".
+
+suit: generating key in /data/riotbuild/riotbase/tests/suit_manifest/bin/p-nucleo-wb55
+sh create_test_data.sh
+test "dbfb4285837ab2ea3d99c448b22877cc7a139ccbaebb1de367e2bec1fd562fe629b389d86603915448078b8fd7e631c8fc9a7d126eb889a1ba0c17611369b190  /data/riotbuild/riotbase/build/pkg/c25519-2017-10-05.zip" =  "$(sha512sum "/data/riotbuild/riotbase/build/pkg/c25519-2017-10-05.zip")"
+"make" -C /data/riotbuild/riotbase/build/pkg/c25519/src -f /data/riotbuild/riotbase/Makefile.base MODULE=c25519
+make[2]: *** No rule to make target 'morph25519.c', needed by '/data/riotbuild/riotbase/tests/suit_manifest/bin/p-nucleo-wb55/c25519/morph25519.o'.  Stop.
+Makefile:20: recipe for target 'all' failed
+make[1]: *** [all] Error 2
+/data/riotbuild/riotbase/Makefile.include:674: recipe for target 'pkg-build-c25519' failed
+make: *** [pkg-build-c25519] Error 2
+/builds/workspace/RIOT.git.jk/makefiles/docker.inc.mk:304: recipe for target '..in-docker-container' failed
+make: *** [..in-docker-container] Error 2
+
+Return value: 2

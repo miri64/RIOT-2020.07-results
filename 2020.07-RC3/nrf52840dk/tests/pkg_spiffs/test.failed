@@ -1,0 +1,37 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/pkg_spiffs test
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nrf52840dk" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nrf52840dk
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+.
+spiffs_tests.tests_spiffs_format (tests/pkg_spiffs/main.c 163) exp 0 was -19
+.
+spiffs_tests.tests_spiffs_mount_umount (tests/pkg_spiffs/main.c 177) exp 0 was -22
+.
+spiffs_tests.tests_spiffs_open_close (tests/pkg_spiffs/main.c 187) res >= 0
+.
+spiffs_tests.tests_spiffs_write (tests/pkg_spiffs/main.c 200) fd >= 0
+.
+spiffs_tests.tests_spiffs_unlink (tests/pkg_spiffs/main.c 232) fd >= 0
+.
+spiffs_tests.tests_spiffs_readdir (tests/pkg_spiffs/main.c 252) fd0 >= 0
+.
+spiffs_tests.tests_spiffs_rename (tests/pkg_spiffs/main.c 316) fd >= 0
+.
+spiffs_tests.tests_spiffs_statvfs (tests/pkg_spiffs/main.c 361) exp 0 was -2
+.
+spiffs_tests.tests_spiffs_partition (tests/pkg_spiffs/main.c 397) exp 0 was -19
+
+run 9 failures 9
+Timeout in expect script at "child.expect(r'OK \((\d+) tests\)', timeout=timeout)" (dist/pythonlibs/testrunner/__init__.py:57)
+
+/builds/workspace/RIOT.git.jk/tests/pkg_spiffs/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

@@ -1,0 +1,7 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/periph_wdt test
+Timeout in expect script at "child.expect_exact(">")" (tests/periph_wdt/tests/01-run.py:40)
+
+/builds/workspace/RIOT.git.jk/tests/periph_wdt/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

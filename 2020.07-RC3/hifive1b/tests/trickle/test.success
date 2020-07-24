@@ -1,0 +1,33 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-hifive1b" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-hifive1b
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0-->OK
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+[START]
+now = 2351379, t = 32
+now = 2479644, t = 97
+now = 2684753, t = 177
+now = 3128997, t = 372
+now = 3794189, t = 540
+[TRICKLE_RESET]
+now = 3810394, t = 15
+now = 3833496, t = 21
+now = 3889617, t = 44
+now = 3976745, t = 66
+now = 4277862, t = 238
+now = 4615081, t = 318
+now = 5650299, t = 840
+[SUCCESS]
+

@@ -1,0 +1,15 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-l433rc" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-l433rc
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+Running test #1... done. Run time: 0.000 s
+Running test #2... done. Run time: 0.000 s
+Running test #3... done. Run time: 0.000 s
+Running test #4... done. Run time: 0.000 s
+Running test #5... done. Run time: 0.000 s

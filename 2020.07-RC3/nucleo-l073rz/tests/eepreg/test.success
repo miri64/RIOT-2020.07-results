@@ -1,0 +1,20 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-l073rz" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-l073rz
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+EEPROM registry (eepreg) test routine
+Testing new registry creation: reset check [SUCCESS]
+Testing writing and reading entries: add write add read [SUCCESS]
+Testing detection of conflicting size: add [SUCCESS]
+Testing calculation of lengths: len len [SUCCESS]
+Testing of successful data move after rm: rm read data [SUCCESS]
+Testing of free space change after write: free add free [SUCCESS]
+Testing of iteration over registry: iter bar foo [SUCCESS]
+Tests complete!
+

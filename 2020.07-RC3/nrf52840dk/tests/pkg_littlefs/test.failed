@@ -1,0 +1,35 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/pkg_littlefs test
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nrf52840dk" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nrf52840dk
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+.
+littlefs_tests.tests_littlefs_format (tests/pkg_littlefs/main.c 156) exp 0 was -28
+.
+littlefs_tests.tests_littlefs_mount_umount (tests/pkg_littlefs/main.c 173) exp 0 was -22
+.
+littlefs_tests.tests_littlefs_open_close (tests/pkg_littlefs/main.c 183) res >= 0
+.
+littlefs_tests.tests_littlefs_write (tests/pkg_littlefs/main.c 196) fd >= 0
+.
+littlefs_tests.tests_littlefs_unlink (tests/pkg_littlefs/main.c 228) fd >= 0
+.
+littlefs_tests.tests_littlefs_readdir (tests/pkg_littlefs/main.c 248) fd0 >= 0
+.
+littlefs_tests.tests_littlefs_rename (tests/pkg_littlefs/main.c 336) fd >= 0
+.
+littlefs_tests.tests_littlefs_statvfs (tests/pkg_littlefs/main.c 381) exp 0 was -2
+
+run 8 failures 8
+Timeout in expect script at "child.expect(r'OK \((\d+) tests\)', timeout=timeout)" (dist/pythonlibs/testrunner/__init__.py:57)
+
+/builds/workspace/RIOT.git.jk/tests/pkg_littlefs/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

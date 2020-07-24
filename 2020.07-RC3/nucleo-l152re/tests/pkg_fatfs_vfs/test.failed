@@ -1,0 +1,26 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/pkg_fatfs_vfs test
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-l152re" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-l152re
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+Tests for FatFs over VFS - test results will be printed in the format test_name:result
+test_mount__mount:[FAILED]
+
+Traceback (most recent call last):
+  File "/builds/workspace/RIOT.git.jk/tests/pkg_fatfs_vfs/tests/01-run.py", line 34, in <module>
+    sys.exit(run(testfunc))
+  File "/builds/workspace/RIOT.git.jk/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/builds/workspace/RIOT.git.jk/tests/pkg_fatfs_vfs/tests/01-run.py", line 28, in testfunc
+    raise TestFailed(child.after.split(':', 1)[0] + " test failed!")
+__main__.TestFailed: test_mount__mount test failed!
+/builds/workspace/RIOT.git.jk/tests/pkg_fatfs_vfs/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

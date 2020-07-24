@@ -1,0 +1,11 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/driver_my9221 flash-only
+/builds/workspace/RIOT.git.jk/dist/tools/cc2538-bsl/cc2538-bsl.py -p "/dev/riot/tty-openmote-b" --bootloader-invert-lines -e -w -v -b 460800 /builds/workspace/RIOT.git.jk/tests/driver_my9221/bin/openmote-b/tests_driver_my9221.hex
+Opening port /dev/riot/tty-openmote-b, baud 460800
+Reading data from /builds/workspace/RIOT.git.jk/tests/driver_my9221/bin/openmote-b/tests_driver_my9221.hex
+Your firmware looks like an Intel Hex file
+Connecting to target...
+ERROR: Timeout waiting for ACK/NACK after 'Synch (0x55 0x55)'
+/builds/workspace/RIOT.git.jk/tests/driver_my9221/../../Makefile.include:707: recipe for target 'flash-only' failed
+make: *** [flash-only] Error 1
+
+Return value: 2

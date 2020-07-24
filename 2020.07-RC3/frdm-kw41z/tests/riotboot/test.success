@@ -1,0 +1,162 @@
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-frdm-kw41z" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-frdm-kw41z
+Welcome to pyterm!
+Type '/exit' to exit.
+52
+Image Version: 0x5f19d189
+Image start address: 0x00001100
+Header chksum: 0xe2eddf44
+
+>  
+> curslotnr
+ 
+>  curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f19d189
+compiling /builds/workspace/RIOT.git.jk/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git.jk/tests/riotboot/bin/frdm-kw41z/tests_riotboot-slot1.1595527562.riot.bin...
+/builds/workspace/RIOT.git.jk/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git.jk/tests/riotboot/bin/frdm-kw41z/tests_riotboot-slot1.1595527562.riot.bin
+### Flashing Target ###
+Value in fcfield is not checked when flashing at $IMAGE_OFFSET >= 0x410
+Binfile detected, adding ROM base address: 0x00000000
+Flashing with IMAGE_OFFSET: 0x00040800
+Open On-Chip Debugger 0.10.0+dev-g68611ef-dirty (2020-07-20-09:42)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : add flash_bank kinetis klx.pflash
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : J-Link OpenSDA 2 compiled May  6 2016 11:04:17
+Info : Hardware version: 1.00
+Info : VTarget = 3.300 V
+Info : clock speed 1000 kHz
+Info : SWD DPIDR 0x0bc11477
+Info : klx.cpu: hardware has 2 breakpoints, 2 watchpoints
+Info : klx.cpu: external reset detected
+Info : starting gdb server for klx.cpu on 0
+Info : Listening on port 45601 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* klx.cpu            cortex_m   little klx.cpu            reset
+
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000514 msp: 0x1fff8200
+Info : Kinetis MKW41Z512xxx4 detected: 2 flash blocks
+Info : 2 PFlash banks: 512k total
+Info : This device supports Program Longword execution only.
+Info : Disabling Kinetis watchdog (initial SIM_COPC 0x0c)
+auto erase enabled
+wrote 16384 bytes from file /builds/workspace/RIOT.git.jk/tests/riotboot/bin/frdm-kw41z/tests_riotboot-slot1.1595527562.riot.bin in 0.443901s (36.044 KiB/s)
+
+verified 14912 bytes in 0.076932s (189.291 KiB/s)
+
+shutdown command invoked
+Done flashing
+Image start address: 0x00001100
+Header chksum: 0xe2eddf44
+
+>  main(): This is RIOT! (Version: riot/2020.07-RC3)
+Hello riotboot!
+curslotnr
+You are running RIOT on a(n) frdm-kw41z board.
+This board features a(n) kinetis MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5f19d18a
+Image start address: 0x00040900
+Header chksum: 0xd2f5d749
+
+>  curslotnr
+Current slot=1
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f19d18a
+Image start address: 0x00040900
+Header chksum: 0xd2f5d749
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x00001100
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x1000 image: 0x00001100
+slot 1: metadata: 0x40800 image: 0x00040900
+> compiling /builds/workspace/RIOT.git.jk/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git.jk/tests/riotboot/bin/frdm-kw41z/tests_riotboot-slot0.1595527563.riot.bin...
+/builds/workspace/RIOT.git.jk/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git.jk/tests/riotboot/bin/frdm-kw41z/tests_riotboot-slot0.1595527563.riot.bin
+### Flashing Target ###
+Value in fcfield is not checked when flashing at $IMAGE_OFFSET >= 0x410
+Binfile detected, adding ROM base address: 0x00000000
+Flashing with IMAGE_OFFSET: 0x00001000
+Open On-Chip Debugger 0.10.0+dev-g68611ef-dirty (2020-07-20-09:42)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : add flash_bank kinetis klx.pflash
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : J-Link OpenSDA 2 compiled May  6 2016 11:04:17
+Info : Hardware version: 1.00
+Info : VTarget = 3.300 V
+Info : clock speed 1000 kHz
+Info : SWD DPIDR 0x0bc11477
+Info : klx.cpu: hardware has 2 breakpoints, 2 watchpoints
+Info : klx.cpu: external reset detected
+Info : starting gdb server for klx.cpu on 0
+Info : Listening on port 36215 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* klx.cpu            cortex_m   little klx.cpu            reset
+
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000514 msp: 0x1fff8200
+Info : Kinetis MKW41Z512xxx4 detected: 2 flash blocks
+Info : 2 PFlash banks: 512k total
+Info : This device supports Program Longword execution only.
+Info : Disabling Kinetis watchdog (initial SIM_COPC 0x0c)
+auto erase enabled
+wrote 16384 bytes from file /builds/workspace/RIOT.git.jk/tests/riotboot/bin/frdm-kw41z/tests_riotboot-slot0.1595527563.riot.bin in 0.452375s (35.369 KiB/s)
+
+verified 14912 bytes in 0.077125s (188.817 KiB/s)
+
+shutdown command invoked
+Done flashing
+ main(): This is RIOT! (Version: riot/2020.07-RC3)
+Hello riotboot!
+You are running RIOT on a(n) frdm-kw41z board.
+This board features a(n) kinetis MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5f19d18b
+Image start address: 0x00001100
+Header chksum: 0xe2f5df46
+
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f19d18b
+Image start address: 0x00001100
+Header chksum: 0xe2f5df46
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x00001100
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x1000 image: 0x00001100
+slot 1: metadata: 0x40800 image: 0x00040900
+> TEST PASSED
+

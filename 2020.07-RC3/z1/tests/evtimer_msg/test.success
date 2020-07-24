@@ -1,0 +1,27 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+Testing generic evtimer
+This should list 2 items
+ev #1 offset=997
+ev #2 offset=501
+This should list 4 items
+ev #1 offset=658
+ev #2 offset=339
+ev #3 offset=501
+ev #4 offset=2456
+Are the reception times of all 4 msgs close to the supposed values?
+At   4705 ms received msg 0: "#2 supposed to be 4703"
+.At   5044 ms received msg 1: "#0 supposed to be 5042"
+.At   5545 ms received msg 2: "#1 supposed to be 5543"
+.At   8001 ms received msg 3: "#3 supposed to be 7999"
+.
+All tests successful
+

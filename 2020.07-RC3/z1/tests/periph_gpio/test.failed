@@ -1,0 +1,35 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/periph_gpio test
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> bench 0 0
+ 
+>  bench 0 0
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:     29129us  ---   0.029us per call  ---   34330049 calls per sec
+                 gpio_set:     31433us  ---   0.031us per call  ---   31813698 calls per sec
+               gpio_clear:     31433us  ---   0.031us per call  ---   31813698 calls per sec
+              gpio_toggle:     31433us  ---   0.031us per call  ---   31813698 calls per sec
+                gpio_read:     54465us  ---   0.054us per call  ---   18360414 calls per sec
+               gpio_write:     42321us  ---   0.042us per call  ---   23628931 calls per sec
+
+ --- DONE ---
+> bench 0 1
+ bench 0 1
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:     29129us  ---   0.029us per call  ---   34330049 calls per sec
+Timeout in expect script at "child.expect(r" *gpio_set: +(\d+)us  --- +(\d+\.\d+)us per call  --- +(\d+) calls per sec")" (tests/periph_gpio/tests/02-bench.py:21)
+
+/builds/workspace/RIOT.git.jk/tests/periph_gpio/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

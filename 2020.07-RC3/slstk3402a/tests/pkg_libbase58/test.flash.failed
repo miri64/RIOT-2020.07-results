@@ -1,0 +1,40 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/pkg_libbase58 flash-only
+/builds/workspace/RIOT.git.jk/dist/tools/jlink/jlink.sh flash /builds/workspace/RIOT.git.jk/tests/pkg_libbase58/bin/slstk3402a/tests_pkg_libbase58.bin
+### Flashing Target ###
+### Flashing at base address 0x0 with offset 0 ###
+SEGGER J-Link Commander V6.54c (Compiled Nov  7 2019 17:05:53)
+DLL version V6.54c, compiled Nov  7 2019 17:05:41
+
+J-Link Commander will now exit on Error
+
+J-Link Command File read successfully.
+Processing script file...
+
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: Silicon Labs J-Link OB compiled Feb  1 2017 16:00:37
+Hardware version: V1.00
+S/N: 440113873
+License(s): RDI
+VTref=3.276V
+Target connection not established yet but required for command.
+Device "EFM32PG12BXXXF1024" selected.
+
+
+Connecting to target via SWD
+InitTarget() start
+InitTarget() end
+InitTarget() start
+InitTarget() end
+
+****** Error: Communication timed out: Requested 34 bytes, received 0 bytes !
+Could not transfer JTAG data.
+Could not read hardware status!
+Cannot connect to target.
+
+Script processing completed.
+
+/builds/workspace/RIOT.git.jk/tests/pkg_libbase58/../../Makefile.include:707: recipe for target 'flash-only' failed
+make: *** [flash-only] Error 1
+
+Return value: 2

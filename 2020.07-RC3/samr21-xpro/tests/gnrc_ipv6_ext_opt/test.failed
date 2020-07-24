@@ -1,0 +1,10 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/gnrc_ipv6_ext_opt test
+make[1]: Nothing to be done for 'all'.
+Traceback (most recent call last):
+  File "/builds/workspace/RIOT.git.jk/tests/gnrc_ipv6_ext_opt/tests/01-run.py", line 16, in <module>
+    from scapy.all import Ether, IPv6, UDP, ICMPv6ParamProblem, \
+ImportError: cannot import name 'AsyncSniffer'
+/builds/workspace/RIOT.git.jk/tests/gnrc_ipv6_ext_opt/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

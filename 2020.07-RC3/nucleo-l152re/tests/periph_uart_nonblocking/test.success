@@ -1,0 +1,36 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-l152re" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-l152re
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+                                                                
+puts with disabled interrupts and a full transmit buffer
+
+Join us now and share the software;
+You'll be free, hackers, you'll be free.
+Join us now and share the software;
+You'll be free, hackers, you'll be free.
+
+Hoarders can get piles of money,
+That is true, hackers, that is true.
+But they cannot help their neighbors;
+That's not good, hackers, that's not good.
+
+When we have enough free software
+At our call, hackers, at our call,
+We'll kick out those dirty licenses
+Ever more, hackers, ever more.
+
+Join us now and share the software;
+You'll be free, hackers, you'll be free.
+Join us now and share the software;
+You'll be free, hackers, you'll be free.
+
+== printed in 2103089/2100000 µs ==
+[SUCCESS]
+

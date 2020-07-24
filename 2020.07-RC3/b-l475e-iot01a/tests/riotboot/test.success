@@ -1,0 +1,161 @@
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-b-l475e-iot01a" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-b-l475e-iot01a
+Welcome to pyterm!
+Type '/exit' to exit.
+
+>  
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a6325
+compiling /builds/workspace/RIOT.git.jk/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git.jk/tests/riotboot/bin/b-l475e-iot01a/tests_riotboot-slot1.1595564838.riot.bin...
+/builds/workspace/RIOT.git.jk/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git.jk/tests/riotboot/bin/b-l475e-iot01a/tests_riotboot-slot1.1595564838.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08080800
+Open On-Chip Debugger 0.10.0+dev-g68611ef-dirty (2020-07-20-09:42)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 500 kHz
+Info : STLINK V2J28M18 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.250033
+Info : stm32l4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for stm32l4x.cpu on 0
+Info : Listening on port 33681 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l4x.cpu       hla_target little stm32l4x.cpu       reset
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000308 msp: 0x20000200
+Info : device idcode = 0x10076415 (STM32L47/L48xx - Rev: 4)
+Info : flash size = 1024kbytes
+Info : flash mode : dual-bank
+Warn : Adding extra erase range, 0x080841c0 .. 0x080847ff
+auto erase enabled
+wrote 14784 bytes from file /builds/workspace/RIOT.git.jk/tests/riotboot/bin/b-l475e-iot01a/tests_riotboot-slot1.1595564838.riot.bin in 0.908692s (15.888 KiB/s)
+
+verified 14784 bytes in 0.503673s (28.664 KiB/s)
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+shutdown command invoked
+Done flashing
+Image start address: 0x08001400
+Header chksum: 0x375f7be1
+
+>  main(): This is RIOT! (Version: riot/2020.07-RC3)
+Hello riotboot!
+You are running RIOT on a(n) b-l475e-iot01a board.
+This board features a(n) stm32 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a6326
+Image start address: 0x08080c00
+Header chksum: 0x276b73ea
+
+> curslotnr
+ curslotnr
+Current slot=1
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a6326
+Image start address: 0x08080c00
+Header chksum: 0x276b73ea
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08001400
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001400
+slot 1: metadata: 0x8080800 image: 0x08080c00
+> compiling /builds/workspace/RIOT.git.jk/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git.jk/tests/riotboot/bin/b-l475e-iot01a/tests_riotboot-slot0.1595564839.riot.bin...
+/builds/workspace/RIOT.git.jk/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git.jk/tests/riotboot/bin/b-l475e-iot01a/tests_riotboot-slot0.1595564839.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08001000
+Open On-Chip Debugger 0.10.0+dev-g68611ef-dirty (2020-07-20-09:42)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 500 kHz
+Info : STLINK V2J28M18 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.245293
+Info : stm32l4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for stm32l4x.cpu on 0
+Info : Listening on port 37307 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l4x.cpu       hla_target little stm32l4x.cpu       reset
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000308 msp: 0x20000200
+Info : device idcode = 0x10076415 (STM32L47/L48xx - Rev: 4)
+Info : flash size = 1024kbytes
+Info : flash mode : dual-bank
+Warn : Adding extra erase range, 0x080049c0 .. 0x08004fff
+auto erase enabled
+wrote 14784 bytes from file /builds/workspace/RIOT.git.jk/tests/riotboot/bin/b-l475e-iot01a/tests_riotboot-slot0.1595564839.riot.bin in 0.903412s (15.981 KiB/s)
+
+verified 14784 bytes in 0.505549s (28.558 KiB/s)
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+shutdown command invoked
+Done flashing
+ main(): This is RIOT! (Version: riot/2020.07-RC3)
+Hello riotboot!
+You are running RIOT on a(n) b-l475e-iot01a board.
+This board features a(n) stm32 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a6327
+Image start address: 0x08001400
+Header chksum: 0x37677be3
+
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a6327
+Image start address: 0x08001400
+Header chksum: 0x37677be3
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08001400
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001400
+slot 1: metadata: 0x8080800 image: 0x08080c00
+> TEST PASSED
+

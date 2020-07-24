@@ -1,0 +1,87 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/examples/suit_update test
+make -C ethos
+make[2]: Nothing to be done for 'all'.
+make -C uhcpd
+make[2]: Nothing to be done for 'all'.
+make -C sliptty
+make[2]: Nothing to be done for 'all'.
+/bin/sh: 1: exec: aiocoap-fileserver: not found
+/usr/bin/make -C ethos
+make[3]: Nothing to be done for 'all'.
+/usr/bin/make -C uhcpd
+make[3]: Nothing to be done for 'all'.
+/usr/bin/make -C sliptty
+make[3]: Nothing to be done for 'all'.
+/builds/workspace/RIOT.git.jk/dist/tools/ethos/ethos riot0 /dev/riot/tty-nrf52840dk
+----> ethos: sending hello.
+----> ethos: activating serial pass through.
+----> ethos: hello reply received
+----> ethos: hello received
+Failed to send flush request: Operation not permitted
+gnrc_uhcpc: Using 4 as border interface and 0 as wireless interface.
+gnrc_uhcpc: only one interface found, skipping setup.
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+RIOT SUIT update example application
+running from slot 0
+slot start addr = 0x2000
+Image magic_number: 0x544f4952
+Image Version: 0x5f19d99c
+Image start address: 0x00002400
+Header chksum: 0x293afa57
+
+suit_coap: started.
+Starting the shell
+> ifconfig
+ifconfig
+Iface  4  HWaddr: 52:2B:D5:7F:14:B4 
+          L2-PDU:1500  MTU:1500  HL:64  RTR  
+          Source address length: 6
+          Link type: wired
+          inet6 addr: fe80::502b:d5ff:fe7f:14b4  scope: link  VAL
+PING fe80::502b:d5ff:fe7f:14b4%riot0(fe80::502b:d5ff:fe7f:14b4%riot0) 56 data bytes
+
+--- fe80::502b:d5ff:fe7f:14b4%riot0 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 41.493/41.493/41.493/0.000 ms
+compiling /builds/workspace/RIOT.git.jk/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-slot0.1595529629.riot.bin...
+creating /builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-slot1.1595529629.riot.bin...
+/builds/workspace/RIOT.git.jk/dist/tools/suit_v3/gen_manifest.py \
+  --urlroot coap://[fd00:dead:beef::1]/fw/nrf52840dk \
+  --seqnr 1595529629 \
+  --uuid-vendor "riot-os.org" \
+  --uuid-class nrf52840dk \
+  -o /builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-riot.suitv3.1595529629.bin.tmp \
+  /builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-slot0.1595529629.riot.bin:0x2000 \
+  /builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-slot1.1595529629.riot.bin:528384
+/builds/workspace/RIOT.git.jk/dist/tools/suit_v3/suit-manifest-generator/bin/suit-tool create -f suit -i /builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-riot.suitv3.1595529629.bin.tmp -o /builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-riot.suitv3.1595529629.bin
+rm -f /builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-riot.suitv3.1595529629.bin.tmp
+suit: generating key in /builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk
+/builds/workspace/RIOT.git.jk/dist/tools/suit_v3/suit-manifest-generator/bin/suit-tool sign -k /builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/invalid_keys.pem -m /builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-riot.suitv3.1595529629.bin -o /builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-riot.suitv3_signed.1595529629.bin
+published "/builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-riot.suitv3.1595529629.bin"
+       as "coap://[fd00:dead:beef::1]/fw/nrf52840dk/suit_update-riot.suitv3.1595529629.bin"
+published "/builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-riot.suitv3.latest.bin"
+       as "coap://[fd00:dead:beef::1]/fw/nrf52840dk/suit_update-riot.suitv3.latest.bin"
+published "/builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-riot.suitv3_signed.1595529629.bin"
+       as "coap://[fd00:dead:beef::1]/fw/nrf52840dk/suit_update-riot.suitv3_signed.1595529629.bin"
+published "/builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-riot.suitv3_signed.latest.bin"
+       as "coap://[fd00:dead:beef::1]/fw/nrf52840dk/suit_update-riot.suitv3_signed.latest.bin"
+published "/builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-slot0.1595529629.riot.bin"
+       as "coap://[fd00:dead:beef::1]/fw/nrf52840dk/suit_update-slot0.1595529629.riot.bin"
+published "/builds/workspace/RIOT.git.jk/examples/suit_update/bin/nrf52840dk/suit_update-slot1.1595529629.riot.bin"
+       as "coap://[fd00:dead:beef::1]/fw/nrf52840dk/suit_update-slot1.1595529629.riot.bin"
+aiocoap-client -m POST "coap://[fe80::502b:d5ff:fe7f:14b4%riot0]/suit/trigger" \
+	--payload "coap://[fd00:dead:beef::1]/fw/nrf52840dk/suit_update-riot.suitv3_signed.1595529629.bin" && \
+	echo "Triggered [fe80::502b:d5ff:fe7f:14b4%riot0] to update."
+/bin/sh: 1: aiocoap-client: not found
+/builds/workspace/RIOT.git.jk/makefiles/suit.inc.mk:69: recipe for target 'suit/notify' failed
+make[1]: *** [suit/notify] Error 127
+pinging node...
+pinging node succeeded.
+
+
+/builds/workspace/RIOT.git.jk/examples/suit_update/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

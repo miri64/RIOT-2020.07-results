@@ -1,0 +1,47 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-i-nucleo-lrwan1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-i-nucleo-lrwan1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+CHUNK_SIZE: 512
+NUMBER_OF_TESTS: 3
+Allocated 512 Bytes at 0x0x200014a0, total 512
+Allocated 512 Bytes at 0x0x200016b8, total 1032
+Allocated 512 Bytes at 0x0x200018d0, total 1552
+Allocated 512 Bytes at 0x0x20001ae8, total 2072
+Allocated 512 Bytes at 0x0x20001d00, total 2592
+Allocations count: 5
+Free 512 Bytes at 0x0x200014a0, total 2088
+Free 512 Bytes at 0x0x200016b8, total 1568
+Free 512 Bytes at 0x0x200018d0, total 1048
+Free 512 Bytes at 0x0x20001ae8, total 528
+Free 512 Bytes at 0x0x20001d00, total 8
+Allocated 512 Bytes at 0x0x20001d00, total 512
+Allocated 512 Bytes at 0x0x20001ae8, total 1032
+Allocated 512 Bytes at 0x0x200018d0, total 1552
+Allocated 512 Bytes at 0x0x200016b8, total 2072
+Allocated 512 Bytes at 0x0x200014a0, total 2592
+Allocations count: 5
+Free 512 Bytes at 0x0x20001d00, total 2088
+Free 512 Bytes at 0x0x20001ae8, total 1568
+Free 512 Bytes at 0x0x200018d0, total 1048
+Free 512 Bytes at 0x0x200016b8, total 528
+Free 512 Bytes at 0x0x200014a0, total 8
+Allocated 512 Bytes at 0x0x20001d00, total 512
+Allocated 512 Bytes at 0x0x20001ae8, total 1032
+Allocated 512 Bytes at 0x0x200018d0, total 1552
+Allocated 512 Bytes at 0x0x200016b8, total 2072
+Allocated 512 Bytes at 0x0x200014a0, total 2592
+Allocations count: 5
+Free 512 Bytes at 0x0x20001d00, total 2088
+Free 512 Bytes at 0x0x20001ae8, total 1568
+Free 512 Bytes at 0x0x200018d0, total 1048
+Free 512 Bytes at 0x0x200016b8, total 528
+Free 512 Bytes at 0x0x200014a0, total 8
+[SUCCESS]
+

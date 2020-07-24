@@ -1,0 +1,46 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/sys_crypto test
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+..........................
+crypto_modes_ocb_tests.test_crypto_modes_ocb_encrypt (tests/sys_crypto/tests-crypto-modes-ocb.c 291) wrong ciphertext
+
+crypto_modes_ocb_tests.test_crypto_modes_ocb_encrypt (tests/sys_crypto/tests-crypto-modes-ocb.c 291) wrong ciphertext
+
+crypto_modes_ocb_tests.test_crypto_modes_ocb_encrypt (tests/sys_crypto/tests-crypto-modes-ocb.c 291) wrong ciphertext
+
+crypto_modes_ocb_tests.test_crypto_modes_ocb_encrypt (tests/sys_crypto/tests-crypto-modes-ocb.c 291) wrong ciphertext
+
+crypto_modes_ocb_tests.test_crypto_modes_ocb_encrypt (tests/sys_crypto/tests-crypto-modes-ocb.c 291) wrong ciphertext
+.
+crypto_modes_ocb_tests.test_crypto_modes_ocb_decrypt (tests/sys_crypto/tests-crypto-modes-ocb.c 336) Decryption failed
+
+crypto_modes_ocb_tests.test_crypto_modes_ocb_decrypt (tests/sys_crypto/tests-crypto-modes-ocb.c 336) Decryption failed
+
+crypto_modes_ocb_tests.test_crypto_modes_ocb_decrypt (tests/sys_crypto/tests-crypto-modes-ocb.c 336) Decryption failed
+
+crypto_modes_ocb_tests.test_crypto_modes_ocb_decrypt (tests/sys_crypto/tests-crypto-modes-ocb.c 336) Decryption failed
+
+crypto_modes_ocb_tests.test_crypto_modes_ocb_decrypt (tests/sys_crypto/tests-crypto-modes-ocb.c 336) Decryption failed
+
+crypto_modes_ocb_tests.test_crypto_modes_ocb_decrypt (tests/sys_crypto/tests-crypto-modes-ocb.c 336) Decryption failed
+......
+crypto_modes_ctr_tests.test_crypto_modes_ctr_encrypt (tests/sys_crypto/tests-crypto-modes-ctr.c 80) wrong ciphertext
+.
+crypto_modes_ctr_tests.test_crypto_modes_ctr_decrypt (tests/sys_crypto/tests-crypto-modes-ctr.c 100) wrong ciphertext
+
+run 34 failures 1�IOT MSP430 hardware initialization complete.
+Help: Press s to start test, r to print it is ready
+Timeout in expect script at "child.expect(r'OK \((\d+) tests\)', timeout=timeout)" (dist/pythonlibs/testrunner/__init__.py:57)
+
+/builds/workspace/RIOT.git.jk/tests/sys_crypto/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

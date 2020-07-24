@@ -1,0 +1,29 @@
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-frdm-kw41z" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-frdm-kw41z
+Welcome to pyterm!
+Type '/exit' to exit.
+e information on how to use it.
+>  main(): This is RIOT! (Version: riot/2020.07-RC3)
+Shell-based test application for heap functions.
+Use the 'help' command to get more information on how to use it.
+> heap
+ 
+>  
+>  heap
+heap: 128280 (used 2500, free 125780) [bytes]
+> malloc 100
+ malloc 100
+allocated 0x1fff94b0
+> heap
+ heap
+heap: 128280 (used 2608, free 125672) [bytes]
+> free 0x1fff94b0
+ free 0x1fff94b0
+freed 0x1fff94b0
+> heap
+ heap
+heap: 128280 (used 2500, free 125780) [bytes]
+

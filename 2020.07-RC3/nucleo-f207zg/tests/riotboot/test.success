@@ -1,0 +1,149 @@
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f207zg" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f207zg
+Welcome to pyterm!
+Type '/exit' to exit.
+
+>  
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a4eef
+compiling /builds/workspace/RIOT.git.jk/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git.jk/tests/riotboot/bin/nucleo-f207zg/tests_riotboot-slot1.1595559664.riot.bin...
+/builds/workspace/RIOT.git.jk/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git.jk/tests/riotboot/bin/nucleo-f207zg/tests_riotboot-slot1.1595559664.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08080000
+Open On-Chip Debugger 0.10.0+dev-g68611ef-dirty (2020-07-20-09:42)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 1000 kHz
+Info : STLINK V2J25M14 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.254318
+Info : stm32f2x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for stm32f2x.cpu on 0
+Info : Listening on port 40653 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f2x.cpu       hla_target little stm32f2x.cpu       reset
+
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080002f0 msp: 0x20000200
+Info : device id = 0x201f6411
+Info : flash size = 1024 kbytes
+auto erase enabled
+wrote 131072 bytes from file /builds/workspace/RIOT.git.jk/tests/riotboot/bin/nucleo-f207zg/tests_riotboot-slot1.1595559664.riot.bin in 4.283765s (29.880 KiB/s)
+
+verified 14032 bytes in 0.128433s (106.695 KiB/s)
+
+shutdown command invoked
+Done flashing
+Image start address: 0x08004200
+Header chksum: 0x428795ab
+
+>  main(): This is RIOT! (Version: riot/2020.07-RC3)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-f207zg board.
+This board features a(n) stm32 MCU.
+riotboot_test: running from slot 1
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a4ef0
+Image start address: 0x08080200
+Header chksum: 0xc29255b4
+
+> curslotnr
+ curslotnr
+Current slot=1
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a4ef0
+Image start address: 0x08080200
+Header chksum: 0xc29255b4
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08004200
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8004000 image: 0x08004200
+slot 1: metadata: 0x8080000 image: 0x08080200
+> compiling /builds/workspace/RIOT.git.jk/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /builds/workspace/RIOT.git.jk/tests/riotboot/bin/nucleo-f207zg/tests_riotboot-slot0.1595559665.riot.bin...
+/builds/workspace/RIOT.git.jk/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git.jk/tests/riotboot/bin/nucleo-f207zg/tests_riotboot-slot0.1595559665.riot.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08004000
+Open On-Chip Debugger 0.10.0+dev-g68611ef-dirty (2020-07-20-09:42)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 1000 kHz
+Info : STLINK V2J25M14 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.255900
+Info : stm32f2x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for stm32f2x.cpu on 0
+Info : Listening on port 33805 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f2x.cpu       hla_target little stm32f2x.cpu       reset
+
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080002f0 msp: 0x20000200
+Info : device id = 0x201f6411
+Info : flash size = 1024 kbytes
+auto erase enabled
+wrote 16384 bytes from file /builds/workspace/RIOT.git.jk/tests/riotboot/bin/nucleo-f207zg/tests_riotboot-slot0.1595559665.riot.bin in 0.709970s (22.536 KiB/s)
+
+verified 14032 bytes in 0.125032s (109.597 KiB/s)
+
+shutdown command invoked
+Done flashing
+ main(): This is RIOT! (Version: riot/2020.07-RC3)
+Hello riotboot!
+You are running RIOT on a(n) nucleo-f207zg board.
+This board features a(n) stm32 MCU.
+riotboot_test: running from slot 0
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a4ef1
+Image start address: 0x08004200
+Header chksum: 0x428f95ad
+
+> curslotnr
+ curslotnr
+Current slot=0
+> curslothdr
+ curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a4ef1
+Image start address: 0x08004200
+Header chksum: 0x428f95ad
+
+> getslotaddr 0
+ getslotaddr 0
+Slot 0 address=0x08004200
+> dumpaddrs
+ dumpaddrs
+slot 0: metadata: 0x8004000 image: 0x08004200
+slot 1: metadata: 0x8080000 image: 0x08080200
+> TEST PASSED
+

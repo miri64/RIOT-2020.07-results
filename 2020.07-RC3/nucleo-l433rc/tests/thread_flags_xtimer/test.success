@@ -1,0 +1,22 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-l433rc" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-l433rc
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+START
+Test setting thread flags from (x)timer callback
+You should see the message '+++ timeout XX +++' printed to the 
+screen 5 times, once every 100 milliseconds
+
++++ timeout  1 +++
++++ timeout  2 +++
++++ timeout  3 +++
++++ timeout  4 +++
++++ timeout  5 +++
+SUCCESS
+
