@@ -1,0 +1,33 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000'
+generating 1 random byte(s)
+Got: 0xe2
+generating 2 random byte(s)
+Got: 0x90 0x0f
+generating 3 random byte(s)
+Got: 0x43 0xda 0xd5
+generating 4 random byte(s)
+Got: 0x2a 0x89 0x06 0x3c
+generating 5 random byte(s)
+Got: 0xc5 0xd8 0x99 0xc0 0xb0
+generating 6 random byte(s)
+Got: 0xde 0x9a 0x07 0x30 0x70 0xe5
+generating 7 random byte(s)
+Got: 0x04 0xa6 0xfb 0x17 0x90 0x10 0xc2
+generating 8 random bREADY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+
+RIOT RTC low-level driver test
+This test will display 'Alarm!' every 2 seconds for 4 times
+  Setting clock to   2020-02-28 23:59:57
+Clock value is now   2020-02-28 23:59:57
+  Setting alarm to   2020-02-28 23:59:59
+   Alarm is set to   2020-02-28 23:59:59
+
+Alarm!
+Alarm!
+Alarm!
+Alarm!
+

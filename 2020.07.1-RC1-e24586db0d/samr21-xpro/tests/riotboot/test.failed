@@ -1,0 +1,28 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/riotboot test
+
+
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x5f3fe109
+Image starcompiling /home/runner/work/RIOT/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /home/runner/work/RIOT/RIOT/tests/riotboot/bin/samr21-xpro/tests_riotboot-slot1.1598021898.riot.bin...
+iotlab-node --jmespath='keys(@)[0]' --format='int' --id 226976 --list saclay,samr21,10 --flash /home/runner/work/RIOT/RIOT/tests/riotboot/bin/samr21-xpro/tests_riotboot-slot1.1598021898.riot.bin | grep 0
+0
+t address: 0x00001100
+Header chksum: 0x2160eeea
+
+> curslotnr
+Timeout in expect script at "child.expect_exact("Current slot={}".format(slotnum))" (tests/riotboot/tests/01-run.py:30)
+
+/home/runner/work/RIOT/RIOT/tests/riotboot/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

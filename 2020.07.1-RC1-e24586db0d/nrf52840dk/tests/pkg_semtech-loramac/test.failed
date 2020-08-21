@@ -1,0 +1,34 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg_semtech-loramac test
+
+
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52840dk-10.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: 2020.07)
+All up, running the shell now
+> loramac erase
+
+> 
+> loramac erase
+Usage: loramac <get|set|join|tx|link_check>
+> reboot
+reboot
+main(): This is RIOT! (Version: 2020.07)
+All up, running the shell now
+> loramac set deveui None
+loramac set deveui None
+Usage: loramac set deveui <16 hex chars>
+loramac set appeui None
+> loramac set appeui None
+Usage: loramac set appeui <16 hex chars>
+> loramac set appkey None
+loramac set appkey None
+Usage: loramac set appkey <32 hex chars>
+> loramac set dr 0
+loramac set dr 0
+> loramac join otaa
+loramac join otaa
+Timeout in expect script at "child.expect_exact(["Join procedure succeeded!"," (tests/pkg_semtech-loramac/tests/01-run.py:102)
+
+/home/runner/work/RIOT/RIOT/tests/pkg_semtech-loramac/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

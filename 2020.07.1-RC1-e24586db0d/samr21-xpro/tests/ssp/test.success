@@ -1,0 +1,15 @@
+/bin/sh: 1: arm-none-eabi-gcc: not found
+r
+/bin/sh: 1: arm-none-eabi-gcc: not found
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+calling stack corruption function
+*** RIOT kernel panic:
+ssp: stack smashing detected
+
+*** halted.
+
+

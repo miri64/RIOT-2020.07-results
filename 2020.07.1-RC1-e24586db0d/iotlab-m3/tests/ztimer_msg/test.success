@@ -1,0 +1,70 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+This is thread 2
+sending 1st msg
+now=3:541674 -> every 2.0s: Hello World
+sending 2nd msg
+now=3:542938 -> every 5.0s: This is a Test
+This is thread 3
+sec=4 min=0 hour=0
+now=5:542606 -> every 2.0s: Hello World
+sec=5 min=0 hour=0
+sec=6 min=0 hour=0
+now=7:543538 -> every 2.0s: Hello World
+sec=7 min=0 hour=0
+now=8:543934 -> every 5.0s: This is a Test
+sec=8 min=0 hour=0
+now=9:544470 -> every 2.0s: Hello World
+sec=9 min=0 hour=0
+sec=10 min=0 hour=0
+now=11:545402 -> every 2.0s: Hello World
+sec=11 min=0 hour=0
+sec=12 min=0 hour=0
+now=13:544930 -> every 5.0s: This is a Test
+now=13:546356 -> every 2.0s: Hello World
+sec=13 min=0 hour=0
+sec=14 min=0 hour=0
+now=15:547310 -> every 2.0s: Hello World
+sec=15 min=0 hour=0
+sec=16 min=0 hour=0
+now=17:548264 -> every 2.0s: Hello World
+sec=17 min=0 hour=0
+now=18:545946 -> every 5.0s: This is a Test
+sec=18 min=0 hour=0
+now=19:549218 -> every 2.0s: Hello World
+sec=19 min=0 hour=0
+sec=20 min=0 hour=0
+now=21:550172 -> every 2.0s: Hello World
+sec=21 min=0 hour=0
+sec=22 min=0 hour=0
+now=23:546962 -> every 5.0s: This is a Test
+now=23:551126 -> every 2.0s: Hello World
+sec=23 min=0 hour=0
+sec=24 min=0 hour=0
+now=25:552080 -> every 2.0s: Hello World
+sec=25 min=0 hour=0
+sec=26 min=0 hour=0
+now=27:553034 -> every 2.0s: Hello World
+sec=27 min=0 hour=0
+now=28:547978 -> every 5.0s: This is a Test
+sec=28 min=0 hour=0
+now=29:553988 -> every 2.0s: Hello World
+sec=29 min=0 hour=0
+sec=30 min=0 hour=0
+now=31:554942 -> every 2.0s: Hello World
+sec=31 min=0 hour=0
+sec=32 min=0 hour=0
+now=33:548994 -> every 5.0s: This is a Test
+now=33:555896 -> every 2.0s: Hello World
+sec=33 min=0 hour=0
+sec=34 min=0 hour=0
+now=35:556850 -> every 2.0s: Hello World
+sec=35 min=0 hour=0
+sec=36 min=0 hour=0
+now=37:557804 -> every 2.0s: Hello World
+sec=37 min=0 hour=0
+now=38:550010 -> every 5.0s: This is a Test

@@ -1,0 +1,53 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000'
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+.
+--- testing manifest 0
+---- res=-6 (expected=-6)
+
+--- testing manifest 1
+suit: verifying manifest signature
+suit: validated manifest version
+)1 <= 1
+seq_nr <= running image
+)---- res=-5 (expected=-5)
+
+--- testing manifest 2
+suit: verifying manifest signature
+suit: validated manifest version
+)riotboot_hdr_validate: riotboot_hdr checksum invalid
+suit: validated sequence number
+)validating vendor ID
+Comparing 547d0d74-6d3a-5a92-9662-4881afd9407b to 547d0d74-6d3a-5a92-9662-4881afd9407b from manifest
+validating vendor ID: OK
+validating class id
+Comparing 297956a8-8622-5282-98f5-f87a79deefdd to e3daf1ac-c712-53da-8c0a-231bbe563173 from manifest
+---- res=-4 (expected=-4)
+
+--- testing manifest 3
+suit: verifying manifest signature
+suit: validated manifest version
+)riotboot_hdr_validate: riotboot_hdr checksum invalid
+suit: validated sequence number
+)validating vendor ID
+Comparing 547d0d74-6d3a-5a92-9662-4881afd9407b to 547d0d74-6d3a-5a92-9662-4881afd9407b from manifest
+validating vendor ID: OK
+validating class id
+Comparing 297956a8-8622-5282-98f5-f87a79deefdd to 297956a8-8622-5282-98f5-f87a79deefdd from manifest
+validating class id: OK
+Comparing manifest offset 4096 with other slot offset 8192
+Comparing manifest offset 8192 with other slot offset 8192
+Comparing manifest offset 4096 with other slot offset 8192
+Comparing manifest offset 8192 with other slot offset 8192
+riotboot_flashwrite_init_raw() empty mock
+Verifying image digest
+Verifying image digest
+---- res=0 (expected=0)
+
+OK (1 tests)
+

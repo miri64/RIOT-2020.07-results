@@ -1,0 +1,13 @@
+Merged configuration '/home/runner/work/RIOT/RIOT/tests/kconfig/app.config'
+No change to configuration in '/home/runner/work/RIOT/RIOT/tests/kconfig/bin/iotlab-m3/generated/merged.config'
+r
+Merged configuration '/home/runner/work/RIOT/RIOT/tests/kconfig/app.config'
+No change to configuration in '/home/runner/work/RIOT/RIOT/tests/kconfig/bin/iotlab-m3/generated/merged.config'
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+Message 1 defined in app.config file
+MSG_2 is active
+

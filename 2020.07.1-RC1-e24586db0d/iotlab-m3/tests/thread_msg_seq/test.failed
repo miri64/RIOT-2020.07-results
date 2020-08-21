@@ -1,0 +1,57 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/thread_msg_seq test
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+r
+r
+r
+r
+Traceback (most recent call last):
+  File "/home/runner/work/RIOT/RIOT/tests/thread_msg_seq/tests/01-run.py", line 30, in <module>
+    sys.exit(run(testfunc))
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/__init__.py", line 27, in run
+    child = setup_child(timeout, env=os.environ,
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/spawn.py", line 88, in setup_child
+    sync_child(child, env)
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/spawn.py", line 125, in sync_child
+    utils.test_utils_interactive_sync(child,
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/utils.py", line 30, in test_utils_interactive_sync
+    _test_utils_interactive_sync(child, retries, delay)
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/utils.py", line 22, in _test_utils_interactive_sync
+    child.expect_exact(ready_exp, timeout=0)
+  File "/opt/hostedtoolcache/Python/3.8.5/x64/lib/python3.8/site-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/opt/hostedtoolcache/Python/3.8.5/x64/lib/python3.8/site-packages/pexpect/expect.py", line 181, in expect_loop
+    return self.timeout(e)
+  File "/opt/hostedtoolcache/Python/3.8.5/x64/lib/python3.8/site-packages/pexpect/expect.py", line 144, in timeout
+    raise exc
+pexpect.exceptions.TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7f32554a9ca0>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): "00'\r\n"
+before (last 100 chars): "ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'\r\n"
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 82046
+child_fd: 5
+closed: False
+timeout: 10
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: 'READY'
+/home/runner/work/RIOT/RIOT/tests/thread_msg_seq/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

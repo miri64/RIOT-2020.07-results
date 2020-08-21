@@ -1,0 +1,30 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000'
+
+Hello
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+
+Test for peripheral TIMERs
+
+Available timers: 1
+
+Testing TIMER_0:
+TIMER_0: initialization successful
+TIMER_0: stopped
+TIMER_0: set channel 0 to 5000
+TIMER_0: set channel 1 to 10000
+TIMER_0: set channel 2 to 15000
+TIMER_0: set channel 3 to 20000
+TIMER_0: starting
+TIMER_0: channel 0 fired at SW count    14545 - init:    14545
+TIMER_0: channel 1 fired at SW count    29531 - diff:    14986
+TIMER_0: channel 2 fired at SW count    44063 - diff:    14532
+TIMER_0: channel 3 fired at SW count    57383 - diff:    13320
+
+TEST SUCCEEDED
+

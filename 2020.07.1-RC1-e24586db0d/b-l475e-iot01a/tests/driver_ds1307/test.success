@@ -1,0 +1,21 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000'
+[bme680]: read data failed with reason -5
++-----------------------------------------+
+[bme680]: read data failed with reason -5
++-----------------------------------------+
+[bme680]: read data failed with reason -5
++-----------------------------------------+
+[bme680]: read data failed with reason -5
++-----------------------------------------+
+[bme680]: read data failed with reason -5
++-----------------------------------------+
+[bme680]: read data failed with reason -5
++--------------------------READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+DS1307 RTC test
+
+error: unable to initialize RTC [I2C initialization error]
+

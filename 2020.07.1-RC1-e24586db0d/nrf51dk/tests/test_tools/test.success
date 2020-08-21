@@ -1,0 +1,12 @@
+shellping
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf51dk-3.saclay.iot-lab.info:20000'
+���shellpong
+true this should not be echoed
+shellping
+shellpong
+toupper lowercase
+LOWERCASE
+getchar
+
+getchar 0x0a
+

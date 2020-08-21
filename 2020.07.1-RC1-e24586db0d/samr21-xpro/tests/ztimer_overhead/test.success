@@ -1,0 +1,9 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+ZTIMER_USEC->adjust = 0
+min=35 max=36 avg_diff=35
+

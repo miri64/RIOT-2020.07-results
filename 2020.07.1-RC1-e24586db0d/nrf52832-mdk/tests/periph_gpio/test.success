@@ -1,0 +1,111 @@
+
+
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52832mdk-1.saclay.iot-lab.info:20000'
+�b!�ی�"C�!ª�c�w1�)��q�!���sc0�kc�1�!��.�
+> 
+> bench 0 0
+bench 0 0
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    109377us  ---   0.109us per call  ---    9142689 calls per sec
+                 gpio_set:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+               gpio_clear:    250001us  ---   0.250us per call  ---    3999984 calls per sec
+              gpio_toggle:    343752us  ---   0.343us per call  ---    2909073 calls per sec
+                gpio_read:    421877us  ---   0.421us per call  ---    2370359 calls per sec
+               gpio_write:    265627us  ---   0.265us per call  ---    3764677 calls per sec
+
+ --- DONE ---
+> bench 0 1
+bench 0 1
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    109377us  ---   0.109us per call  ---    9142689 calls per sec
+                 gpio_set:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+               gpio_clear:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+              gpio_toggle:    343752us  ---   0.343us per call  ---    2909073 calls per sec
+                gpio_read:    421877us  ---   0.421us per call  ---    2370359 calls per sec
+               gpio_write:    265626us  ---   0.265us per call  ---    3764691 calls per sec
+
+ --- DONE ---
+> bench 0 2
+bench 0 2
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    109377us  ---   0.109us per call  ---    9142689 calls per sec
+                 gpio_set:    250001us  ---   0.250us per call  ---    3999984 calls per sec
+               gpio_clear:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+              gpio_toggle:    343751us  ---   0.343us per call  ---    2909082 calls per sec
+                gpio_read:    421877us  ---   0.421us per call  ---    2370359 calls per sec
+               gpio_write:    265626us  ---   0.265us per call  ---    3764691 calls per sec
+
+ --- DONE ---
+> bench 0 3
+bench 0 3
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    109377us  ---   0.109us per call  ---    9142689 calls per sec
+                 gpio_set:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+               gpio_clear:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+              gpio_toggle:    343752us  ---   0.343us per call  ---    2909073 calls per sec
+                gpio_read:    421877us  ---   0.421us per call  ---    2370359 calls per sec
+               gpio_write:    265627us  ---   0.265us per call  ---    3764677 calls per sec
+
+ --- DONE ---
+> bench 0 4
+bench 0 4
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    109377us  ---   0.109us per call  ---    9142689 calls per sec
+                 gpio_set:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+               gpio_clear:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+              gpio_toggle:    343752us  ---   0.343us per call  ---    2909073 calls per sec
+                gpio_read:    421876us  ---   0.421us per call  ---    2370364 calls per sec
+               gpio_write:    265627us  ---   0.265us per call  ---    3764677 calls per sec
+
+ --- DONE ---
+> bench 0 5
+bench 0 5
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    109377us  ---   0.109us per call  ---    9142689 calls per sec
+                 gpio_set:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+               gpio_clear:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+              gpio_toggle:    343752us  ---   0.343us per call  ---    2909073 calls per sec
+                gpio_read:    421876us  ---   0.421us per call  ---    2370364 calls per sec
+               gpio_write:    265627us  ---   0.265us per call  ---    3764677 calls per sec
+
+ --- DONE ---
+> bench 0 6
+bench 0 6
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    109376us  ---   0.109us per call  ---    9142773 calls per sec
+                 gpio_set:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+               gpio_clear:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+              gpio_toggle:    343752us  ---   0.343us per call  ---    2909073 calls per sec
+                gpio_read:    421877us  ---   0.421us per call  ---    2370359 calls per sec
+               gpio_write:    265627us  ---   0.265us per call  ---    3764677 calls per sec
+
+ --- DONE ---
+> bench 0 7
+bench 0 7
+
+GPIO driver run-time performance benchmark
+
+                 nop loop:    109377us  ---   0.109us per call  ---    9142689 calls per sec
+                 gpio_set:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+               gpio_clear:    250002us  ---   0.250us per call  ---    3999968 calls per sec
+              gpio_toggle:    343752us  ---   0.343us per call  ---    2909073 calls per sec
+                gpio_read:    421877us  ---   0.421us per call  ---    2370359 calls per sec
+               gpio_write:    265626us  ---   0.265us per call  ---    3764691 calls per sec
+
+ --- DONE ---
+>Benchmark was successful
+

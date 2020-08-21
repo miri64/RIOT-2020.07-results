@@ -1,0 +1,36 @@
+
+
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52840dk-10.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: 2020.07)
+> help
+
+> t1
+
+> help
+Command              Description
+---------------------------------------
+t1                   See main.c
+t2                   See main.c
+t3                   See main.c
+t4                   See main.c
+t5                   See main.c
+> t1
+OK
+
+> t2
+t2
+OK
+
+> t3
+t3
+OK
+
+> t4
+t4
+OK
+
+> t5
+t5
+OK
+
+> 

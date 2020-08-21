@@ -1,0 +1,77 @@
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: 2020.07)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+MicroPython v1.4.2-6568-gbb8e51f6d on 2020-08-21; riot-iotlab-m3 with stm32
+Type "help()" for more information.
+>>> print("echo this! " * 4)
+print("echo this! " * 4)
+echo this! echo this! echo this! echo this! 
+>>> import riot
+print(riot.thread_getpid())
+import riot
+>>> print(riot.thread_getpid())
+1
+>>> import utime
+import utime
+>>> utime.time()
+utime.time()
+848
+>>> utime.sleep_ms(0)
+utime.sleep_ms(0)
+>>> utime.time()
+utime.time()
+1124
+>>> test_sleep(0, 1000): slept 276ms
+utime.time()
+utime.time()
+1264
+>>> utime.sleep_ms(50)
+utime.sleep_ms(50)
+>>> utime.time()
+utime.time()
+1590
+>>> test_sleep(50, 303): slept 326ms
+utime.time()
+utime.time()
+1729
+>>> utime.sleep_ms(250)
+utime.sleep_ms(250)
+>>> utime.time()
+utime.time()
+2256
+>>> test_sleep(250, 303): slept 527ms
+utime.time()
+utime.time()
+2395
+>>> utime.sleep_ms(500)
+utime.sleep_ms(500)
+>>> utime.time()
+utime.time()
+3172
+>>> test_sleep(500, 303): slept 777ms
+import xtimer
+import xtimer
+>>> a = 0
+a = 0
+>>> def inc_a(): global a; a+=1
+def inc_a(): global a; a+=1
+... 
+
+>>> t = xtimer.xtimer(inc_a)
+t = xtimer.xtimer(inc_a)
+>>> utime.time()
+utime.time()
+4001
+>>> t.set(500000)
+t.set(500000)
+>>> while a==0: pass
+while a==0: pass
+... 
+
+>>> utime.time()
+utime.time()
+4776
+>>> [TEST PASSED]
+

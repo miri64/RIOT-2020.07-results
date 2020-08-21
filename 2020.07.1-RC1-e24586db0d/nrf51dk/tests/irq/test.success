@@ -1,0 +1,17 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf51dk-3.saclay.iot-lab.info:20000'
+gHelp: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+START
+busy_thread created
+xtimer_wait()
+busy_thread starting
+main: return
+i: 98091
+j: 98091
+k: 98091
+SUCCESS
+

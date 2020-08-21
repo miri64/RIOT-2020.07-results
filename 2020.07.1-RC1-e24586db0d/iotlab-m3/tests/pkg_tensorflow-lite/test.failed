@@ -1,0 +1,58 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg_tensorflow-lite test
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+2020/08/21 16:29:21 socat[8197] E connect(5, AF=2 172.16.42.1:20000, 16): Connection refused
+Connection to saclay.iot-lab.info closed.
+/home/runner/work/RIOT/RIOT/Makefile.include:725: recipe for target 'cleanterm' failed
+make[1]: *** [cleanterm] Error 1
+Traceback (most recent call last):
+  File "/home/runner/work/RIOT/RIOT/tests/pkg_tensorflow-lite/tests/01-run.py", line 14, in <module>
+    sys.exit(run(testfunc))
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/__init__.py", line 27, in run
+    child = setup_child(timeout, env=os.environ,
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/spawn.py", line 88, in setup_child
+    sync_child(child, env)
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/spawn.py", line 125, in sync_child
+    utils.test_utils_interactive_sync(child,
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/utils.py", line 30, in test_utils_interactive_sync
+    _test_utils_interactive_sync(child, retries, delay)
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/utils.py", line 17, in _test_utils_interactive_sync
+    ret = child.expect_exact([ready_exp, pexpect.TIMEOUT], timeout=delay)
+  File "/opt/hostedtoolcache/Python/3.8.5/x64/lib/python3.8/site-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/opt/hostedtoolcache/Python/3.8.5/x64/lib/python3.8/site-packages/pexpect/expect.py", line 179, in expect_loop
+    return self.eof(e)
+  File "/opt/hostedtoolcache/Python/3.8.5/x64/lib/python3.8/site-packages/pexpect/expect.py", line 122, in eof
+    raise exc
+pexpect.exceptions.EOF: End Of File (EOF). Exception style platform.
+<pexpect.pty_spawn.spawn object at 0x7f0bfc630d00>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): ''
+before (last 100 chars): "/RIOT/Makefile.include:725: recipe for target 'cleanterm' failed\r\nmake[1]: *** [cleanterm] Error 1\r\n"
+after: <class 'pexpect.exceptions.EOF'>
+match: None
+match_index: None
+exitstatus: 2
+flag_eof: True
+pid: 35992
+child_fd: 5
+closed: False
+timeout: 10
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: 'READY'
+    1: TIMEOUT
+/home/runner/work/RIOT/RIOT/tests/pkg_tensorflow-lite/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

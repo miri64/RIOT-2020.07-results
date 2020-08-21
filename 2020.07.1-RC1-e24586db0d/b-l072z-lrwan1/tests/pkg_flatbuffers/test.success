@@ -1,0 +1,18 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000'
+n_ro:[FAILED]
+test_open__close_ro:[FAILED]
+test_open__open_wo:[FAILED]
+test_open__close_wo:[FAILED]
+test_open__open_rw:[FAILED]
+test_open__close_rw:[FAILED]
+test_open__umount:[FAILED]
+test_rw__mount:[FAILED]
+test_rw__open_ro:[FAILED]
+test_rw__read_ro:[FAILED]
+test_rw__write_ro:[OKREADYs
+
+START
+main(): This is RIOT! (Version: 2020.07)
+The FlatBuffer was successfully created and verified!
+

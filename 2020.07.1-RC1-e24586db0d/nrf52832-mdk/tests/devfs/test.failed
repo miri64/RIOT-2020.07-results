@@ -1,0 +1,72 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/devfs test
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52832mdk-1.saclay.iot-lab.info:20000'
+�!���!B��.H.H�o start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+START
+main(): This is RIOT! (Version: 2020.07)
+....
+OK (4 tests)
+r
+r
+r
+r
+Traceback (most recent call last):
+  File "/home/runner/work/RIOT/RIOT/tests/devfs/tests/01-run.py", line 14, in <module>
+    sys.exit(run_check_unittests())
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/__init__.py", line 69, in run_check_unittests
+    return run(_unittests_func, timeout, echo, traceback)
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/__init__.py", line 27, in run
+    child = setup_child(timeout, env=os.environ,
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/spawn.py", line 88, in setup_child
+    sync_child(child, env)
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/spawn.py", line 125, in sync_child
+    utils.test_utils_interactive_sync(child,
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/utils.py", line 30, in test_utils_interactive_sync
+    _test_utils_interactive_sync(child, retries, delay)
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/utils.py", line 22, in _test_utils_interactive_sync
+    child.expect_exact(ready_exp, timeout=0)
+  File "/opt/hostedtoolcache/Python/3.8.5/x64/lib/python3.8/site-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/opt/hostedtoolcache/Python/3.8.5/x64/lib/python3.8/site-packages/pexpect/expect.py", line 181, in expect_loop
+    return self.timeout(e)
+  File "/opt/hostedtoolcache/Python/3.8.5/x64/lib/python3.8/site-packages/pexpect/expect.py", line 144, in timeout
+    raise exc
+pexpect.exceptions.TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7f5cb0903dc0>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): 'ts)\r\n'
+before (last 100 chars): ' test, r to print it is ready\r\nSTART\r\nmain(): This is RIOT! (Version: 2020.07)\r\n....\r\nOK (4 tests)\r\n'
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 32440
+child_fd: 5
+closed: False
+timeout: 10
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: 'READY'
+/home/runner/work/RIOT/RIOT/tests/devfs/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

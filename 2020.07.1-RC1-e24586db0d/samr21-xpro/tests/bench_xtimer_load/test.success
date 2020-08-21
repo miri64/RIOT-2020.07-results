@@ -1,0 +1,22 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+TEST_HZ=64
+[START]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+drift: min=-2 max=0 final=0
+jitter: min=-2 max=2 abs avg=0
+[DONE]
+

@@ -1,0 +1,23 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000'
+times.
+[ALIVE] alternated 190k times.
+[ALIVE] alternated 200k times.
+[ALIVE] alternated 210k times.
+[ALIVE] alternated 220k times.
+[ALIVE] alternated 230k times.
+[ALIVE] alternaHelp: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+Executing test_get_addr()
+ + succeeded.
+Executing test_send()
+ + succeeded.
+Executing test_receive()
+ + succeeded.
+Executing test_set_addr()
+ + succeeded.
+ALL TESTS SUCCESSFUL
+

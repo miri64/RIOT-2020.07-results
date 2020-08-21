@@ -1,0 +1,10 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/emcute test
+cc -O3 -Wall ethos.c -o ethos
+Traceback (most recent call last):
+  File "/home/runner/work/RIOT/RIOT/tests/emcute/tests/01-run.py", line 19, in <module>
+    from scapy.all import Automaton, ATMT, log_runtime, MTU, raw, SimpleSocket
+ModuleNotFoundError: No module named 'scapy'
+/home/runner/work/RIOT/RIOT/tests/emcute/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

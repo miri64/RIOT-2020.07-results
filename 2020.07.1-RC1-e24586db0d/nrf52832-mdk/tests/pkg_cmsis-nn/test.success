@@ -1,0 +1,19 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52832mdk-1.saclay.iot-lab.info:20000'
+�!�ܕ!����Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READY
+Help: Press s to start test, r to print it is ready
+START
+main(): This is RIOT! (Version: 2020.07)
+start execution
+Predicted class: cat
+s
+

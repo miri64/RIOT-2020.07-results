@@ -1,0 +1,22 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+[START]
+now = 3613475, t = 57
+now = 3703552, t = 85
+now = 3951629, t = 211
+now = 4234796, t = 252
+now = 5405963, t = 941
+[TRICKLE_RESET]
+now = 5421154, t = 13
+now = 5449231, t = 23
+now = 5501308, t = 41
+now = 5602385, t = 76
+now = 5804462, t = 148
+now = 6414628, t = 500
+now = 7013795, t = 585
+[SUCCESS]
+

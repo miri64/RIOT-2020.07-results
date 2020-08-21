@@ -1,0 +1,26 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000'
+��lp: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+Runtime of Selected Core API functions
+
+                 nop loop:     50001us  ---   0.050us per call  ---   19999600 calls per sec
+
+             mutex_init():         1us  ---   0.000us per call  ---  3567587328 calls per sec
+        mutex lock/unlock:    800001us  ---   0.800us per call  ---    1249998 calls per sec
+
+       thread_flags_set():    412502us  ---   0.412us per call  ---    2424230 calls per sec
+     thread_flags_clear():    400002us  ---   0.400us per call  ---    2499987 calls per sec
+thread flags set/wait any:   1212502us  ---   1.212us per call  ---     824740 calls per sec
+thread flags set/wait all:   1050002us  ---   1.050us per call  ---     952379 calls per sec
+thread flags set/wait one:   1187502us  ---   1.187us per call  ---     842103 calls per sec
+
+        msg_try_receive():    625002us  ---   0.625us per call  ---    1599994 calls per sec
+              msg_avail():    225001us  ---   0.225us per call  ---    4444424 calls per sec
+
+[SUCCESS]
+

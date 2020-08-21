@@ -1,0 +1,137 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/posix_semaphore test
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52832mdk-1.saclay.iot-lab.info:20000'
+�!���!B��.H.H�o start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+START
+main(): This is RIOT! (Version: 2020.07)
+######################### TEST1:
+first: sem_init
+first: thread create
+second: sem_trywait
+second: sem_trywait failed
+second: sem_trywait done with == 0
+second: wait for post
+first: thread created
+first: sem_getvalue
+first: sem_getvalue != 0
+first: do yield
+first: done yield
+first: sem_trywait
+first: sem_trywait FAILED
+first: sem_trywait done
+first: sem_post
+second: sem was posted
+second: end
+first: sem_post done
+first: sem_destroy
+first: end
+######################### TEST2:
+first: sem_init
+first: thread create: 5
+first: thread created: priority 5 (1/5)
+first: thread create: 4
+first: thread created: priority 4 (2/5)
+first: thread create: 3
+first: thread created: priority 3 (3/5)
+first: thread create: 2
+first: thread created: priority 2 (4/5)
+first: thread create: 1
+first: thread created: priority 1 (5/5)
+------------------------------------------
+post no. 0
+Thread 'priority 1' woke up.
+Back in main thread.
+post no. 1
+Thread 'priority 2' woke up.
+Back in main thread.
+post no. 2
+Thread 'priority 3' woke up.
+Back in main thread.
+post no. 3
+Thread 'priority 4' woke up.
+Back in main thread.
+post no. 4
+Thread 'priority 5' woke up.
+Back in main thread.
+######################### TEST3:
+first: sem_init s1
+first: sem_init s2
+first: create thread 1
+first: create thread 2
+------------------------------------------
+post s1
+Thread 1 woke up after waiting for s1.
+post s2
+Thread 2 woke up after waiting for s2.
+post s2
+Thread 1 woke up after waiting for s2.
+post s1
+Thread 2 woke up after waiting for s1.
+######################### TEST4:
+first: sem_init s1
+first: wait 1 sec for s1
+first: timed out
+first: waited 1000026 usec
+######################### DONE
+r
+r
+r
+r
+Traceback (most recent call last):
+  File "/home/runner/work/RIOT/RIOT/tests/posix_semaphore/tests/01-run.py", line 101, in <module>
+    sys.exit(run(testfunc))
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/__init__.py", line 27, in run
+    child = setup_child(timeout, env=os.environ,
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/spawn.py", line 88, in setup_child
+    sync_child(child, env)
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/spawn.py", line 125, in sync_child
+    utils.test_utils_interactive_sync(child,
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/utils.py", line 30, in test_utils_interactive_sync
+    _test_utils_interactive_sync(child, retries, delay)
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/utils.py", line 22, in _test_utils_interactive_sync
+    child.expect_exact(ready_exp, timeout=0)
+  File "/opt/hostedtoolcache/Python/3.8.5/x64/lib/python3.8/site-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/opt/hostedtoolcache/Python/3.8.5/x64/lib/python3.8/site-packages/pexpect/expect.py", line 181, in expect_loop
+    return self.timeout(e)
+  File "/opt/hostedtoolcache/Python/3.8.5/x64/lib/python3.8/site-packages/pexpect/expect.py", line 144, in timeout
+    raise exc
+pexpect.exceptions.TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7f9efd505d90>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): 'ONE\r\n'
+before (last 100 chars): 't: wait 1 sec for s1\r\nfirst: timed out\r\nfirst: waited 1000026 usec\r\n######################### DONE\r\n'
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 28123
+child_fd: 5
+closed: False
+timeout: 10
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: 'READY'
+/home/runner/work/RIOT/RIOT/tests/posix_semaphore/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

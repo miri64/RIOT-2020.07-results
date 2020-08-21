@@ -1,0 +1,12 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52832mdk-1.saclay.iot-lab.info:20000'
+�#)��Help: Press s to start test, r to print it is ready
+READY
+s
+START
+[1mmain(): This is RIOT! (Version: 2020.07)
+[0m[1;31mLogging value '42' and string 'test'
+[0m[1;33mLogging value '42' and string 'test'
+[0m[1mLogging value '42' and string 'test'
+[0m[0;32mLogging value '42' and string 'test'
+[0m

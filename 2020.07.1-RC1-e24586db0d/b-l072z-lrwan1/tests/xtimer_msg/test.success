@@ -1,0 +1,73 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000'
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+This is thread 3
+sending 1st msg
+now=3:382603 -> every 2.0s: Hello World
+sending 2nd msg
+now=3:387758 -> every 5.0s: This is a Test
+This is thread 4
+sec=4 min=0 hour=0
+now=5:386345 -> every 2.0s: Hello World
+sec=5 min=0 hour=0
+sec=6 min=0 hour=0
+now=7:390088 -> every 2.0s: Hello World
+sec=7 min=0 hour=0
+now=8:391767 -> every 5.0s: This is a Test
+sec=8 min=0 hour=0
+now=9:393831 -> every 2.0s: Hello World
+sec=9 min=0 hour=0
+sec=10 min=0 hour=0
+now=11:397574 -> every 2.0s: Hello World
+sec=11 min=0 hour=0
+sec=12 min=0 hour=0
+now=13:395775 -> every 5.0s: This is a Test
+now=13:401406 -> every 2.0s: Hello World
+sec=13 min=0 hour=0
+sec=14 min=0 hour=0
+now=15:405239 -> every 2.0s: Hello World
+sec=15 min=0 hour=0
+sec=16 min=0 hour=0
+now=17:409072 -> every 2.0s: Hello World
+sec=17 min=0 hour=0
+now=18:399873 -> every 5.0s: This is a Test
+sec=18 min=0 hour=0
+now=19:412906 -> every 2.0s: Hello World
+sec=19 min=0 hour=0
+sec=20 min=0 hour=0
+now=21:416741 -> every 2.0s: Hello World
+sec=21 min=0 hour=0
+sec=22 min=0 hour=0
+now=23:403972 -> every 5.0s: This is a Test
+now=23:420577 -> every 2.0s: Hello World
+sec=23 min=0 hour=0
+sec=24 min=0 hour=0
+now=25:424413 -> every 2.0s: Hello World
+sec=25 min=0 hour=0
+sec=26 min=0 hour=0
+now=27:428249 -> every 2.0s: Hello World
+sec=27 min=0 hour=0
+now=28:408072 -> every 5.0s: This is a Test
+sec=28 min=0 hour=0
+now=29:432085 -> every 2.0s: Hello World
+sec=29 min=0 hour=0
+sec=30 min=0 hour=0
+now=31:435921 -> every 2.0s: Hello World
+sec=31 min=0 hour=0
+sec=32 min=0 hour=0
+now=33:412172 -> every 5.0s: This is a Test
+now=33:439757 -> every 2.0s: Hello World
+sec=33 min=0 hour=0
+sec=34 min=0 hour=0
+now=35:443593 -> every 2.0s: Hello World
+sec=35 min=0 hour=0
+sec=36 min=0 hour=0
+now=37:447429 -> every 2.0s: Hello World
+sec=37 min=0 hour=0
+now=38:416273 -> every 5.0s: This is a Test
+

@@ -1,0 +1,13 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000'
+p: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READYs
+
+START
+main(): This is RIOT! (Version: 2020.07)
+micro-ecc compiled!
+Testing 16 random private key pairs and signature using HWRNG
+................ done with 0 error(s)
+SUCCESS
+

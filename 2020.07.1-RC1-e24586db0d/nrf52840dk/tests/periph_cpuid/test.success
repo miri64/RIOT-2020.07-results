@@ -1,0 +1,13 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52840dk-10.saclay.iot-lab.info:20000'
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+Test for the CPUID driver
+This test is reading out the CPUID of the platforms CPU
+
+CPUID_LEN: 8
+CPUID: 0xc5 0xca 0x31 0xd5 0x31 0x67 0x41 0xdf
+

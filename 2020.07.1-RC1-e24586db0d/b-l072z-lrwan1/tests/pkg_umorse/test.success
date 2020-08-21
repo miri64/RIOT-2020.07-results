@@ -1,0 +1,31 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000'
+SG_DRAW_PIXEL (4736)
+ucg: UCG_MSG_DRAW_PIXEL (4864)
+ucg: UCG_MSG_DRAW_PIXEL (4992)
+ucg: UCG_MSG_DRAW_PIXEL (5120)
+ucg: UCG_MSG_DRAW_PIXEL (5248)
+ucg: UCG_MSG_DRAW_PIXEL (5376)
+ucg: UCG_MSG_DRAW_PIXEL (5504)
+ucg: UCG_MSG_DRAW_PIXEL (5632)
+ucg: UCG_MSG_DRAW_PIXEL (5760)
+ucg: UCG_MSG_DRAW_PIXEL (5888)
+ucg: UCG_MSG_DRAW_PIXEL (6016)
+ucg: UCG_MSG_DRAW_PIXEL (6144)
+ucg: UCG_MSG_DRAW_PIREADY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+[START]
+> Translate text of length 30 into Morse code:
+"Hello RIOT-OS!
+This is uMorse."
+> using aligned encoding:
+.... . ._.. ._.. ___ / ._. .. ___ _ ___ ...
+_ .... .. ... / .. ... / .._ __ ___ ._. ... .
+> encoded length=52
+> using compact encoding:
+.... . ._.. ._.. ___ / ._. .. ___ _ ___ ...
+_ .... .. ... / .. ... / .._ __ ___ ._. ... .
+> encoded length=25
+[SUCCESS]

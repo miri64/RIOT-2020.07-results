@@ -1,0 +1,7 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/gnrc_dhcpv6_client test
+/home/runner/work/RIOT/RIOT/tests/gnrc_dhcpv6_client/dhcpv6_server.sh 61342 /home/runner/work/RIOT/RIOT/tests/gnrc_dhcpv6_client/kea-dhcp6.conf
+[31;1mRequire root since kea uses some PID and Lock files in /var[0m
+Makefile:43: recipe for target 'dhcpv6_server' failed
+make: *** [dhcpv6_server] Error 1
+
+Return value: 2

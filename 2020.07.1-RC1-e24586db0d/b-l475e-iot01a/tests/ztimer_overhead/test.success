@@ -1,0 +1,21 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000'
+443002 -> every 2.0s: Hello World
+sec=39 min=0 hour=0
+sec=40 min=0 hour=0
+now=41:446656 -> every 2.0s: Hello World
+sec=41 min=0 hour=0
+sec=42 min=0 hour=0
+now=43:413699 -> every 5.0s: This is a Test
+now=43:450310 -> every 2.0s: Hello World
+sec=43 min=0 hour=0
+sec=44 min=0 hour=0
+now=45:453964 -> every 2.0s: Hello World
+sec=45 min=0 hour=0
+sec=46 miREADY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+ZTIMER_USEC->adjust = 0
+min=4 max=5 avg_diff=4
+

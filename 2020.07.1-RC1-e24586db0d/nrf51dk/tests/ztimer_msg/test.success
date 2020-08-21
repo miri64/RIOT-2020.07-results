@@ -1,0 +1,72 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf51dk-3.saclay.iot-lab.info:20000'
+gzgREADY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+This is thread 3
+sending 1st msg
+now=3:472426 -> every 2.0s: Hello World
+sending 2nd msg
+now=3:477842 -> every 5.0s: This is a Test
+This is thread 4
+sec=4 min=0 hour=0
+now=5:476428 -> every 2.0s: Hello World
+sec=5 min=0 hour=0
+sec=6 min=0 hour=0
+now=7:480429 -> every 2.0s: Hello World
+sec=7 min=0 hour=0
+now=8:482120 -> every 5.0s: This is a Test
+sec=8 min=0 hour=0
+now=9:484431 -> every 2.0s: Hello World
+sec=9 min=0 hour=0
+sec=10 min=0 hour=0
+now=11:488432 -> every 2.0s: Hello World
+sec=11 min=0 hour=0
+sec=12 min=0 hour=0
+now=13:486397 -> every 5.0s: This is a Test
+now=13:492530 -> every 2.0s: Hello World
+sec=13 min=0 hour=0
+sec=14 min=0 hour=0
+now=15:496625 -> every 2.0s: Hello World
+sec=15 min=0 hour=0
+sec=16 min=0 hour=0
+now=17:500724 -> every 2.0s: Hello World
+sec=17 min=0 hour=0
+now=18:490760 -> every 5.0s: This is a Test
+sec=18 min=0 hour=0
+now=19:504826 -> every 2.0s: Hello World
+sec=19 min=0 hour=0
+sec=20 min=0 hour=0
+now=21:508923 -> every 2.0s: Hello World
+sec=21 min=0 hour=0
+sec=22 min=0 hour=0
+now=23:495132 -> every 5.0s: This is a Test
+now=23:513029 -> every 2.0s: Hello World
+sec=23 min=0 hour=0
+sec=24 min=0 hour=0
+now=25:517133 -> every 2.0s: Hello World
+sec=25 min=0 hour=0
+sec=26 min=0 hour=0
+now=27:521238 -> every 2.0s: Hello World
+sec=27 min=0 hour=0
+now=28:499504 -> every 5.0s: This is a Test
+sec=28 min=0 hour=0
+now=29:525343 -> every 2.0s: Hello World
+sec=29 min=0 hour=0
+sec=30 min=0 hour=0
+now=31:529448 -> every 2.0s: Hello World
+sec=31 min=0 hour=0
+sec=32 min=0 hour=0
+now=33:503875 -> every 5.0s: This is a Test
+now=33:533554 -> every 2.0s: Hello World
+sec=33 min=0 hour=0
+sec=34 min=0 hour=0
+now=35:537658 -> every 2.0s: Hello World
+sec=35 min=0 hour=0
+sec=36 min=0 hour=0
+now=37:541763 -> every 2.0s: Hello World
+sec=37 min=0 hour=0
+now=38:508247 -> every 5.0s: This is a Test
+sec=38 min=0 hour=0
+

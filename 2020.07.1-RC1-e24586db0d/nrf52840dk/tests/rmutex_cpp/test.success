@@ -1,0 +1,74 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52840dk-10.saclay.iot-lab.info:20000'
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+Recursive Mutex test
+Please refer to the README.md for more information
+
+T2 (prio 6, depth 0): trying to lock rmutex now
+T3 (prio 4, depth 0): trying to lock rmutex now
+T4 (prio 5, depth 0): trying to lock rmutex now
+T5 (prio 2, depth 0): trying to lock rmutex now
+T6 (prio 4, depth 0): trying to lock rmutex now
+main: unlocking recursive mutex
+T5 (prio 2, depth 0): locked rmutex now
+T5 (prio 2, depth 1): trying to lock rmutex now
+T5 (prio 2, depth 1): locked rmutex now
+T5 (prio 2, depth 2): trying to lock rmutex now
+T5 (prio 2, depth 2): locked rmutex now
+T5 (prio 2, depth 3): trying to lock rmutex now
+T5 (prio 2, depth 3): locked rmutex now
+T5 (prio 2, depth 3): unlocked rmutex
+T5 (prio 2, depth 2): unlocked rmutex
+T5 (prio 2, depth 1): unlocked rmutex
+T5 (prio 2, depth 0): unlocked rmutex
+T3 (prio 4, depth 0): locked rmutex now
+T3 (prio 4, depth 1): trying to lock rmutex now
+T3 (prio 4, depth 1): locked rmutex now
+T3 (prio 4, depth 2): trying to lock rmutex now
+T3 (prio 4, depth 2): locked rmutex now
+T3 (prio 4, depth 2): unlocked rmutex
+T3 (prio 4, depth 1): unlocked rmutex
+T3 (prio 4, depth 0): unlocked rmutex
+T6 (prio 4, depth 0): locked rmutex now
+T6 (prio 4, depth 1): trying to lock rmutex now
+T6 (prio 4, depth 1): locked rmutex now
+T6 (prio 4, depth 2): trying to lock rmutex now
+T6 (prio 4, depth 2): locked rmutex now
+T6 (prio 4, depth 3): trying to lock rmutex now
+T6 (prio 4, depth 3): locked rmutex now
+T6 (prio 4, depth 4): trying to lock rmutex now
+T6 (prio 4, depth 4): locked rmutex now
+T6 (prio 4, depth 4): unlocked rmutex
+T6 (prio 4, depth 3): unlocked rmutex
+T6 (prio 4, depth 2): unlocked rmutex
+T6 (prio 4, depth 1): unlocked rmutex
+T6 (prio 4, depth 0): unlocked rmutex
+T4 (prio 5, depth 0): locked rmutex now
+T4 (prio 5, depth 1): trying to lock rmutex now
+T4 (prio 5, depth 1): locked rmutex now
+T4 (prio 5, depth 2): trying to lock rmutex now
+T4 (prio 5, depth 2): locked rmutex now
+T4 (prio 5, depth 2): unlocked rmutex
+T4 (prio 5, depth 1): unlocked rmutex
+T4 (prio 5, depth 0): unlocked rmutex
+T2 (prio 6, depth 0): locked rmutex now
+T2 (prio 6, depth 1): trying to lock rmutex now
+T2 (prio 6, depth 1): locked rmutex now
+T2 (prio 6, depth 2): trying to lock rmutex now
+T2 (prio 6, depth 2): locked rmutex now
+T2 (prio 6, depth 3): trying to lock rmutex now
+T2 (prio 6, depth 3): locked rmutex now
+T2 (prio 6, depth 4): trying to lock rmutex now
+T2 (prio 6, depth 4): locked rmutex now
+T2 (prio 6, depth 4): unlocked rmutex
+T2 (prio 6, depth 3): unlocked rmutex
+T2 (prio 6, depth 2): unlocked rmutex
+T2 (prio 6, depth 1): unlocked rmutex
+T2 (prio 6, depth 0): unlocked rmutex
+
+Test END, check the order of priorities above.
+

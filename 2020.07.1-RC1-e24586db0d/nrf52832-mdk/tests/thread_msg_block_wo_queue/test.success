@@ -1,0 +1,9 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52832mdk-1.saclay.iot-lab.info:20000'
+�!)��!��READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+sender_thread start
+main thread alive
+

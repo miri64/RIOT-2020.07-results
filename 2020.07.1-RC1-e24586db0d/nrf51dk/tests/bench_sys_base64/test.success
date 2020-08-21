@@ -1,0 +1,11 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf51dk-3.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+Verifying that base64 encoding works for benchmark input: OK
+Verifying that base64 decoding works for benchmark input: OK
+Encoding 10.000 x 96 bytes (128 bytes in base64): 3205007 µs
+Decoding 10.000 x 96 bytes (128 bytes in base64): 5633789 µs
+

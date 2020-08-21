@@ -1,0 +1,5 @@
+O
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52832mdk-1.saclay.iot-lab.info:20000'
+�!��"��� '�'
+You entered 'O'
+You ente

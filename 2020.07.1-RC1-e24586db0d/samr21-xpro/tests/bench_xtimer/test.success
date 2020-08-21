@@ -1,0 +1,23 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+xtimer benchmark application.
+
+                     set() one    16679 / 1000 = 16
+                  remove() one     1655 / 1000 = 1
+          set() + remove() one    18010 / 1000 = 18
+  set() many increasing target   450179 / 1000 = 450
+               re-set()  first    16189 / 1000 = 16
+               re-set() middle   460385 / 1000 = 460
+               re-set()   last   878827 / 1000 = 878
+       remove() + set()  first   233355 / 1000 = 233
+       remove() + set() middle   679139 / 1000 = 679
+       remove() + set()   last  1089919 / 1000 = 1089
+      remove() many decreasing   105993 / 1000 = 105
+                  xtimer_now()     9009 / 1000 = 9
+              sizeof(xtimer_t)    28000 / 1000 = 28
+done.
+

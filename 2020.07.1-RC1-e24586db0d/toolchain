@@ -1,0 +1,43 @@
+
+Operating System Environment
+----------------------------
+         Operating System: "Ubuntu" "18.04.5 LTS (Bionic Beaver)"
+                   Kernel: Linux 5.3.0-1034-azure x86_64 x86_64
+             System shell: /bin/dash (probably dash)
+             make's shell: /bin/dash (probably dash)
+
+Installed compiler toolchains
+-----------------------------
+               native gcc: gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+        arm-none-eabi-gcc: missing
+                  avr-gcc: missing
+         mips-mti-elf-gcc: missing
+               msp430-gcc: missing
+     riscv-none-embed-gcc: missing
+     xtensa-esp32-elf-gcc: missing
+   xtensa-esp8266-elf-gcc: missing
+                    clang: clang version 9.0.0-2~ubuntu18.04.2 (tags/RELEASE_900/final)
+
+Installed compiler libs
+-----------------------
+     arm-none-eabi-newlib: missing
+      mips-mti-elf-newlib: missing
+  riscv-none-embed-newlib: missing
+  xtensa-esp32-elf-newlib: missing
+xtensa-esp8266-elf-newlib: missing
+                 avr-libc: missing (missing)
+
+Installed development tools
+---------------------------
+                   ccache: missing
+                    cmake: cmake version 3.17.0
+                 cppcheck: missing
+                  doxygen: missing
+                      git: git version 2.28.0
+                     make: GNU Make 4.1
+                  openocd: missing
+                   python: Python 3.8.5
+                  python2: Python 2.7.17
+                  python3: Python 3.8.5
+                   flake8: error: /opt/hostedtoolcache/Python/3.8.5/x64/bin/python3: No module named flake8
+               coccinelle: missing

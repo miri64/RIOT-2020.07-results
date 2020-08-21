@@ -1,0 +1,18 @@
+
+
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf51dk-3.saclay.iot-lab.info:20000'
+"J���
+shell: command not found: �
+> 
+> ifconfig
+ifconfig
+Iface  3  HWaddr: 45:8B  Channel: 0  NID: 0xaffe 
+           TX-Power: 0dBm  State: IDLE 
+          L2-PDU:200  
+          
+          Statistics for Layer 2
+            RX packets 0  bytes 0
+            TX packets 0 (Multicast: 0)  bytes 0
+            TX succeeded 0 errors 0
+
+> 

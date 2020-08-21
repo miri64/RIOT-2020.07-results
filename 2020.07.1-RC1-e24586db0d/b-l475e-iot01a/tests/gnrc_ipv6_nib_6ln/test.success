@@ -1,0 +1,10 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000'
+
+�elp: Press s to start test, r to print it is ready
+READY
+s
+START
+.................................................
+OK (49 tests)
+

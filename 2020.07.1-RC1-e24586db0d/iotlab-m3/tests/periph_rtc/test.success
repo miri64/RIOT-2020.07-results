@@ -1,0 +1,19 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+
+RIOT RTC low-level driver test
+This test will display 'Alarm!' every 2 seconds for 4 times
+  Setting clock to   2020-02-28 23:59:57
+Clock value is now   2020-02-28 23:59:57
+  Setting alarm to   2020-02-28 23:59:59
+   Alarm is set to   2020-02-28 23:59:59
+
+Alarm!
+Alarm!
+Alarm!
+Alarm!
+

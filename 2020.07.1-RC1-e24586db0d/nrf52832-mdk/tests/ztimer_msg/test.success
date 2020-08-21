@@ -1,0 +1,71 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52832mdk-1.saclay.iot-lab.info:20000'
+�!�ܗ!��READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+This is thread 2
+sending 1st msg
+now=3:619554 -> every 2.0s: Hello World
+sending 2nd msg
+now=3:624496 -> every 5.0s: This is a Test
+This is thread 3
+sec=4 min=0 hour=0
+now=5:623104 -> every 2.0s: Hello World
+sec=5 min=0 hour=0
+sec=6 min=0 hour=0
+now=7:626657 -> every 2.0s: Hello World
+sec=7 min=0 hour=0
+now=8:628305 -> every 5.0s: This is a Test
+sec=8 min=0 hour=0
+now=9:630210 -> every 2.0s: Hello World
+sec=9 min=0 hour=0
+sec=10 min=0 hour=0
+now=11:633763 -> every 2.0s: Hello World
+sec=11 min=0 hour=0
+sec=12 min=0 hour=0
+now=13:632116 -> every 5.0s: This is a Test
+now=13:637402 -> every 2.0s: Hello World
+sec=13 min=0 hour=0
+sec=14 min=0 hour=0
+now=15:641042 -> every 2.0s: Hello World
+sec=15 min=0 hour=0
+sec=16 min=0 hour=0
+now=17:644681 -> every 2.0s: Hello World
+sec=17 min=0 hour=0
+now=18:636013 -> every 5.0s: This is a Test
+sec=18 min=0 hour=0
+now=19:648320 -> every 2.0s: Hello World
+sec=19 min=0 hour=0
+sec=20 min=0 hour=0
+now=21:651959 -> every 2.0s: Hello World
+sec=21 min=0 hour=0
+sec=22 min=0 hour=0
+now=23:639910 -> every 5.0s: This is a Test
+now=23:655598 -> every 2.0s: Hello World
+sec=23 min=0 hour=0
+sec=24 min=0 hour=0
+now=25:659238 -> every 2.0s: Hello World
+sec=25 min=0 hour=0
+sec=26 min=0 hour=0
+now=27:662877 -> every 2.0s: Hello World
+sec=27 min=0 hour=0
+now=28:643808 -> every 5.0s: This is a Test
+sec=28 min=0 hour=0
+now=29:666516 -> every 2.0s: Hello World
+sec=29 min=0 hour=0
+sec=30 min=0 hour=0
+now=31:670155 -> every 2.0s: Hello World
+sec=31 min=0 hour=0
+sec=32 min=0 hour=0
+now=33:647705 -> every 5.0s: This is a Test
+now=33:673795 -> every 2.0s: Hello World
+sec=33 min=0 hour=0
+sec=34 min=0 hour=0
+now=35:677434 -> every 2.0s: Hello World
+sec=35 min=0 hour=0
+sec=36 min=0 hour=0
+now=37:681073 -> every 2.0s: Hello World
+sec=37 min=0 hour=0
+now=38:651602 -> every 5.0s: This is a Test
+

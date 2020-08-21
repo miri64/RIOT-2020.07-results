@@ -1,0 +1,13 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52832mdk-1.saclay.iot-lab.info:20000'
+�!���!��READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+This test tests re-setting of an already active timer.
+It should print three times "now=<value>", with values approximately 100ms (100000us) apart.
+now=3472338
+now=3572349
+now=3672342
+Test completed!
+

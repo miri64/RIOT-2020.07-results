@@ -1,0 +1,35 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/periph_rtc test
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000'
+rating 1 random byte(s)
+Got: 0x40
+generating 2 random byte(s)
+Got: 0x34 0x02
+generating 3 random byte(s)
+Got: 0x30 0x30 0x31
+generating 4 random byte(s)
+Got: 0xc8 0xe3 0x53 0xf3
+generating 5 random byte(s)
+Got: 0x9e 0x48 0xa7 0x30 0xf0
+generating 6 random byte(s)
+Got: 0x7f 0xae 0x00 0x8c 0xdf 0xce
+generating 7 random byte(s)
+Got: 0xf8 0xdf 0x4f 0x95 0xfa 0x94 0xa0
+generating 8 random bREADY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+
+RIOT RTC low-level driver test
+This test will display 'Alarm!' every 2 seconds for 4 times
+  Setting clock to   2020-02-28 23:59:57
+Clock value is now   2020-02-28 23:59:57
+  Setting alarm to   2020-02-28 23:59:59
+   Alarm is set to   2020-02-28 23:59:59
+
+Timeout in expect script at "child.expect_exact('Alarm!')" (tests/periph_rtc/tests/01-run.py:46)
+
+/home/runner/work/RIOT/RIOT/tests/periph_rtc/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

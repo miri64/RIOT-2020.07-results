@@ -1,0 +1,24 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000'
+ is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+TEST_HZ=64
+[START]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+drift: min=0 max=57 final=1
+jitter: min=-56 max=56 abs avg=11
+[DONE]
+

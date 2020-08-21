@@ -1,0 +1,17 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52dk-10.saclay.iot-lab.info:20000'
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+Hello blob!
+
+Hello blob_subdir!
+
+0x00
+0x01
+0x02
+0x03
+0xFF
+

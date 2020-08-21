@@ -1,0 +1,10 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/gnrc_ipv6_ext test
+cc -O3 -Wall ethos.c -o ethos
+Traceback (most recent call last):
+  File "/home/runner/work/RIOT/RIOT/tests/gnrc_ipv6_ext/tests/01-run.py", line 14, in <module>
+    from scapy.all import Ether, IPv6, UDP, \
+ModuleNotFoundError: No module named 'scapy'
+/home/runner/work/RIOT/RIOT/tests/gnrc_ipv6_ext/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

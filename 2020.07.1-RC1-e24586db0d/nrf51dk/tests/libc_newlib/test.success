@@ -1,0 +1,10 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf51dk-3.saclay.iot-lab.info:20000'
+zw'z'READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+Newlib/nano test
+.
+OK (1 tests)
+

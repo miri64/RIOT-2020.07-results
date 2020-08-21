@@ -1,0 +1,19 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000'
+=0
+sec=40 min=0 hour=0
+now=41:449471 -> every 2.0s: Hello World
+sec=41 min=0 hour=0
+sec=42 min=0 hour=0
+now=43:414707 -> every 5.0s: This is a Test
+now=43:453310 -> every 2.0s: Hello World
+sec=43 min=0 hour=0
+sec=44 min=0 hour=0
+now=45:457149 -> every 2.0s:Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+ZTIMER_USEC->adjust = 0
+min=19 max=19 avg_diff=19
+

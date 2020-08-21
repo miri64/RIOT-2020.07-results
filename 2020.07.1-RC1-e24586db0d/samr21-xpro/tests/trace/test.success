@@ -1,0 +1,9 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000'
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+n=   0 t=  3527078 v=0x00000000
+n=   1 t=+      10 v=0x00000001
+

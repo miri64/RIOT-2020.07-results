@@ -1,0 +1,22 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000'
+MPV6 (3)
+   type: 133  code:   0
+   cksum: 0x7c23
+00000000  00  00  00  00
+~~ SNIP  3 - size:  16 byte, type: NETTYPE_UNDEF (0)
+00000000  01  02  02  00  00  FF  FE  00  00  01  00  00  00  00  00  00
+~~ PKT    -  4 snips, total size:  72 byte
+PKTDUMP: data to send:
+~~ SNIP  0 - size:   8 byte, type: NETTYPE_NETIF (-1)
+if_pid: 6  rssi: 0  lqi: 0
+flags: 0x0
+src_l2addr: (nil)
+dst_l2addr: (nil)
+~~ SNIP  1 - size:  40 byte, type: NETTYPE_IPV6 (2READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+.............
+OK (13 tests)
+

@@ -1,0 +1,23 @@
+
+
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52dk-10.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: 2020.07)
+Shell-based test application for heap functions.
+Use the 'help' command to get more information on how to use it.
+> heap
+
+> 
+> heap
+heap: 63008 (used 2500, free 60508) [bytes]
+malloc 100
+> malloc 100
+allocated 0x200013a8
+> heap
+heap
+heap: 63008 (used 2608, free 60400) [bytes]
+> free 0x200013a8
+free 0x200013a8
+freed 0x200013a8
+> heap
+heap
+heap: 63008 (used 2500, free 60508) [bytes]

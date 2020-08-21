@@ -1,0 +1,22 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000'
+affic class: 0x00 (ECN: 0x0, DSCP: 0x00)
+flow label: 0x00000
+length: 24  next header: 58  hop limit: 255
+source address: fe80::ff:fe00:1
+destination address: ff02::2
+~~ SNIP  2 - size:   8 byte, type: NETTYPE_ICMPV6 (3)
+   type: 133  code:   0
+   cksum: 0x7c23
+00000000  00  00  00  00
+~~ SNIP  3 - size:  16 byte, type: NETTYPE_UNDEF (0)
+00000000  01  02  02  00  00  FF  FE  00  00  01  00  00  00  00  00  00
+~~ PKT    -  4 snips, total size:  72 byte
+PKTDUMP: data to send:
+~~ SNIP  0 - size:   8 byte, type: READYs
+
+START
+main(): This is RIOT! (Version: 2020.07)
+.............
+OK (13 tests)
+

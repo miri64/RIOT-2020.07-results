@@ -1,0 +1,15 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000'
+: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2020.07)
+cb_mux benchmark application
+Populating cb_mux list with 20 items
+Finding the last list entry
+List walk time: 5 us
+Walk time less than threshold of 200 us
+[SUCCESS]
+
