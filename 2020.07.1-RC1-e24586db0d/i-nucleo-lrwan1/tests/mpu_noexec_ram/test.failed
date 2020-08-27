@@ -1,0 +1,37 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/mpu_noexec_ram test
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-i-nucleo-lrwan1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-i-nucleo-lrwan1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+Attempting to jump to stack buffer ...
+
+
+Context before hardfault:
+   r0: 0x0000000a
+   r1: 0x20000220
+   r2: 0x00000000
+   r3: 0x20000a4d
+  r12: 0x00000000
+   lr: 0x0800123f
+   pc: 0x20000a4c
+  psr: 0x01000000
+
+Misc
+EXC_RET: 0xfffffffd
+Attempting to reconstruct state for debugging...
+In GDB:
+  set $pc=0x20000a4c
+  frame 0
+  bt
+Timeout in expect script at "child.expect_exact("MEM MANAGE HANDLER\r\n")" (tests/mpu_noexec_ram/tests/01-run.py:14)
+
+/builds/workspace/RIOT.git.jk/tests/mpu_noexec_ram/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

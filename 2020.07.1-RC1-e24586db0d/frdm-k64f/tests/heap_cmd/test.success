@@ -1,0 +1,25 @@
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-frdm-k64f" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-frdm-k64f
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> heap
+ 
+>  heap
+heap: 259608 (used 2500, free 257108) [bytes]
+> malloc 100
+ malloc 100
+allocated 0x1fff13b0
+> heap
+ heap
+heap: 259608 (used 2608, free 257000) [bytes]
+> free 0x1fff13b0
+ free 0x1fff13b0
+freed 0x1fff13b0
+> heap
+ heap
+heap: 259608 (used 2500, free 257108) [bytes]
+> 

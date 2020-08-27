@@ -1,0 +1,106 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-hifive1b" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-hifive1b
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->ATE0
+OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0-->OK
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+START
+
+-= TEST 1 - create 20 tls with sequential values 0...19 =-
+now rise sequential by one values 1...20
+pick deliberate storage (key[3]:-2147478216) and change the value
+show tls values:
+key[0]: -2147478312, val: 1
+key[1]: -2147478280, val: 2
+key[2]: -2147478248, val: 3
+key[3]: -2147478216, val: 42
+key[4]: -2147478184, val: 5
+key[5]: -2147478152, val: 6
+key[6]: -2147478120, val: 7
+key[7]: -2147478088, val: 8
+key[8]: -2147478056, val: 9
+key[9]: -2147478024, val: 10
+key[10]: -2147477992, val: 11
+key[11]: -2147477960, val: 12
+key[12]: -2147477928, val: 13
+key[13]: -2147477896, val: 14
+key[14]: -2147477864, val: 15
+key[15]: -2147477832, val: 16
+key[16]: -2147477800, val: 17
+key[17]: -2147477768, val: 18
+key[18]: -2147477736, val: 19
+key[19]: -2147477704, val: 20
+
+ -= TEST 2 - delete deliberate key (key[5]:-2147478152) =-
+show tls values:
+key[0]: -2147478312, val: 1
+key[1]: -2147478280, val: 2
+key[2]: -2147478248, val: 3
+key[3]: -2147478216, val: 42
+key[4]: -2147478184, val: 5
+key[6]: -2147478120, val: 7
+key[7]: -2147478088, val: 8
+key[8]: -2147478056, val: 9
+key[9]: -2147478024, val: 10
+key[10]: -2147477992, val: 11
+key[11]: -2147477960, val: 12
+key[12]: -2147477928, val: 13
+key[13]: -2147477896, val: 14
+key[14]: -2147477864, val: 15
+key[15]: -2147477832, val: 16
+key[16]: -2147477800, val: 17
+key[17]: -2147477768, val: 18
+key[18]: -2147477736, val: 19
+key[19]: -2147477704, val: 20
+
+-= TEST 3 - create new tls =-
+added new tls, key: -2147477672, val: 99
+show tls values:
+key[0]: -2147478312, val: 1
+key[1]: -2147478280, val: 2
+key[2]: -2147478248, val: 3
+key[3]: -2147478216, val: 42
+key[4]: -2147478184, val: 5
+key[6]: -2147478120, val: 7
+key[7]: -2147478088, val: 8
+key[8]: -2147478056, val: 9
+key[9]: -2147478024, val: 10
+key[10]: -2147477992, val: 11
+key[11]: -2147477960, val: 12
+key[12]: -2147477928, val: 13
+key[13]: -2147477896, val: 14
+key[14]: -2147477864, val: 15
+key[15]: -2147477832, val: 16
+key[16]: -2147477800, val: 17
+key[17]: -2147477768, val: 18
+key[18]: -2147477736, val: 19
+key[19]: -2147477704, val: 20
+
+-= TEST 4 - delete all keys =-
+show tls values:
+
+-= TEST 5 - try delete non-existing key =-
+try to delete returns: 0
+
+-= TEST 6 - add key and delete without a tls =-
+created key: -2147477640
+try to delete returns: 0
+
+-= TEST 7 - add key without tls =-
+created key: -2147477632
+test_7_val: 0
+tls tests finished.
+SUCCESS
+

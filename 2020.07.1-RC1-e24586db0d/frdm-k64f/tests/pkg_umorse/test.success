@@ -1,0 +1,24 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-frdm-k64f" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-frdm-k64f
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+[START]
+>  Translate text of length 30 into Morse code:
+"Hello RIOT-OS!
+This is uMorse."
+>  using aligned encoding:
+.... . ._.. ._.. ___ / ._. .. ___ _ ___ ...
+_ .... .. ... / .. ... / .._ __ ___ ._. ... .
+>  encoded length=52
+>  using compact encoding:
+.... . ._.. ._.. ___ / ._. .. ___ _ ___ ...
+_ .... .. ... / .. ... / .._ __ ___ ._. ... .
+>  encoded length=25
+[SUCCESS]
+

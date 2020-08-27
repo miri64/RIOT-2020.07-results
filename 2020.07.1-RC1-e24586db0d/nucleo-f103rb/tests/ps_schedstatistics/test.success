@@ -1,0 +1,37 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f103rb" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f103rb
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+ 
+>  
+>  help
+Command              Description
+---------------------------------------
+reboot               Reboot the node
+version              Prints current RIOT_VERSION
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+> ps
+ ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches
+	  - | isr_stack            | -        - |   - |    512 (  212) (  300) | 0x20000000 | 0x200001c8
+	  1 | main                 | running  Q |   7 |   1536 (  780) (  756) | 0x20000538 | 0x2000082c  | 52.722% |       200
+	  2 | thread               | bl rx    _ |   6 |   1024 (  436) (  588) | 0x20000d7c | 0x200010b4  |  8.732% |       263
+	  3 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000117c | 0x200014b4  | 10.343% |       279
+	  4 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000157c | 0x200018b4  | 12.341% |       297
+	  5 | thread               | bl mutex _ |   6 |   1024 (  412) (  612) | 0x2000197c | 0x20001cb4  | 14.329% |       315
+	  6 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001d7c | 0x200020b4  |  8.773% |       331
+	    | SUM                  |            |     |   7168 ( 3076) ( 4092)
+> 

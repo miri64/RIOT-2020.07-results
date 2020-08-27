@@ -1,0 +1,30 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-uno" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-uno
+Welcome to pyterm!
+Type '/exit' to exit.
+ess s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+xtimer benchmark application.
+
+                     set() one    51708 / 1000 = 51
+                  remove() one     6524 / 1000 = 6
+          set() + remove() one    58032 / 1000 = 58
+  set() many increasing target     1132 / 12 = 94
+               re-set()  first    79948 / 1000 = 79
+               re-set() middle   128360 / 1000 = 128
+               re-set()   last   137696 / 1000 = 137
+       remove() + set()  first   102072 / 1000 = 102
+       remove() + set() middle   143752 / 1000 = 143
+       remove() + set()   last   154204 / 1000 = 154
+      remove() many decreasing      160 / 12 = 13
+                  xtimer_now()    18464 / 1000 = 18
+              sizeof(xtimer_t)      264 / 12 = 22
+done.
+

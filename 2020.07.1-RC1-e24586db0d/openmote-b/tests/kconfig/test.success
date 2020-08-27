@@ -1,0 +1,17 @@
+Merged configuration '/builds/workspace/RIOT.git.jk/tests/kconfig/app.config'
+No change to configuration in '/builds/workspace/RIOT.git.jk/tests/kconfig/bin/openmote-b/generated/merged.config'
+r
+Merged configuration '/builds/workspace/RIOT.git.jk/tests/kconfig/app.config'
+No change to configuration in '/builds/workspace/RIOT.git.jk/tests/kconfig/bin/openmote-b/generated/merged.config'
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-openmote-b" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-openmote-b
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+Message 1 defined in app.config file
+MSG_2 is active
+

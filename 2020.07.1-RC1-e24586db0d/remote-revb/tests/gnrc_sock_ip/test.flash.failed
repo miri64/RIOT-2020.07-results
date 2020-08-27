@@ -1,0 +1,11 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/gnrc_sock_ip flash-only
+/builds/workspace/RIOT.git.jk/dist/tools/cc2538-bsl/cc2538-bsl.py -p "/dev/riot/tty-remote-revb"  -e -w -v -b 115200 /builds/workspace/RIOT.git.jk/tests/gnrc_sock_ip/bin/remote-revb/tests_gnrc_sock_ip.bin
+Opening port /dev/riot/tty-remote-revb, baud 115200
+Reading data from /builds/workspace/RIOT.git.jk/tests/gnrc_sock_ip/bin/remote-revb/tests_gnrc_sock_ip.bin
+Cannot auto-detect firmware filetype: Assuming .bin
+Connecting to target...
+ERROR: Timeout waiting for ACK/NACK after 'Synch (0x55 0x55)'
+/builds/workspace/RIOT.git.jk/tests/gnrc_sock_ip/../../Makefile.include:707: recipe for target 'flash-only' failed
+make: *** [flash-only] Error 1
+
+Return value: 2

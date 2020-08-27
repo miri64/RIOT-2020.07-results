@@ -1,0 +1,37 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-uno" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-uno
+Welcome to pyterm!
+Type '/exit' to exit.
+ess s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+
+Running Timer 0 at 250000 Hz.
+One counter cycle is 25000 ticks or 100 ms
+Will print 'tick' every cycle.
+
+TEST START
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+
+Cycles:
+channel 0 = 12	[OK]
+channel 1 = 00	[OK]
+TEST SUCCEEDED
+

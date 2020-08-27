@@ -1,0 +1,144 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/examples/suit_update test
+make -C ethos
+make[2]: Nothing to be done for 'all'.
+make -C uhcpd
+make[2]: Nothing to be done for 'all'.
+make -C sliptty
+make[2]: Nothing to be done for 'all'.
+/bin/sh: 1: exec: aiocoap-fileserver: not found
+/usr/bin/make -C ethos
+make[3]: Nothing to be done for 'all'.
+/usr/bin/make -C uhcpd
+make[3]: Nothing to be done for 'all'.
+/usr/bin/make -C sliptty
+make[3]: Nothing to be done for 'all'.
+/builds/workspace/RIOT.git.jk/dist/tools/ethos/ethos riot0 /dev/riot/tty-pba-d-01-kw2x
+----> ethos: sending hello.
+----> ethos: activating serial pass through.
+slot start addr = 0x1000
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a085e
+Image start address: 0x00001200
+Header chksum: 0xc041171a
+
+suit_coap: started.
+Starting the shell
+> gnrc_uhcpc: only one interface found, skipping setup.
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+RIOT SUIT update example application
+running from slot 0
+slot start addr = 0x1000
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a085e
+Image start address: 0x00001200
+Header chksum: 0xc041171a
+
+suit_coap: started.
+Starting the shell
+> gnrc_uhcpc: only one interface found, skipping setup.
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+RIOT SUIT update example application
+running from slot 0
+slot start addr = 0x1000
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a085e
+Image start address: 0x00001200
+Header chksum: 0xc041171a
+
+suit_coap: started.
+Starting the shell
+> ----> ethos: hello reply received
+Failed to send flush request: Operation not permitted
+gnrc_uhcpc: only one interface found, skipping setup.
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+RIOT SUIT update example application
+running from slot 0
+slot start addr = 0x1000
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a085e
+Image start address: 0x00001200
+Header chksum: 0xc041171a
+
+suit_coap: started.
+Starting the shell
+> ----> ethos: hello reply received
+Failed to send flush request: Operation not permitted
+----> ethos: hello received
+Failed to send flush request: Operation not permitted
+gnrc_uhcpc: Using 4 as border interface and 0 as wireless interface.
+gnrc_uhcpc: only one interface found, skipping setup.ifconfig
+
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+RIOT SUIT update example application
+running from slot 0
+slot start addr = 0x1000
+Image magic_number: 0x544f4952
+Image Version: 0x5f1a085e
+Image start address: 0x00001200
+Header chksum: 0xc041171a
+
+suit_coap: started.
+Starting the shell
+> ifconfig
+Iface  4  HWaddr: 96:A9:4B:AF:2E:23 
+          L2-PDU:1500  MTU:1500  HL:64  RTR  
+          Source address length: 6
+          Link type: wired
+          inet6 addr: fe80::94a9:4bff:feaf:2e23  scope: link  VAL
+PING fe80::94a9:4bff:feaf:2e23%riot0(fe80::94a9:4bff:feaf:2e23%riot0) 56 data bytes
+
+--- fe80::94a9:4bff:feaf:2e23%riot0 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING fe80::94a9:4bff:feaf:2e23%riot0(fe80::94a9:4bff:feaf:2e23%riot0) 56 data bytes
+
+--- fe80::94a9:4bff:feaf:2e23%riot0 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING fe80::94a9:4bff:feaf:2e23%riot0(fe80::94a9:4bff:feaf:2e23%riot0) 56 data bytes
+
+--- fe80::94a9:4bff:feaf:2e23%riot0 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING fe80::94a9:4bff:feaf:2e23%riot0(fe80::94a9:4bff:feaf:2e23%riot0) 56 data bytes
+
+--- fe80::94a9:4bff:feaf:2e23%riot0 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING fe80::94a9:4bff:feaf:2e23%riot0(fe80::94a9:4bff:feaf:2e23%riot0) 56 data bytes
+
+--- fe80::94a9:4bff:feaf:2e23%riot0 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING fe80::94a9:4bff:feaf:2e23%riot0(fe80::94a9:4bff:feaf:2e23%riot0) 56 data bytes
+
+--- fe80::94a9:4bff:feaf:2e23%riot0 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING fe80::94a9:4bff:feaf:2e23%riot0(fe80::94a9:4bff:feaf:2e23%riot0) 56 data bytes
+
+--- fe80::94a9:4bff:feaf:2e23%riot0 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING fe80::94a9:4bff:feaf:2e23%riot0(fe80::94a9:4bff:feaf:2e23%riot0) 56 data bytes
+
+--- fe80::94a9:4bff:feaf:2e23%riot0 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING fe80::94a9:4bff:feaf:2e23%riot0(fe80::94a9:4bff:feaf:2e23%riot0) 56 data bytes
+
+--- fe80::94a9:4bff:feaf:2e23%riot0 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING fe80::94a9:4bff:feaf:2e23%riot0(fe80::94a9:4bff:feaf:2e23%riot0) 56 data bytes
+
+--- fe80::94a9:4bff:feaf:2e23%riot0 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+pinging node...
+pinging node failed. aborting test.
+
+/builds/workspace/RIOT.git.jk/examples/suit_update/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

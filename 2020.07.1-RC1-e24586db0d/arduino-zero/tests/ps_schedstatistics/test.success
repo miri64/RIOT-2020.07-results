@@ -1,0 +1,38 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-zero" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-zero
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+ 
+>  
+>  help
+Command              Description
+---------------------------------------
+reboot               Reboot the node
+version              Prints current RIOT_VERSION
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+> ps
+ ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches
+	  - | isr_stack            | -        - |   - |    512 (  168) (  344) | 0x20000000 | 0x200001c0
+	  1 | idle                 | pending  Q |  15 |    256 (  148) (  108) | 0x20000538 | 0x200005a4  | 97.134% |       160
+	  2 | main                 | running  Q |   7 |   1536 (  812) (  724) | 0x20000638 | 0x2000090c  |  1.114% |       149
+	  3 | thread               | bl rx    _ |   6 |   1024 (  460) (  564) | 0x20000e6c | 0x2000118c  |  0.343% |       129
+	  4 | thread               | bl rx    _ |   6 |   1024 (  460) (  564) | 0x2000126c | 0x2000158c  |  0.482% |       139
+	  5 | thread               | bl mutex _ |   6 |   1024 (  460) (  564) | 0x2000166c | 0x2000195c  |  0.643% |       150
+	  6 | thread               | bl mutex _ |   6 |   1024 (  460) (  564) | 0x20001a6c | 0x20001d5c  |  0.816% |       160
+	  7 | thread               | bl rx    _ |   6 |   1024 (  460) (  564) | 0x20001e6c | 0x2000218c  |  0.299% |       171
+	    | SUM                  |            |     |   7424 ( 3428) ( 3996)
+> 

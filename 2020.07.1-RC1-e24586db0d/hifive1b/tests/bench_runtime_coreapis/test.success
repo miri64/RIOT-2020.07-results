@@ -1,0 +1,36 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-hifive1b" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-hifive1b
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->ATE0
+OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0-->OK
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+Runtime of Selected Core API functions
+
+                 nop loop:      9369us  ---   0.009us per call  ---  106734977 calls per sec
+
+             mutex_init():         0us  ---   0.000us per call  ---        233 calls per sec
+        mutex lock/unlock:    203125us  ---   0.203us per call  ---    4923076 calls per sec
+
+       thread_flags_set():     96894us  ---   0.096us per call  ---   10320556 calls per sec
+     thread_flags_clear():     81299us  ---   0.081us per call  ---   12300274 calls per sec
+thread flags set/wait any:    293762us  ---   0.293us per call  ---    3404116 calls per sec
+thread flags set/wait all:    268768us  ---   0.268us per call  ---    3720681 calls per sec
+thread flags set/wait one:    315643us  ---   0.315us per call  ---    3168136 calls per sec
+
+        msg_try_receive():    150024us  ---   0.150us per call  ---    6665600 calls per sec
+              msg_avail():     40619us  ---   0.040us per call  ---   24619020 calls per sec
+
+[SUCCESS]
+

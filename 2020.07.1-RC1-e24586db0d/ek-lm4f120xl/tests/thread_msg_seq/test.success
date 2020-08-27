@@ -1,0 +1,24 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-ek-lm4f120xl" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-ek-lm4f120xl
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+START
+THREAD nr1 (pid:2) start
+THREAD nr2 (pid:3) start
+THREAD nr3 (pid:4) start
+THREADS CREATED
+
+THREAD nr1 (pid:2) end.
+Got msg from pid 2: "nr1"
+THREAD nr2 (pid:3) end.
+Got msg from pid 3: "nr2"
+THREAD nr3 (pid:4) end.
+Got msg from pid 4: "nr3"
+SUCCESS
+

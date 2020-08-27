@@ -1,0 +1,22 @@
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-pba-d-01-kw2x" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-pba-d-01-kw2x
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> ifconfig
+ 
+>  ifconfig
+Iface  2  HWaddr: 13:36  Channel: 26  NID: 0x23 
+          Long HWaddr: D3:C1:6D:4E:AB:6A:13:36 
+           TX-Power: 0dBm  State: IDLE 
+          AUTOACK  ACK_REQ  AUTOCCA  
+          L2-PDU:102  Source address length: 2
+          
+          Statistics for Layer 2
+            RX packets 1  bytes 43
+            TX packets 0 (Multicast: 0)  bytes 0
+            TX succeeded 0 errors 0
+

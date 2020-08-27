@@ -1,0 +1,11 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/pipe flash-only
+/builds/workspace/RIOT.git.jk/dist/tools/cc2538-bsl/cc2538-bsl.py -p "/dev/riot/tty-remote-reva"  -e -w -v -b 115200 /builds/workspace/RIOT.git.jk/tests/pipe/bin/remote-reva/tests_pipe.bin
+Opening port /dev/riot/tty-remote-reva, baud 115200
+Reading data from /builds/workspace/RIOT.git.jk/tests/pipe/bin/remote-reva/tests_pipe.bin
+Cannot auto-detect firmware filetype: Assuming .bin
+Connecting to target...
+ERROR: Timeout waiting for ACK/NACK after 'Get ChipID (0x28)'
+/builds/workspace/RIOT.git.jk/tests/pipe/../../Makefile.include:707: recipe for target 'flash-only' failed
+make: *** [flash-only] Error 1
+
+Return value: 2

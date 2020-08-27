@@ -1,0 +1,25 @@
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f303re" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f303re
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> heap
+ 
+>  heap
+heap: 62976 (used 2500, free 60476) [bytes]
+malloc 100
+>  malloc 100
+allocated 0x200013c8
+> heap
+ heap
+heap: 62976 (used 2608, free 60368) [bytes]
+free 0x200013c8
+>  free 0x200013c8
+freed 0x200013c8
+> heap
+ heap
+heap: 62976 (used 2500, free 60476) [bytes]
+> 

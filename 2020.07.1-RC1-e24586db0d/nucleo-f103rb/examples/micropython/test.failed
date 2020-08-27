@@ -1,0 +1,11 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/examples/micropython test
+Terminal program miniterm.py is required but not found in PATH.  Aborting.
+/builds/workspace/RIOT.git.jk/Makefile.include:725: recipe for target 'cleanterm' failed
+make[1]: *** [cleanterm] Error 1
+Unexpected end of file in expect script at "child.expect_exact('boot.py: MicroPython says hello!')" (examples/micropython/tests/01-run.py:15)
+
+Process already stopped
+/builds/workspace/RIOT.git.jk/examples/micropython/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

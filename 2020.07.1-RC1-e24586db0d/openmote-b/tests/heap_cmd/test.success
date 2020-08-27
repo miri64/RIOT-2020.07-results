@@ -1,0 +1,25 @@
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-openmote-b" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-openmote-b
+Welcome to pyterm!
+Type '/exit' to exit.
+
+>  
+> heap
+ heap
+heap: 30236 (used 2500, free 27736) [bytes]
+> malloc 100
+ malloc 100
+allocated 0x200013b0
+> heap
+ heap
+heap: 30236 (used 2608, free 27628) [bytes]
+> free 0x200013b0
+ free 0x200013b0
+freed 0x200013b0
+> heap
+ heap
+heap: 30236 (used 2500, free 27736) [bytes]
+> 

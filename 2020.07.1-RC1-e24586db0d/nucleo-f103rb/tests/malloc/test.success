@@ -1,0 +1,185 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f103rb" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f103rb
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+CHUNK_SIZE: 512
+NUMBER_OF_TESTS: 3
+Allocated 512 Bytes at 0x0x200013b8, total 512
+Allocated 512 Bytes at 0x0x200015d0, total 1032
+Allocated 512 Bytes at 0x0x200017e8, total 1552
+Allocated 512 Bytes at 0x0x20001a00, total 2072
+Allocated 512 Bytes at 0x0x20001c18, total 2592
+Allocated 512 Bytes at 0x0x20001e30, total 3112
+Allocated 512 Bytes at 0x0x20002048, total 3632
+Allocated 512 Bytes at 0x0x20002260, total 4152
+Allocated 512 Bytes at 0x0x20002478, total 4672
+Allocated 512 Bytes at 0x0x20002690, total 5192
+Allocated 512 Bytes at 0x0x200028a8, total 5712
+Allocated 512 Bytes at 0x0x20002ac0, total 6232
+Allocated 512 Bytes at 0x0x20002cd8, total 6752
+Allocated 512 Bytes at 0x0x20002ef0, total 7272
+Allocated 512 Bytes at 0x0x20003108, total 7792
+Allocated 512 Bytes at 0x0x20003320, total 8312
+Allocated 512 Bytes at 0x0x20003538, total 8832
+Allocated 512 Bytes at 0x0x20003750, total 9352
+Allocated 512 Bytes at 0x0x20003968, total 9872
+Allocated 512 Bytes at 0x0x20003b80, total 10392
+Allocated 512 Bytes at 0x0x20003d98, total 10912
+Allocated 512 Bytes at 0x0x20003fb0, total 11432
+Allocated 512 Bytes at 0x0x200041c8, total 11952
+Allocated 512 Bytes at 0x0x200043e0, total 12472
+Allocated 512 Bytes at 0x0x200045f8, total 12992
+Allocated 512 Bytes at 0x0x20004810, total 13512
+Allocated 512 Bytes at 0x0x20004a28, total 14032
+Allocated 512 Bytes at 0x0x20004c40, total 14552
+Allocations count: 28
+Free 512 Bytes at 0x0x200013b8, total 14048
+Free 512 Bytes at 0x0x200015d0, total 13528
+Free 512 Bytes at 0x0x200017e8, total 13008
+Free 512 Bytes at 0x0x20001a00, total 12488
+Free 512 Bytes at 0x0x20001c18, total 11968
+Free 512 Bytes at 0x0x20001e30, total 11448
+Free 512 Bytes at 0x0x20002048, total 10928
+Free 512 Bytes at 0x0x20002260, total 10408
+Free 512 Bytes at 0x0x20002478, total 9888
+Free 512 Bytes at 0x0x20002690, total 9368
+Free 512 Bytes at 0x0x200028a8, total 8848
+Free 512 Bytes at 0x0x20002ac0, total 8328
+Free 512 Bytes at 0x0x20002cd8, total 7808
+Free 512 Bytes at 0x0x20002ef0, total 7288
+Free 512 Bytes at 0x0x20003108, total 6768
+Free 512 Bytes at 0x0x20003320, total 6248
+Free 512 Bytes at 0x0x20003538, total 5728
+Free 512 Bytes at 0x0x20003750, total 5208
+Free 512 Bytes at 0x0x20003968, total 4688
+Free 512 Bytes at 0x0x20003b80, total 4168
+Free 512 Bytes at 0x0x20003d98, total 3648
+Free 512 Bytes at 0x0x20003fb0, total 3128
+Free 512 Bytes at 0x0x200041c8, total 2608
+Free 512 Bytes at 0x0x200043e0, total 2088
+Free 512 Bytes at 0x0x200045f8, total 1568
+Free 512 Bytes at 0x0x20004810, total 1048
+Free 512 Bytes at 0x0x20004a28, total 528
+Free 512 Bytes at 0x0x20004c40, total 8
+Allocated 512 Bytes at 0x0x20004c40, total 512
+Allocated 512 Bytes at 0x0x20004a28, total 1032
+Allocated 512 Bytes at 0x0x20004810, total 1552
+Allocated 512 Bytes at 0x0x200045f8, total 2072
+Allocated 512 Bytes at 0x0x200043e0, total 2592
+Allocated 512 Bytes at 0x0x200041c8, total 3112
+Allocated 512 Bytes at 0x0x20003fb0, total 3632
+Allocated 512 Bytes at 0x0x20003d98, total 4152
+Allocated 512 Bytes at 0x0x20003b80, total 4672
+Allocated 512 Bytes at 0x0x20003968, total 5192
+Allocated 512 Bytes at 0x0x20003750, total 5712
+Allocated 512 Bytes at 0x0x20003538, total 6232
+Allocated 512 Bytes at 0x0x20003320, total 6752
+Allocated 512 Bytes at 0x0x20003108, total 7272
+Allocated 512 Bytes at 0x0x20002ef0, total 7792
+Allocated 512 Bytes at 0x0x20002cd8, total 8312
+Allocated 512 Bytes at 0x0x20002ac0, total 8832
+Allocated 512 Bytes at 0x0x200028a8, total 9352
+Allocated 512 Bytes at 0x0x20002690, total 9872
+Allocated 512 Bytes at 0x0x20002478, total 10392
+Allocated 512 Bytes at 0x0x20002260, total 10912
+Allocated 512 Bytes at 0x0x20002048, total 11432
+Allocated 512 Bytes at 0x0x20001e30, total 11952
+Allocated 512 Bytes at 0x0x20001c18, total 12472
+Allocated 512 Bytes at 0x0x20001a00, total 12992
+Allocated 512 Bytes at 0x0x200017e8, total 13512
+Allocated 512 Bytes at 0x0x200015d0, total 14032
+Allocated 512 Bytes at 0x0x200013b8, total 14552
+Allocations count: 28
+Free 512 Bytes at 0x0x20004c40, total 14048
+Free 512 Bytes at 0x0x20004a28, total 13528
+Free 512 Bytes at 0x0x20004810, total 13008
+Free 512 Bytes at 0x0x200045f8, total 12488
+Free 512 Bytes at 0x0x200043e0, total 11968
+Free 512 Bytes at 0x0x200041c8, total 11448
+Free 512 Bytes at 0x0x20003fb0, total 10928
+Free 512 Bytes at 0x0x20003d98, total 10408
+Free 512 Bytes at 0x0x20003b80, total 9888
+Free 512 Bytes at 0x0x20003968, total 9368
+Free 512 Bytes at 0x0x20003750, total 8848
+Free 512 Bytes at 0x0x20003538, total 8328
+Free 512 Bytes at 0x0x20003320, total 7808
+Free 512 Bytes at 0x0x20003108, total 7288
+Free 512 Bytes at 0x0x20002ef0, total 6768
+Free 512 Bytes at 0x0x20002cd8, total 6248
+Free 512 Bytes at 0x0x20002ac0, total 5728
+Free 512 Bytes at 0x0x200028a8, total 5208
+Free 512 Bytes at 0x0x20002690, total 4688
+Free 512 Bytes at 0x0x20002478, total 4168
+Free 512 Bytes at 0x0x20002260, total 3648
+Free 512 Bytes at 0x0x20002048, total 3128
+Free 512 Bytes at 0x0x20001e30, total 2608
+Free 512 Bytes at 0x0x20001c18, total 2088
+Free 512 Bytes at 0x0x20001a00, total 1568
+Free 512 Bytes at 0x0x200017e8, total 1048
+Free 512 Bytes at 0x0x200015d0, total 528
+Free 512 Bytes at 0x0x200013b8, total 8
+Allocated 512 Bytes at 0x0x20004c40, total 512
+Allocated 512 Bytes at 0x0x20004a28, total 1032
+Allocated 512 Bytes at 0x0x20004810, total 1552
+Allocated 512 Bytes at 0x0x200045f8, total 2072
+Allocated 512 Bytes at 0x0x200043e0, total 2592
+Allocated 512 Bytes at 0x0x200041c8, total 3112
+Allocated 512 Bytes at 0x0x20003fb0, total 3632
+Allocated 512 Bytes at 0x0x20003d98, total 4152
+Allocated 512 Bytes at 0x0x20003b80, total 4672
+Allocated 512 Bytes at 0x0x20003968, total 5192
+Allocated 512 Bytes at 0x0x20003750, total 5712
+Allocated 512 Bytes at 0x0x20003538, total 6232
+Allocated 512 Bytes at 0x0x20003320, total 6752
+Allocated 512 Bytes at 0x0x20003108, total 7272
+Allocated 512 Bytes at 0x0x20002ef0, total 7792
+Allocated 512 Bytes at 0x0x20002cd8, total 8312
+Allocated 512 Bytes at 0x0x20002ac0, total 8832
+Allocated 512 Bytes at 0x0x200028a8, total 9352
+Allocated 512 Bytes at 0x0x20002690, total 9872
+Allocated 512 Bytes at 0x0x20002478, total 10392
+Allocated 512 Bytes at 0x0x20002260, total 10912
+Allocated 512 Bytes at 0x0x20002048, total 11432
+Allocated 512 Bytes at 0x0x20001e30, total 11952
+Allocated 512 Bytes at 0x0x20001c18, total 12472
+Allocated 512 Bytes at 0x0x20001a00, total 12992
+Allocated 512 Bytes at 0x0x200017e8, total 13512
+Allocated 512 Bytes at 0x0x200015d0, total 14032
+Allocated 512 Bytes at 0x0x200013b8, total 14552
+Allocations count: 28
+Free 512 Bytes at 0x0x20004c40, total 14048
+Free 512 Bytes at 0x0x20004a28, total 13528
+Free 512 Bytes at 0x0x20004810, total 13008
+Free 512 Bytes at 0x0x200045f8, total 12488
+Free 512 Bytes at 0x0x200043e0, total 11968
+Free 512 Bytes at 0x0x200041c8, total 11448
+Free 512 Bytes at 0x0x20003fb0, total 10928
+Free 512 Bytes at 0x0x20003d98, total 10408
+Free 512 Bytes at 0x0x20003b80, total 9888
+Free 512 Bytes at 0x0x20003968, total 9368
+Free 512 Bytes at 0x0x20003750, total 8848
+Free 512 Bytes at 0x0x20003538, total 8328
+Free 512 Bytes at 0x0x20003320, total 7808
+Free 512 Bytes at 0x0x20003108, total 7288
+Free 512 Bytes at 0x0x20002ef0, total 6768
+Free 512 Bytes at 0x0x20002cd8, total 6248
+Free 512 Bytes at 0x0x20002ac0, total 5728
+Free 512 Bytes at 0x0x200028a8, total 5208
+Free 512 Bytes at 0x0x20002690, total 4688
+Free 512 Bytes at 0x0x20002478, total 4168
+Free 512 Bytes at 0x0x20002260, total 3648
+Free 512 Bytes at 0x0x20002048, total 3128
+Free 512 Bytes at 0x0x20001e30, total 2608
+Free 512 Bytes at 0x0x20001c18, total 2088
+Free 512 Bytes at 0x0x20001a00, total 1568
+Free 512 Bytes at 0x0x200017e8, total 1048
+Free 512 Bytes at 0x0x200015d0, total 528
+Free 512 Bytes at 0x0x200013b8, total 8
+[SUCCESS]
+

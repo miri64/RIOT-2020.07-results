@@ -1,0 +1,44 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+Sizeof RIOT core types
+
+                                size
+sizeof(cib_t):                    6
+sizeof(clist_node_t):             2
+sizeof(core_panic_t):             2
+sizeof(kernel_pid_t):             2
+sizeof(list_node_t):              2
+sizeof(mbox_t):                  12
+sizeof(msg_t):                    8
+sizeof(mutex_t):                  2
+sizeof(priority_queue_node_t):    8
+sizeof(priority_queue_t):         2
+sizeof(ringbuffer_t):             8
+sizeof(rmutex_t):                 6
+sizeof(thread_flags_t):           0   (not enabled)
+
+TCB (thread_t) details:         size  offset
+sizeof(thread_t):                28       -
+    tcb->sp                       2       0
+    tcb->status                   2       2
+    tcb->priority                 1       4
+    tcb->pid                      2       6
+    tcb->rq_entry                 2       8
+    tcb->wait_data                2      10
+    tcb->msg_waiters              2      12
+    tcb->msg_queue                6      14
+    tcb->msg_array                2      20
+    tcb->stack_start              2      22
+    tcb->name                     2      24
+    tcb->stack_size               2      26
+
+[SUCCESS]
+

@@ -1,0 +1,27 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-frdm-k64f" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-frdm-k64f
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+xtimer benchmark application.
+
+                     set() one     6352 / 1000 = 6
+                  remove() one      802 / 1000 = 0
+          set() + remove() one     7002 / 1000 = 7
+  set() many increasing target   329112 / 1000 = 329
+               re-set()  first     6701 / 1000 = 6
+               re-set() middle   334829 / 1000 = 334
+               re-set()   last   649127 / 1000 = 649
+       remove() + set()  first   194702 / 1000 = 194
+       remove() + set() middle   524527 / 1000 = 524
+       remove() + set()   last   833994 / 1000 = 833
+      remove() many decreasing    92482 / 1000 = 92
+                  xtimer_now()     1751 / 1000 = 1
+              sizeof(xtimer_t)    28000 / 1000 = 28
+done.
+

@@ -1,0 +1,10 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/pkg_tensorflow-lite flash-only
+CI-build: skipping link step
+/builds/workspace/RIOT.git.jk/dist/tools/openocd/openocd.sh flash /builds/workspace/RIOT.git.jk/tests/pkg_tensorflow-lite/bin/nucleo-l073rz/tests_pkg_tensorflow-lite.elf
+### Flashing Target ###
+Error: Unable to locate IMAGE_FILE
+       (/builds/workspace/RIOT.git.jk/tests/pkg_tensorflow-lite/bin/nucleo-l073rz/tests_pkg_tensorflow-lite.elf)
+/builds/workspace/RIOT.git.jk/tests/pkg_tensorflow-lite/../../Makefile.include:707: recipe for target 'flash-only' failed
+make: *** [flash-only] Error 1
+
+Return value: 2

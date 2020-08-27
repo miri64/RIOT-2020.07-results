@@ -1,0 +1,35 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-hifive1b" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-hifive1b
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->ATE0
+OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0-->OK
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+xtimer benchmark application.
+
+                     set() one      885 / 1000 = 0
+                  remove() one      122 / 1000 = 0
+          set() + remove() one      916 / 1000 = 0
+  set() many increasing target      489 / 100 = 4
+               re-set()  first      854 / 1000 = 0
+               re-set() middle     4913 / 1000 = 4
+               re-set()   last     9003 / 1000 = 9
+       remove() + set()  first     2930 / 1000 = 2
+       remove() + set() middle     6928 / 1000 = 6
+       remove() + set()   last    11017 / 1000 = 11
+      remove() many decreasing      122 / 100 = 1
+                  xtimer_now()      274 / 1000 = 0
+              sizeof(xtimer_t)     2800 / 100 = 28
+done.
+

@@ -1,0 +1,32 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-z1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-z1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+[START] event test application.
+
+initializing detached event queue 0x1338
+posting 0x110c
+posting 0x1110
+running thread that will claim event queue 0x1338
+claiming event queue 0x1338
+launching event queue 0x1338
+triggered delayed event 0x110c
+triggered delayed event 0x1110
+posting 0x00001114
+posting 0x00001118
+canceling 0x00001118
+posting custom event
+posting timed callback with timeout 1sec
+posting timed callback with timeout 0.5sec and canceling it again
+launching event queue
+triggered 0x00001114
+triggered custom event with text: "CUSTOM CALLBACK"
+triggered timed callback with arg 0x00005678 after 1000160us
+[SUCCESS]�IOT MSP430 hardware initialization complete.
+

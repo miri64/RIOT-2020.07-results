@@ -1,0 +1,25 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/pkg_c25519 clean all
+# Reset package to checkout state.
+rm -rf /builds/workspace/RIOT.git.jk/build/pkg/c25519
+rm -rf /builds/workspace/RIOT.git.jk/tests/pkg_c25519/bin/slstk3402a/pkg-build/gecko_sdk
+Launching build container using image "riot/riotbuild:latest".
+docker run --rm --tty --user $(id -u) -v '/usr/share/zoneinfo/Europe/Paris:/etc/localtime:ro' -v '/builds/workspace/RIOT.git.jk:/data/riotbuild/riotbase:delegated' -e 'RIOTBASE=/data/riotbuild/riotbase' -e 'CCACHE_BASEDIR=/data/riotbuild/riotbase' -e 'BUILD_DIR=/data/riotbuild/riotbase/build' -e 'RIOTPROJECT=/data/riotbuild/riotbase' -e 'RIOTCPU=/data/riotbuild/riotbase/cpu' -e 'RIOTBOARD=/data/riotbuild/riotbase/boards' -e 'RIOTMAKE=/data/riotbuild/riotbase/makefiles'      --env BOARD=slstk3402a -e 'BOARD=slstk3402a' -e 'CC_NOCOLOR=1' -e 'RIOT_CI_BUILD=1' -e 'RIOT_VERSION=riot/2020.07-RC3'  -w '/data/riotbuild/riotbase/tests/pkg_c25519/' 'riot/riotbuild:latest' make 'CC_NOCOLOR=1' 'RIOT_CI_BUILD=1'    all 
+Building application "tests_pkg_c25519" for "slstk3402a" with MCU "efm32".
+
+test "dbfb4285837ab2ea3d99c448b22877cc7a139ccbaebb1de367e2bec1fd562fe629b389d86603915448078b8fd7e631c8fc9a7d126eb889a1ba0c17611369b190  /data/riotbuild/riotbase/build/pkg/c25519-2017-10-05.zip" =  "$(sha512sum "/data/riotbuild/riotbase/build/pkg/c25519-2017-10-05.zip")"
+"make" -C /data/riotbuild/riotbase/build/pkg/c25519/src -f /data/riotbuild/riotbase/Makefile.base MODULE=c25519
+"make" -C /data/riotbuild/riotbase/build/pkg/gecko_sdk/dist
+[01m[Kcc1:[m[K [01;31m[Kerror: [m[K/data/riotbuild/riotbase/build/pkg/c25519/src: No such file or directory [[01;31m[K-Werror=missing-include-dirs[m[K]
+cc1: all warnings being treated as errors
+/data/riotbuild/riotbase/Makefile.base:108: recipe for target '/data/riotbuild/riotbase/tests/pkg_c25519/bin/slstk3402a/gecko_sdk_emlib/em_wdog.o' failed
+make[3]: *** [/data/riotbuild/riotbase/tests/pkg_c25519/bin/slstk3402a/gecko_sdk_emlib/em_wdog.o] Error 1
+/data/riotbuild/riotbase/Makefile.base:30: recipe for target 'ALL--/data/riotbuild/riotbase/build/pkg/gecko_sdk/dist/emlib/src' failed
+make[2]: *** [ALL--/data/riotbuild/riotbase/build/pkg/gecko_sdk/dist/emlib/src] Error 2
+Makefile:17: recipe for target 'all' failed
+make[1]: *** [all] Error 2
+/data/riotbuild/riotbase/Makefile.include:674: recipe for target 'pkg-build-gecko_sdk' failed
+make: *** [pkg-build-gecko_sdk] Error 2
+/builds/workspace/RIOT.git.jk/makefiles/docker.inc.mk:304: recipe for target '..in-docker-container' failed
+make: *** [..in-docker-container] Error 2
+
+Return value: 2

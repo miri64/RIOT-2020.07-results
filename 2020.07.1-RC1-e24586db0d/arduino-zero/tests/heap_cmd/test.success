@@ -1,0 +1,25 @@
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-arduino-zero" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-arduino-zero
+Welcome to pyterm!
+Type '/exit' to exit.
+
+>  
+heap
+>  heap
+heap: 29972 (used 2500, free 27472) [bytes]
+malloc 100
+>  malloc 100
+allocated 0x200014b8
+> heap
+ heap
+heap: 29972 (used 2608, free 27364) [bytes]
+> free 0x200014b8
+ free 0x200014b8
+freed 0x200014b8
+> heap
+ heap
+heap: 29972 (used 2500, free 27472) [bytes]
+

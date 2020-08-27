@@ -1,0 +1,43 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f103rb" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f103rb
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+
+Test for peripheral TIMERs
+
+Available timers: 2
+
+Testing TIMER_0:
+TIMER_0: initialization successful
+TIMER_0: stopped
+TIMER_0: set channel 0 to 5000
+TIMER_0: set channel 1 to 10000
+TIMER_0: set channel 2 to 15000
+TIMER_0: set channel 3 to 20000
+TIMER_0: starting
+TIMER_0: channel 0 fired at SW count    17142 - init:    17142
+TIMER_0: channel 1 fired at SW count    34275 - diff:    17133
+TIMER_0: channel 2 fired at SW count    51409 - diff:    17134
+TIMER_0: channel 3 fired at SW count    68542 - diff:    17133
+
+Testing TIMER_1:
+TIMER_1: initialization successful
+TIMER_1: stopped
+TIMER_1: set channel 0 to 5000
+TIMER_1: set channel 1 to 10000
+TIMER_1: set channel 2 to 15000
+TIMER_1: set channel 3 to 20000
+TIMER_1: starting
+TIMER_1: channel 0 fired at SW count    17141 - init:    17141
+TIMER_1: channel 1 fired at SW count    34275 - diff:    17134
+TIMER_1: channel 2 fired at SW count    51409 - diff:    17134
+TIMER_1: channel 3 fired at SW count    68542 - diff:    17133
+
+TEST SUCCEEDED
+

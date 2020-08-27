@@ -1,0 +1,32 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-nucleo-f767zi" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-nucleo-f767zi
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+[START] event test application.
+
+initializing detached event queue 0x20000960
+posting 0x20000228
+posting 0x20000230
+running thread that will claim event queue 0x20000960
+claiming event queue 0x20000960
+launching event queue 0x20000960
+triggered delayed event 0x20000228
+triggered delayed event 0x20000230
+posting 0x20000238
+posting 0x20000240
+canceling 0x20000240
+posting custom event
+posting timed callback with timeout 1sec
+posting timed callback with timeout 0.5sec and canceling it again
+launching event queue
+triggered 0x20000238
+triggered custom event with text: "CUSTOM CALLBACK"
+triggered timed callback with arg 0x12345678 after 1000014us
+[SUCCESS]
+

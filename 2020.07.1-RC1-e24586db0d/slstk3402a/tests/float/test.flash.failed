@@ -1,0 +1,10 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/float flash-only
+/builds/workspace/RIOT.git.jk/dist/tools/jlink/jlink.sh flash /builds/workspace/RIOT.git.jk/tests/float/bin/slstk3402a/tests_float.bin
+### Flashing Target ###
+### Flashing at base address 0x0 with offset 0 ###
+SEGGER J-Link Commander V6.54c (Compiled Nov  7 2019 17:05:53)
+Segmentation fault (core dumped)
+/builds/workspace/RIOT.git.jk/tests/float/../../Makefile.include:707: recipe for target 'flash-only' failed
+make: *** [flash-only] Error 139
+
+Return value: 2

@@ -1,0 +1,75 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /builds/workspace/RIOT.git.jk/tests/riotboot test
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-slstk3402a" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-slstk3402a
+could not open port /dev/riot/tty-slstk3402a: [Errno 16] Device or resource busy: '/dev/riot/tty-slstk3402a'
+Trying to reconnect to /dev/riot/tty-slstk3402a in 10 sec
+
+
+
+
+
+
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/pexpect/expect.py", line 99, in expect_loop
+    incoming = spawn.read_nonblocking(spawn.maxread, timeout)
+  File "/usr/lib/python3/dist-packages/pexpect/pty_spawn.py", line 462, in read_nonblocking
+    raise TIMEOUT('Timeout exceeded.')
+pexpect.exceptions.TIMEOUT: Timeout exceeded.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/builds/workspace/RIOT.git.jk/tests/riotboot/tests/01-run.py", line 80, in <module>
+    sys.exit(run(testfunc))
+  File "/builds/workspace/RIOT.git.jk/dist/pythonlibs/testrunner/__init__.py", line 28, in run
+    logfile=sys.stdout if echo else None)
+  File "/builds/workspace/RIOT.git.jk/dist/pythonlibs/testrunner/spawn.py", line 88, in setup_child
+    sync_child(child, env)
+  File "/builds/workspace/RIOT.git.jk/dist/pythonlibs/testrunner/spawn.py", line 123, in sync_child
+    TEST_INTERACTIVE_DELAY)
+  File "/builds/workspace/RIOT.git.jk/dist/pythonlibs/testrunner/utils.py", line 41, in test_utils_interactive_sync_shell
+    _test_utils_interactive_sync(child, retries, delay, '\n', '>')
+  File "/builds/workspace/RIOT.git.jk/dist/pythonlibs/testrunner/utils.py", line 22, in _test_utils_interactive_sync
+    child.expect_exact(ready_exp, timeout=0)
+  File "/usr/lib/python3/dist-packages/pexpect/spawnbase.py", line 390, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/usr/lib/python3/dist-packages/pexpect/expect.py", line 107, in expect_loop
+    return self.timeout(e)
+  File "/usr/lib/python3/dist-packages/pexpect/expect.py", line 70, in timeout
+    raise TIMEOUT(msg)
+pexpect.exceptions.TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7f3f80d2f4e0>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): "source busy: '/dev/riot/tty-slstk3402a'\r\nTrying to reconnect to /dev/riot/tty-slstk3402a in 10 sec\r\n"
+before (last 100 chars): "source busy: '/dev/riot/tty-slstk3402a'\r\nTrying to reconnect to /dev/riot/tty-slstk3402a in 10 sec\r\n"
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 13586
+child_fd: 5
+closed: False
+timeout: 10
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: ">"
+/builds/workspace/RIOT.git.jk/tests/riotboot/../../Makefile.include:770: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

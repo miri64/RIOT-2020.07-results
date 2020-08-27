@@ -1,0 +1,25 @@
+
+
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-slstk3402a" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-slstk3402a
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> heap
+ 
+>  heap
+heap: 259564 (used 2500, free 257064) [bytes]
+malloc 100
+>  malloc 100
+allocated 0x200013e0
+> heap
+ heap
+heap: 259564 (used 2608, free 256956) [bytes]
+free 0x200013e0
+>  free 0x200013e0
+freed 0x200013e0
+> heap
+ heap
+heap: 259564 (used 2500, free 257064) [bytes]
+

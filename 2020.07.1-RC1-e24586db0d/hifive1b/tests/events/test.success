@@ -1,0 +1,39 @@
+r
+/builds/workspace/RIOT.git.jk/dist/tools/pyterm/pyterm -p "/dev/riot/tty-hifive1b" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/riot/tty-hifive1b
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0-->OK
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: riot/2020.07-RC3)
+[START] event test application.
+
+initializing detached event queue 0x80000668
+posting 0x800000a4
+posting 0x800000ac
+running thread that will claim event queue 0x80000668
+claiming event queue 0x80000668
+launching event queue 0x80000668
+triggered delayed event 0x800000a4
+triggered delayed event 0x800000ac
+posting 0x800000b4
+posting 0x800000bc
+canceling 0x800000bc
+posting custom event
+posting timed callback with timeout 1sec
+posting timed callback with timeout 0.5sec and canceling it again
+launching event queue
+triggered 0x800000b4
+triggered custom event with text: "CUSTOM CALLBACK"
+triggered timed callback with arg 0x12345678 after 1000031us
+[SUCCESS]
+
